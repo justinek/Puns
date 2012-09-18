@@ -1,0 +1,949 @@
+sentenceID,isCorrect,pairID,word1,word2,relatedness,word1_index,word2_index,distance,sentence
+1,0,1,atheism,prophet,0.212970834416913,0,4,-4,atheism is a non prophet organization
+1,0,2,non,prophet,-0.779943058250298,3,4,-1,atheism is a non prophet organization
+1,0,3,organization,prophet,-0.315206882747317,5,4,1,atheism is a non prophet organization
+2,0,4,circumference,pi,1.27193586016228,4,8,-4,i get my large circumference from too much pi
+2,0,5,large,pi,-0.048889565836259,3,8,-5,i get my large circumference from too much pi
+2,0,6,much,pi,-0.316593921901783,7,8,-1,i get my large circumference from too much pi
+3,0,7,baker,knead,1.41355339919079,0,6,-6,bakers trade bread recipes on a knead to know basis
+3,0,8,basis,knead,-0.754514916649654,9,6,3,bakers trade bread recipes on a knead to know basis
+3,0,9,bread,knead,1.45620579262288,2,6,-4,bakers trade bread recipes on a knead to know basis
+3,0,10,know,knead,-0.977045746381195,8,6,2,bakers trade bread recipes on a knead to know basis
+3,0,11,recipe,knead,0.866398656745918,0,6,-6,bakers trade bread recipes on a knead to know basis
+3,0,12,trade,knead,-0.66611011280683,1,6,-5,bakers trade bread recipes on a knead to know basis
+4,0,13,choose,oar,-0.621176828220049,5,7,-2,the indecisive rower could not choose either oar
+4,0,14,either,oar,-0.817415912078897,6,7,-1,the indecisive rower could not choose either oar
+4,0,15,indecisive,oar,-0.886550122888529,1,7,-6,the indecisive rower could not choose either oar
+4,0,16,rower,oar,1.51772650409791,2,7,-5,the indecisive rower could not choose either oar
+5,0,17,cake,tier,0.846589749037438,7,10,-3,it was an emotional wedding even the cake was in tiers
+5,0,18,emotional,tier,-0.570508583521174,3,10,-7,it was an emotional wedding even the cake was in tiers
+5,0,19,even,tier,0.174805833866074,5,10,-5,it was an emotional wedding even the cake was in tiers
+5,0,20,wedding,tier,0.457995185518359,4,10,-6,it was an emotional wedding even the cake was in tiers
+6,0,21,conduct,poll,0.771880233844757,5,8,-3,a new country decided to conduct a flag poll
+6,0,22,country,poll,0.176479716288564,2,8,-6,a new country decided to conduct a flag poll
+6,0,23,decide,poll,-0.609642823120879,3,8,-5,a new country decided to conduct a flag poll
+6,0,24,flag,poll,0.066849233147248,7,8,-1,a new country decided to conduct a flag poll
+6,0,25,new,poll,-0.291702180374532,1,8,-7,a new country decided to conduct a flag poll
+7,0,26,chairman,bored,-0.438220726243671,7,10,-3,at some executive meetings there is a chairman of the bored
+7,0,27,executive,bored,0.131752393415876,2,10,-8,at some executive meetings there is a chairman of the bored
+7,0,28,meetings,bored,0.476620883815132,3,10,-7,at some executive meetings there is a chairman of the bored
+8,0,29,donut,greece,-0.747574590891916,4,9,-5,did you know that donuts were first made in greece
+8,0,30,first,greece,-0.367145191414409,6,9,-3,did you know that donuts were first made in greece
+8,0,31,know,greece,-0.628334900018039,2,9,-7,did you know that donuts were first made in greece
+8,0,32,made,greece,-0.402622492632511,7,9,-2,did you know that donuts were first made in greece
+9,0,33,above,sine,-0.728519927323733,14,12,2,i always prayed before my trigonometry tests i was hoping for a sine from above
+9,0,34,always,sine,-0.815121699369387,1,12,-11,i always prayed before my trigonometry tests i was hoping for a sine from above
+9,0,35,before,sine,-0.336899979909447,3,12,-9,i always prayed before my trigonometry tests i was hoping for a sine from above
+9,0,36,hoping,sine,-0.817280033323014,9,12,-3,i always prayed before my trigonometry tests i was hoping for a sine from above
+9,0,37,prayed,sine,-0.909208080442562,2,12,-10,i always prayed before my trigonometry tests i was hoping for a sine from above
+9,0,38,test,sine,-0.173873377044911,6,12,-6,i always prayed before my trigonometry tests i was hoping for a sine from above
+9,0,39,trigonometry,sine,1.46768639562691,5,12,-7,i always prayed before my trigonometry tests i was hoping for a sine from above
+10,0,40,dislike,principal,0.009964760535553,5,10,-5,it was not school john disliked it was just the principal of it
+10,0,41,john,principal,-0.302361145865677,4,10,-6,it was not school john disliked it was just the principal of it
+10,0,42,school,principal,1.73631632190123,3,10,-7,it was not school john disliked it was just the principal of it
+11,0,43,music,cd,1.75823618229048,1,6,-5,some music stores are in a cd part of town
+11,0,44,part,cd,-0.513742868339641,7,6,1,some music stores are in a cd part of town
+11,0,45,store,cd,1.0936602079745,2,6,-4,some music stores are in a cd part of town
+11,0,46,town,cd,-0.777168646242943,9,6,3,some music stores are in a cd part of town
+12,0,47,mad,hare,-0.372814037663931,4,8,-4,the magician got so mad he pulled his hare out
+12,0,48,magician,hare,0.480614666665408,1,8,-7,the magician got so mad he pulled his hare out
+12,0,49,out,hare,-0.783945763902641,9,8,1,the magician got so mad he pulled his hare out
+12,0,50,pulled,hare,-0.718077284983201,6,8,-2,the magician got so mad he pulled his hare out
+13,0,51,admonished,knotty,-0.681502204920682,5,13,-8,the young pine sapling was admonished by his father apparently he had been knotty
+13,0,52,apparently,knotty,-0.859038510339086,9,13,-4,the young pine sapling was admonished by his father apparently he had been knotty
+13,0,53,father,knotty,-0.957404058374754,8,13,-5,the young pine sapling was admonished by his father apparently he had been knotty
+13,0,54,pine,knotty,0.186427140223222,2,13,-11,the young pine sapling was admonished by his father apparently he had been knotty
+13,0,55,sapling,knotty,-0.267658057066485,3,13,-10,the young pine sapling was admonished by his father apparently he had been knotty
+13,0,56,young,knotty,-0.898306565899094,1,13,-12,the young pine sapling was admonished by his father apparently he had been knotty
+14,0,57,learn,taut,-0.701849637276055,1,8,-7,to learn rope tricks you have to be taut
+14,0,58,rope,taut,0.823133524033699,2,8,-6,to learn rope tricks you have to be taut
+14,0,59,trick,taut,-0.819567385416993,3,8,-5,to learn rope tricks you have to be taut
+15,0,60,class,marx,0.291062991843603,5,9,-4,i dropped out of communism class because of lousy marx
+15,0,61,communism,marx,1.484117772585,4,9,-5,i dropped out of communism class because of lousy marx
+15,0,62,drop,marx,-0.974134049602003,1,9,-8,i dropped out of communism class because of lousy marx
+15,0,63,lousy,marx,-0.447405577960524,8,9,-1,i dropped out of communism class because of lousy marx
+15,0,64,out,marx,-0.690879394798797,2,9,-7,i dropped out of communism class because of lousy marx
+16,0,65,boy,hi,-0.601338814847851,1,10,-9,a boy who instinctively waves at people has a natural hi
+16,0,66,instinctively,hi,-0.753637514649243,3,10,-7,a boy who instinctively waves at people has a natural hi
+16,0,67,natural,hi,-0.717051055168573,9,10,-1,a boy who instinctively waves at people has a natural hi
+16,0,68,people,hi,0.2543776500543,6,10,-4,a boy who instinctively waves at people has a natural hi
+16,0,69,wave,hi,0.960027098316622,4,10,-6,a boy who instinctively waves at people has a natural hi
+17,0,70,end,daze,-0.793870186343594,9,13,-4,a teacher having a tough time longs for the end of the school daze
+17,0,71,having,daze,-0.821772754723475,2,13,-11,a teacher having a tough time longs for the end of the school daze
+17,0,72,long,daze,-0.365334239586843,6,13,-7,a teacher having a tough time longs for the end of the school daze
+17,0,73,school,daze,0.009049183208419,12,13,-1,a teacher having a tough time longs for the end of the school daze
+17,0,74,teacher,daze,-0.449397166445749,1,13,-12,a teacher having a tough time longs for the end of the school daze
+17,0,75,time,daze,-0.427734704492132,5,13,-8,a teacher having a tough time longs for the end of the school daze
+17,0,76,tough,daze,-0.447304647490349,4,13,-9,a teacher having a tough time longs for the end of the school daze
+18,0,77,author,prose,1.21854723251659,0,5,-5,authors in jail have their prose and cons
+18,0,78,con,prose,-0.988175325203342,7,5,2,authors in jail have their prose and cons
+18,0,79,jail,prose,-0.818689906539946,2,5,-3,authors in jail have their prose and cons
+19,0,80,eat,plane,-0.543054197801893,4,14,-10,do not expect to eat something fancy when you are flying because it is plane food
+19,0,81,expect,plane,-0.627034179882813,2,14,-12,do not expect to eat something fancy when you are flying because it is plane food
+19,0,82,fancy,plane,-0.31665950967214,6,14,-8,do not expect to eat something fancy when you are flying because it is plane food
+19,0,83,fly,plane,1.59459509492523,10,14,-4,do not expect to eat something fancy when you are flying because it is plane food
+19,0,84,food,plane,-0.107567803964099,15,14,1,do not expect to eat something fancy when you are flying because it is plane food
+19,0,85,something,plane,-0.7301501425976,5,14,-9,do not expect to eat something fancy when you are flying because it is plane food
+20,0,86,beaver,dam,1.43013573007484,3,11,-8,i saw a beaver movie last night it was the best dam movie i have ever seen
+20,0,87,best,dam,-0.685682848013475,10,11,-1,i saw a beaver movie last night it was the best dam movie i have ever seen
+20,0,88,last,dam,-0.700251215730588,5,11,-6,i saw a beaver movie last night it was the best dam movie i have ever seen
+20,0,89,movie,dam,-0.76537102675955,12,11,1,i saw a beaver movie last night it was the best dam movie i have ever seen
+20,0,90,movie,dam,-0.723009377177616,12,11,1,i saw a beaver movie last night it was the best dam movie i have ever seen
+20,0,91,night,dam,-0.739837466068135,6,11,-5,i saw a beaver movie last night it was the best dam movie i have ever seen
+20,0,92,see,dam,-0.578751664389796,1,11,-10,i saw a beaver movie last night it was the best dam movie i have ever seen
+21,0,93,computer,hertz,0.421382149003866,1,6,-5,my computer is so slow it hertz
+21,0,94,slow,hertz,-0.210378162973284,4,6,-2,my computer is so slow it hertz
+22,0,95,actor,role,1.51203583982452,1,12,-11,the actors had one great movie after another they were on a role
+22,0,96,another,role,-0.109727419779322,7,12,-5,the actors had one great movie after another they were on a role
+22,0,97,great,role,0.037679214736919,4,12,-8,the actors had one great movie after another they were on a role
+22,0,98,movie,role,1.50719980103713,5,12,-7,the actors had one great movie after another they were on a role
+22,0,99,one,role,-0.174359608089913,3,12,-9,the actors had one great movie after another they were on a role
+23,0,100,id,collar,0.455070154516723,16,15,1,the man put his name on the neck of his shirt so he would have collar id
+23,0,101,man,collar,0.169665527603799,1,15,-14,the man put his name on the neck of his shirt so he would have collar id
+23,0,102,name,collar,-0.239107257359563,4,15,-11,the man put his name on the neck of his shirt so he would have collar id
+23,0,103,neck,collar,1.35678822900602,7,15,-8,the man put his name on the neck of his shirt so he would have collar id
+23,0,104,put,collar,-0.626225828753545,2,15,-13,the man put his name on the neck of his shirt so he would have collar id
+23,0,105,shirt,collar,1.71237068795948,10,15,-5,the man put his name on the neck of his shirt so he would have collar id
+24,0,106,muscle,steal,-0.389849238650028,2,4,-2,thieves have muscles of steal
+24,0,107,thief,steal,1.40657815930287,0,4,-4,thieves have muscles of steal
+25,0,108,actress,dye,-0.361951574506001,2,14,-12,when an actress saw her first strands of gray hair she thought she would dye
+25,0,109,first,dye,-0.889894946138966,5,14,-9,when an actress saw her first strands of gray hair she thought she would dye
+25,0,110,gray,dye,0.698618834125592,8,14,-6,when an actress saw her first strands of gray hair she thought she would dye
+25,0,111,hair,dye,1.48433806330608,9,14,-5,when an actress saw her first strands of gray hair she thought she would dye
+25,0,112,saw,dye,-0.382343614309707,3,14,-11,when an actress saw her first strands of gray hair she thought she would dye
+25,0,113,strand,dye,0.559800324973014,6,14,-8,when an actress saw her first strands of gray hair she thought she would dye
+25,0,114,think,dye,-0.754200229129679,11,14,-3,when an actress saw her first strands of gray hair she thought she would dye
+26,0,115,belt,waist,1.46299948299053,2,6,-4,a cardboard belt would be a waist of paper
+26,0,116,cardboard,waist,-0.898306565899094,1,6,-5,a cardboard belt would be a waist of paper
+26,0,117,paper,waist,-0.456903001729479,8,6,2,a cardboard belt would be a waist of paper
+27,0,118,fit,foot,0.027560141343848,3,10,-7,being able to fit size fourteen shoes is quite a feet
+27,0,119,fourteen,foot,-0.367883923440896,5,10,-5,being able to fit size fourteen shoes is quite a feet
+27,0,120,quite,foot,-0.825666924364559,8,10,-2,being able to fit size fourteen shoes is quite a feet
+27,0,121,shoe,foot,1.88772641635073,6,10,-4,being able to fit size fourteen shoes is quite a feet
+27,0,122,size,foot,1.1565555100512,4,10,-6,being able to fit size fourteen shoes is quite a feet
+28,0,123,mime,aloud,-0.28089679393206,1,10,-9,the mime wanted to say something but he was not aloud
+28,0,124,something,aloud,-0.494306712418425,5,10,-5,the mime wanted to say something but he was not aloud
+28,0,125,want,aloud,-0.532113913858016,2,10,-8,the mime wanted to say something but he was not aloud
+29,0,126,bucket,pail,1.70826959657936,5,8,-3,those who carry too many buckets start feeling pail
+29,0,127,carry,pail,0.903753344375391,2,8,-6,those who carry too many buckets start feeling pail
+29,0,128,feel,pail,-0.487454776080876,7,8,-1,those who carry too many buckets start feeling pail
+29,0,129,many,pail,-0.559703745103118,4,8,-4,those who carry too many buckets start feeling pail
+29,0,130,start,pail,-0.836294919609356,6,8,-2,those who carry too many buckets start feeling pail
+29,0,131,those,pail,-0.857078333113506,0,8,-8,those who carry too many buckets start feeling pail
+30,0,132,castle,manor,1.16342320448332,5,8,-3,a mans home is his castle in a manor of speaking
+30,0,133,home,manor,1.15053175851913,2,8,-6,a mans home is his castle in a manor of speaking
+30,0,134,man,manor,-0.507834338523038,1,8,-7,a mans home is his castle in a manor of speaking
+30,0,135,speaking,manor,-0.645022924012276,10,8,2,a mans home is his castle in a manor of speaking
+31,0,136,chip,cache,-0.236471378032956,12,9,3,an online poker tournament ended suddenly when the computer cached in its chips
+31,0,137,computer,cache,1.0554169137547,8,9,-1,an online poker tournament ended suddenly when the computer cached in its chips
+31,0,138,end,cache,-0.482932551870127,4,9,-5,an online poker tournament ended suddenly when the computer cached in its chips
+31,0,139,online,cache,0.803361269001471,1,9,-8,an online poker tournament ended suddenly when the computer cached in its chips
+31,0,140,poker,cache,-0.356650899984429,2,9,-7,an online poker tournament ended suddenly when the computer cached in its chips
+31,0,141,suddenly,cache,-0.797502490819805,5,9,-4,an online poker tournament ended suddenly when the computer cached in its chips
+31,0,142,tournament,cache,-0.179601731579132,3,9,-6,an online poker tournament ended suddenly when the computer cached in its chips
+32,0,143,britain,reign,0.768095575906237,0,12,-12,britain is a wet place since the queen has had a long reign
+32,0,144,long,reign,0.731459765893335,11,12,-1,britain is a wet place since the queen has had a long reign
+32,0,145,place,reign,-0.11189373362167,4,12,-8,britain is a wet place since the queen has had a long reign
+32,0,146,queen,reign,1.75853959453502,7,12,-5,britain is a wet place since the queen has had a long reign
+32,0,147,wet,reign,-0.596183968544639,3,12,-9,britain is a wet place since the queen has had a long reign
+33,0,148,extra,thyme,-0.60616564354925,4,6,-2,herb gardeners who work extra get thyme and a half
+33,0,149,gardener,thyme,0.443421682037815,2,6,-4,herb gardeners who work extra get thyme and a half
+33,0,150,half,thyme,-0.558384525647363,9,6,3,herb gardeners who work extra get thyme and a half
+33,0,151,herb,thyme,1.52452946764133,0,6,-6,herb gardeners who work extra get thyme and a half
+33,0,152,work,thyme,-0.806612313681016,3,6,-3,herb gardeners who work extra get thyme and a half
+34,0,153,bad,pore,-0.654532980889198,5,13,-8,if you say you have bad skin i would say that was a pore excuse
+34,0,154,excuse,pore,-0.898306565899094,14,13,1,if you say you have bad skin i would say that was a pore excuse
+34,0,155,skin,pore,1.80201698484168,6,13,-7,if you say you have bad skin i would say that was a pore excuse
+35,0,156,complex,gilt,-0.784064971069133,8,7,1,people who like gold paint have a gilt complex
+35,0,157,gold,gilt,0.648786640098113,3,7,-4,people who like gold paint have a gilt complex
+35,0,158,paint,gilt,-0.101953425431991,4,7,-3,people who like gold paint have a gilt complex
+35,0,159,people,gilt,-0.672256448752771,0,7,-7,people who like gold paint have a gilt complex
+36,0,160,human,heir,0.324202842244139,3,1,2,to heir is human
+37,0,161,boy,son,1.84186161037444,2,10,-8,when their boy was little they only got rest after son down
+37,0,162,down,son,-0.59958183223735,11,10,1,when their boy was little they only got rest after son down
+37,0,163,little,son,0.535843469610164,4,10,-6,when their boy was little they only got rest after son down
+37,0,164,rest,son,-0.768338144811851,8,10,-2,when their boy was little they only got rest after son down
+38,0,165,high,c,0.215793751726981,10,11,-1,novice pirates make terrible singers because they cannot hit the high cs
+38,0,166,hit,c,-0.815647567852622,8,11,-3,novice pirates make terrible singers because they cannot hit the high cs
+38,0,167,make,c,-1.02005310437571,2,11,-9,novice pirates make terrible singers because they cannot hit the high cs
+38,0,168,novice,c,-0.703917840016708,0,11,-11,novice pirates make terrible singers because they cannot hit the high cs
+38,0,169,pirate,c,-0.792378389611587,1,11,-10,novice pirates make terrible singers because they cannot hit the high cs
+38,0,170,singer,c,0.694133199282786,4,11,-7,novice pirates make terrible singers because they cannot hit the high cs
+38,0,171,terrible,c,-0.860856832198662,3,11,-8,novice pirates make terrible singers because they cannot hit the high cs
+39,0,172,bright,watt,1.10663984407831,4,9,-5,an electrician is a bright spark who knows whats watt
+39,0,173,electrician,watt,1.63402244845377,1,9,-8,an electrician is a bright spark who knows whats watt
+39,0,174,know,watt,-0.889631856649002,7,9,-2,an electrician is a bright spark who knows whats watt
+39,0,175,spark,watt,0.53638566409786,5,9,-4,an electrician is a bright spark who knows whats watt
+40,0,176,budget,razor,-0.25277588685621,7,13,-6,when the mayor wanted to slash the budget he turned to a fund razor
+40,0,177,fund,razor,-0.875571998716363,12,13,-1,when the mayor wanted to slash the budget he turned to a fund razor
+40,0,178,mayor,razor,-0.762674361585394,2,13,-11,when the mayor wanted to slash the budget he turned to a fund razor
+40,0,179,slash,razor,1.29702251554896,5,13,-8,when the mayor wanted to slash the budget he turned to a fund razor
+40,0,180,turn,razor,-0.755233435691892,9,13,-4,when the mayor wanted to slash the budget he turned to a fund razor
+40,0,181,want,razor,-0.877775268401213,3,13,-10,when the mayor wanted to slash the budget he turned to a fund razor
+41,0,182,biblical,prophet,1.45995574696005,3,4,-1,daniel is a biblical prophet known for interpreting dreams
+41,0,183,daniel,prophet,0.805308669413531,0,4,-4,daniel is a biblical prophet known for interpreting dreams
+41,0,184,dream,prophet,0.804131545935035,8,4,4,daniel is a biblical prophet known for interpreting dreams
+41,0,185,interpreting,prophet,0.697770067196284,7,4,3,daniel is a biblical prophet known for interpreting dreams
+41,0,186,known,prophet,-0.031148315410505,5,4,1,daniel is a biblical prophet known for interpreting dreams
+42,0,187,decimal,pi,1.21262464055348,9,5,4,he can recite the number pi up to 10 decimal places
+42,0,188,number,pi,1.59504276265363,4,5,-1,he can recite the number pi up to 10 decimal places
+42,0,189,place,pi,-0.564605975619762,10,5,5,he can recite the number pi up to 10 decimal places
+42,0,190,recite,pi,0.588390716648794,2,5,-3,he can recite the number pi up to 10 decimal places
+42,0,191,ten,pi,-0.224980536862907,8,5,3,he can recite the number pi up to 10 decimal places
+42,0,192,up,pi,-0.593747935644252,6,5,1,he can recite the number pi up to 10 decimal places
+43,0,193,baker,knead,1.48626023135334,0,1,-1,bakers knead flour and milk together to make bread dough
+43,0,194,bread,knead,1.49369181558088,8,1,7,bakers knead flour and milk together to make bread dough
+43,0,195,dough,knead,1.53647393981059,9,1,8,bakers knead flour and milk together to make bread dough
+43,0,196,flour,knead,1.81698242359774,2,1,1,bakers knead flour and milk together to make bread dough
+43,0,197,make,knead,0.260196799876926,7,1,6,bakers knead flour and milk together to make bread dough
+43,0,198,milk,knead,-0.519440108011665,4,1,3,bakers knead flour and milk together to make bread dough
+43,0,199,together,knead,0.295652627301357,5,1,4,bakers knead flour and milk together to make bread dough
+44,0,200,dip,oar,0.426404550784138,2,4,-2,the fisherman dipped the oar in the river
+44,0,201,fisherman,oar,1.79733524738104,1,4,-3,the fisherman dipped the oar in the river
+44,0,202,river,oar,1.13587566270064,7,4,3,the fisherman dipped the oar in the river
+45,0,203,box,tier,-0.160263934106645,0,4,-4,boxes are stacked in tiers in the warehouse
+45,0,204,stack,tier,0.895424942441347,2,4,-2,boxes are stacked in tiers in the warehouse
+45,0,205,warehouse,tier,-0.144777299367225,7,4,3,boxes are stacked in tiers in the warehouse
+46,0,206,candidate,poll,1.66044967559982,10,3,7,pollsters conducted a poll on the popularity of the political candidates
+46,0,207,conduct,poll,0.95938178290662,1,3,-2,pollsters conducted a poll on the popularity of the political candidates
+46,0,208,political,poll,1.39357738674503,9,3,6,pollsters conducted a poll on the popularity of the political candidates
+46,0,209,pollster,poll,1.34707142184641,0,3,-3,pollsters conducted a poll on the popularity of the political candidates
+46,0,210,popularity,poll,1.12489298030111,6,3,3,pollsters conducted a poll on the popularity of the political candidates
+47,0,211,alone,bore,-0.144997028332573,4,10,-6,the old man is alone all the time and is bored to tears
+47,0,212,man,bore,-0.577792416299145,2,10,-8,the old man is alone all the time and is bored to tears
+47,0,213,old,bore,-0.079101842967128,1,10,-9,the old man is alone all the time and is bored to tears
+47,0,214,tear,bore,-0.60450352003924,12,10,2,the old man is alone all the time and is bored to tears
+47,0,215,time,bore,-0.237938628258902,7,10,-3,the old man is alone all the time and is bored to tears
+48,0,216,country,greece,1.61726280252036,3,0,3,greece is a country in the the southern portion of europe
+48,0,217,europe,greece,1.34658711117235,10,0,10,greece is a country in the the southern portion of europe
+48,0,218,portion,greece,-0.587085071824229,8,0,8,greece is a country in the the southern portion of europe
+48,0,219,southern,greece,0.565019210168354,7,0,7,greece is a country in the the southern portion of europe
+49,0,220,angle,sine,1.19120099339024,10,3,7,in mathematics the sine function is a function of an angle
+49,0,221,function,sine,0.911291434572067,7,3,4,in mathematics the sine function is a function of an angle
+49,0,222,function,sine,0.54565196148864,7,3,4,in mathematics the sine function is a function of an angle
+49,0,223,mathematics,sine,1.59004679336064,1,3,-2,in mathematics the sine function is a function of an angle
+50,0,224,high,principal,0.451478239970654,8,4,4,ms wu is the principal of our local high school
+50,0,225,local,principal,-0.235525746986563,7,4,3,ms wu is the principal of our local high school
+50,0,226,school,principal,1.76661042421187,9,4,5,ms wu is the principal of our local high school
+51,0,227,bought,cd,0.596221205948439,1,4,-3,i bought a new cd today with classical music
+51,0,228,classical,cd,1.17117681773181,7,4,3,i bought a new cd today with classical music
+51,0,229,music,cd,1.36173721777846,8,4,4,i bought a new cd today with classical music
+51,0,230,new,cd,0.399664402945214,3,4,-1,i bought a new cd today with classical music
+51,0,231,today,cd,-0.785882364111073,5,4,1,i bought a new cd today with classical music
+52,0,232,field,hare,0.780246842480845,6,1,5,the hare ran rapidly through the fields
+52,0,233,ran,hare,0.712039380185827,2,1,1,the hare ran rapidly through the fields
+52,0,234,rapidly,hare,0.50264459001043,3,1,2,the hare ran rapidly through the fields
+52,0,235,through,hare,-0.909208080442562,4,1,3,the hare ran rapidly through the fields
+53,0,236,cabin,knotty,-0.339950519232175,1,5,-4,that cabin is made of knotty pine
+53,0,237,made,knotty,-0.245517529954399,3,5,-2,that cabin is made of knotty pine
+53,0,238,pine,knotty,0.98902241501959,6,5,1,that cabin is made of knotty pine
+54,0,239,between,taut,-0.140223120048216,4,3,1,the clothesline hangs taut between two poles
+54,0,240,clothesline,taut,0.503493651706073,1,3,-2,the clothesline hangs taut between two poles
+54,0,241,hang,taut,-0.118995992265672,2,3,-1,the clothesline hangs taut between two poles
+54,0,242,pole,taut,-0.644894431199731,6,3,3,the clothesline hangs taut between two poles
+54,0,243,two,taut,-0.819938630974231,5,3,2,the clothesline hangs taut between two poles
+55,0,244,german,marx,1.04614487726045,4,1,3,karl marx was a german philosopher
+55,0,245,karl,marx,1.60460477684671,0,1,-1,karl marx was a german philosopher
+55,0,246,philosopher,marx,1.17682931291877,5,1,4,karl marx was a german philosopher
+56,0,247,today,hi,-0.412658158509577,4,0,4,hi how are you today
+57,0,248,bad,daze,-0.412787117458235,8,4,4,she was in a daze after learning the bad news
+57,0,249,learning,daze,-0.567639598064149,6,4,2,she was in a daze after learning the bad news
+57,0,250,new,daze,-0.871478795210295,9,4,5,she was in a daze after learning the bad news
+58,0,251,essay,prose,1.28408001019312,2,6,-4,novels and essays are written in prose
+58,0,252,novel,prose,1.27693587846647,0,6,-6,novels and essays are written in prose
+58,0,253,written,prose,1.43926719118499,4,6,-2,novels and essays are written in prose
+59,0,254,airport,plane,1.64764439882315,5,1,4,our plane landed at the airport
+59,0,255,land,plane,1.14161845243749,2,1,1,our plane landed at the airport
+60,0,256,beaver,dam,2.04340949234351,1,5,-4,that beaver is building a dam with logs and sticks
+60,0,257,building,dam,0.360377157136515,3,5,-2,that beaver is building a dam with logs and sticks
+60,0,258,log,dam,0.959252920297831,7,5,2,that beaver is building a dam with logs and sticks
+60,0,259,stick,dam,0.106371409594604,9,5,4,that beaver is building a dam with logs and sticks
+61,0,260,computer,hertz,0.178559042959391,1,9,-8,this computer has a processing speed of 33 mega hertz
+61,0,261,mega,hertz,0.919814829772108,8,9,-1,this computer has a processing speed of 33 mega hertz
+61,0,262,process,hertz,0.248382261012054,4,9,-5,this computer has a processing speed of 33 mega hertz
+61,0,263,speed,hertz,0.556962039754035,5,9,-4,this computer has a processing speed of 33 mega hertz
+62,0,264,leading,role,1.41679324990746,3,4,-1,she plays the leading role in a television show
+62,0,265,play,role,1.31021982956755,1,4,-3,she plays the leading role in a television show
+62,0,266,show,role,1.38303210578534,8,4,4,she plays the leading role in a television show
+62,0,267,television,role,0.857585814622148,7,4,3,she plays the leading role in a television show
+63,0,268,before,collar,-0.896047541828856,7,3,4,he puts a collar on his dog before walking it
+63,0,269,dog,collar,1.35516188166286,6,3,3,he puts a collar on his dog before walking it
+63,0,270,put,collar,-0.251253639086736,1,3,-2,he puts a collar on his dog before walking it
+63,0,271,walking,collar,0.326433233432516,8,3,5,he puts a collar on his dog before walking it
+64,0,272,boy,steal,-0.484018354033287,2,5,-3,the little boy wanted to steal his friends candy but decided not to
+64,0,273,candy,steal,-0.07237537618486,8,5,3,the little boy wanted to steal his friends candy but decided not to
+64,0,274,decide,steal,-0.128716298903818,10,5,5,the little boy wanted to steal his friends candy but decided not to
+64,0,275,friend,steal,-0.603650855865145,7,5,2,the little boy wanted to steal his friends candy but decided not to
+64,0,276,little,steal,-0.58377439257709,1,5,-4,the little boy wanted to steal his friends candy but decided not to
+64,0,277,want,steal,0.547193413195806,3,5,-2,the little boy wanted to steal his friends candy but decided not to
+65,0,278,hair,dye,1.36903888833255,8,6,2,some people do not like to dye their hair
+65,0,279,people,dye,-0.51660530622155,1,6,-5,some people do not like to dye their hair
+66,0,280,belt,waist,1.74231054246043,10,5,5,she must have a small waist look how tiny her belt is
+66,0,281,look,waist,-0.188178647677657,6,5,1,she must have a small waist look how tiny her belt is
+66,0,282,small,waist,0.523567311902234,4,5,-1,she must have a small waist look how tiny her belt is
+66,0,283,tiny,waist,0.441326168415236,8,5,3,she must have a small waist look how tiny her belt is
+67,0,284,hurting,foot,0.300155521830414,4,6,-2,these new shoes are hurting my feet
+67,0,285,new,foot,-0.805232044786804,1,6,-5,these new shoes are hurting my feet
+67,0,286,shoe,foot,1.58550170537397,2,6,-4,these new shoes are hurting my feet
+68,0,287,class,aloud,-0.076447875646036,7,5,2,the student read her poem aloud in class
+68,0,288,poem,aloud,0.454641639162645,4,5,-1,the student read her poem aloud in class
+68,0,289,read,aloud,1.21867042614304,2,5,-3,the student read her poem aloud in class
+68,0,290,student,aloud,-0.186477324573278,1,5,-4,the student read her poem aloud in class
+69,0,291,clean,pail,0.288977037577935,8,4,4,a worker filled a pail with water to clean the floor
+69,0,292,fill,pail,1.0521233199622,2,4,-2,a worker filled a pail with water to clean the floor
+69,0,293,floor,pail,0.358538965912373,10,4,6,a worker filled a pail with water to clean the floor
+69,0,294,water,pail,1.14767009776416,6,4,2,a worker filled a pail with water to clean the floor
+69,0,295,worker,pail,0.201748996290237,1,4,-3,a worker filled a pail with water to clean the floor
+70,0,296,huge,manor,0.890780293929846,6,7,-1,those wealthy people live in a huge manor
+70,0,297,live,manor,0.386300284728262,3,7,-4,those wealthy people live in a huge manor
+70,0,298,people,manor,0.31579889328267,2,7,-5,those wealthy people live in a huge manor
+70,0,299,those,manor,-0.598610377930611,0,7,-7,those wealthy people live in a huge manor
+70,0,300,wealthy,manor,1.24495231179182,1,7,-6,those wealthy people live in a huge manor
+71,0,301,copy,cache,0.335958657361964,1,0,1,cached copies of the web pages are stored in the database
+71,0,302,database,cache,1.24354521924147,10,0,10,cached copies of the web pages are stored in the database
+71,0,303,page,cache,0.197712130636077,5,0,5,cached copies of the web pages are stored in the database
+71,0,304,store,cache,0.708572022380054,7,0,7,cached copies of the web pages are stored in the database
+71,0,305,web,cache,0.947860905883493,4,0,4,cached copies of the web pages are stored in the database
+72,0,306,end,reign,0.119977062469213,7,1,6,the reign of louis xiv of france ended in 1715
+72,0,307,france,reign,0.330303888942925,6,1,5,the reign of louis xiv of france ended in 1715
+72,0,308,louis,reign,0.443736452091216,3,1,2,the reign of louis xiv of france ended in 1715
+73,0,309,chicken,thyme,0.790600880920379,6,13,-7,one of my favorite meals is chicken in a creamy sauce flavored with thyme
+73,0,310,creamy,thyme,-0.505595912271628,9,13,-4,one of my favorite meals is chicken in a creamy sauce flavored with thyme
+73,0,311,favorite,thyme,-0.481272368322712,3,13,-10,one of my favorite meals is chicken in a creamy sauce flavored with thyme
+73,0,312,flavor,thyme,0.787410791250026,11,13,-2,one of my favorite meals is chicken in a creamy sauce flavored with thyme
+73,0,313,meal,thyme,0.748377180355409,4,13,-9,one of my favorite meals is chicken in a creamy sauce flavored with thyme
+73,0,314,one,thyme,-0.817649311930047,0,13,-13,one of my favorite meals is chicken in a creamy sauce flavored with thyme
+73,0,315,sauce,thyme,0.894330694038718,10,13,-3,one of my favorite meals is chicken in a creamy sauce flavored with thyme
+74,0,316,opening,pore,1.31386513502471,6,1,5,a pore is a very small opening on the surface of your skin
+74,0,317,skin,pore,1.75334416180791,12,1,11,a pore is a very small opening on the surface of your skin
+74,0,318,small,pore,0.761796412072259,5,1,4,a pore is a very small opening on the surface of your skin
+74,0,319,surface,pore,0.259398366424172,9,1,8,a pore is a very small opening on the surface of your skin
+74,0,320,very,pore,-0.388932126512045,4,1,3,a pore is a very small opening on the surface of your skin
+75,0,321,cover,gilt,0.076027429983691,1,5,-4,she covered the frame with gilt
+75,0,322,frame,gilt,0.620316092976432,3,5,-2,she covered the frame with gilt
+76,0,323,british,heir,0.749438693248171,6,3,3,prince william is heir to the british throne
+76,0,324,prince,heir,1.44789110397171,0,3,-3,prince william is heir to the british throne
+76,0,325,throne,heir,1.50590325260022,7,3,4,prince william is heir to the british throne
+76,0,326,william,heir,0.69689323734099,1,3,-2,prince william is heir to the british throne
+77,0,327,daughter,son,1.77738216390489,6,3,3,they have a son and a daughter
+78,0,328,c,c,1.74458083125762,8,8,0,the soprano c is sometimes called the high c
+78,0,329,called,c,-0.455407215766891,5,8,-3,the soprano c is sometimes called the high c
+78,0,330,high,c,-0.082897492803822,7,8,-1,the soprano c is sometimes called the high c
+78,0,331,sometimes,c,-0.853921280725646,4,8,-4,the soprano c is sometimes called the high c
+78,0,332,soprano,c,0.817115257360575,1,8,-7,the soprano c is sometimes called the high c
+79,0,333,bulb,watt,1.86265221002862,8,6,2,my desk lamp uses a 60 watt light bulb
+79,0,334,desk,watt,-0.746175994953701,1,6,-5,my desk lamp uses a 60 watt light bulb
+79,0,335,lamp,watt,1.26595521378393,2,6,-4,my desk lamp uses a 60 watt light bulb
+79,0,336,light,watt,1.55840501397235,7,6,1,my desk lamp uses a 60 watt light bulb
+79,0,337,use,watt,-0.168693053899143,3,6,-3,my desk lamp uses a 60 watt light bulb
+80,0,338,beard,razor,1.41977191894054,7,3,4,he used a razor to shave his beard
+80,0,339,shave,razor,1.80951633485795,5,3,2,he used a razor to shave his beard
+80,0,340,use,razor,0.249439540804206,1,3,-2,he used a razor to shave his beard
+81,0,341,business,profit,1.31094528445956,1,6,-5,that business made a 1 million profit last year
+81,0,342,last,profit,0.001496075277508,7,6,1,that business made a 1 million profit last year
+81,0,343,make,profit,0.993231668960084,2,6,-4,that business made a 1 million profit last year
+81,0,344,million,profit,0.923508338515671,5,6,-1,that business made a 1 million profit last year
+81,0,345,year,profit,0.370658642042125,8,6,2,that business made a 1 million profit last year
+82,0,346,apple,pie,1.62313450577717,4,5,-1,would you like some apple pie for dessert
+82,0,347,dessert,pie,1.58952195138686,7,5,2,would you like some apple pie for dessert
+83,0,348,company,need,-0.069653749608277,1,4,-3,the company has a need for computer programmers
+83,0,349,computer,need,-0.335250931429922,6,4,2,the company has a need for computer programmers
+83,0,350,programmer,need,-0.213229129793482,7,4,3,the company has a need for computer programmers
+84,0,351,car,or,-0.945111365927718,4,5,-1,take care of your car or else you will have problems
+84,0,352,care,or,-0.892304080881294,1,5,-4,take care of your car or else you will have problems
+84,0,353,problem,or,-0.611411144898185,10,5,5,take care of your car or else you will have problems
+84,0,354,take,or,-0.602058824085577,0,5,-5,take care of your car or else you will have problems
+85,0,355,cheek,tear,0.637431756509806,4,0,4,tears ran down her cheeks as she watched a sad movie
+85,0,356,down,tear,0.963342847748347,2,0,2,tears ran down her cheeks as she watched a sad movie
+85,0,357,movie,tear,0.687253131905242,10,0,10,tears ran down her cheeks as she watched a sad movie
+85,0,358,run,tear,-0.045253490230975,1,0,1,tears ran down her cheeks as she watched a sad movie
+85,0,359,sad,tear,1.51235813538621,9,0,9,tears ran down her cheeks as she watched a sad movie
+85,0,360,watch,tear,-0.641010071406434,7,0,7,tears ran down her cheeks as she watched a sad movie
+86,0,361,flag,pole,1.2396140554421,3,6,-3,she raised a flag up the pole
+86,0,362,raise,pole,0.62578963017423,1,6,-5,she raised a flag up the pole
+86,0,363,up,pole,0.766225090563923,4,6,-2,she raised a flag up the pole
+87,0,364,company,board,0.776604950804146,6,7,-1,he has a meeting with the companys board of directors
+87,0,365,director,board,1.45358431472702,9,7,2,he has a meeting with the companys board of directors
+87,0,366,meeting,board,1.04516976835005,3,7,-4,he has a meeting with the companys board of directors
+88,0,367,much,grease,-0.514129830511972,3,4,-1,there was too much grease on the plate
+88,0,368,plate,grease,0.462259010707738,7,4,3,there was too much grease on the plate
+89,0,369,boutique,sign,0.668128703089459,8,1,7,the sign on our store says the clothes boutique
+89,0,370,clothe,sign,-0.529080972781708,7,1,6,the sign on our store says the clothes boutique
+89,0,371,store,sign,1.0376666611044,4,1,3,the sign on our store says the clothes boutique
+90,0,372,believe,principle,0.925094978585257,1,4,-3,i believe in the principle of physics
+90,0,373,physics,principle,1.0972479645796,6,4,2,i believe in the principle of physics
+91,0,374,bar,seedy,0.733705627719276,2,1,1,the seedy bar was full of drunken unwashed people
+91,0,375,drunk,seedy,0.679340802910194,6,1,5,the seedy bar was full of drunken unwashed people
+91,0,376,full,seedy,-0.377147122815943,4,1,3,the seedy bar was full of drunken unwashed people
+91,0,377,people,seedy,-0.037329124650713,8,1,7,the seedy bar was full of drunken unwashed people
+91,0,378,unwashed,seedy,0.074602779460382,7,1,6,the seedy bar was full of drunken unwashed people
+92,0,379,head,hair,1.63435464204158,8,5,3,most people have lots of hair on their heads
+92,0,380,lot,hair,-0.416071726867637,3,5,-2,most people have lots of hair on their heads
+92,0,381,people,hair,0.838443672938411,1,5,-4,most people have lots of hair on their heads
+93,0,382,boy,naughty,0.451369365636573,1,4,-3,that boy is a naughty child
+93,0,383,child,naughty,0.682242994723321,5,4,1,that boy is a naughty child
+94,0,384,college,teach,1.5579765341066,4,1,3,she taught mathematics to college students
+94,0,385,mathematics,teach,1.54849592563124,2,1,1,she taught mathematics to college students
+94,0,386,student,teach,1.51816481031699,2,1,1,she taught mathematics to college students
+95,0,387,high,mark,0.380956240203835,5,1,4,she got high marks in high school
+95,0,388,school,mark,0.740300423711437,6,1,5,she got high marks in high school
+96,0,389,feet,high,0.385803613960015,4,5,-1,the statue is 10 feet high
+96,0,390,statue,high,0.231216464156564,1,5,-4,the statue is 10 feet high
+96,0,391,ten,high,0.383360081145167,3,5,-2,the statue is 10 feet high
+97,0,392,seven,day,0.87926164338694,2,3,-1,there are seven days in a week
+97,0,393,week,day,1.64810005920336,6,3,3,there are seven days in a week
+98,0,394,con,pro,1.12276538667379,5,3,2,what are the pros and cons of social networking sites
+98,0,395,network,pro,0.233612917484429,8,3,5,what are the pros and cons of social networking sites
+98,0,396,site,pro,-0.290358496194332,9,3,6,what are the pros and cons of social networking sites
+98,0,397,social,pro,-0.186204688622774,7,3,4,what are the pros and cons of social networking sites
+99,0,398,beautiful,plain,0.161037787216039,6,2,4,she felt plain next to her beautiful sister
+99,0,399,feel,plain,-0.507432010677942,1,2,-1,she felt plain next to her beautiful sister
+99,0,400,next,plain,-0.817683173905255,3,2,1,she felt plain next to her beautiful sister
+99,0,401,sister,plain,-0.442710190588612,7,2,5,she felt plain next to her beautiful sister
+100,0,402,give,damn,0.316232418449366,3,5,-2,i do not give a damn what you say
+101,0,403,fall,hurt,1.32271457321785,1,6,-5,i fell and now my leg hurts
+101,0,404,leg,hurt,0.176667866569725,5,6,-1,i fell and now my leg hurts
+101,0,405,now,hurt,-0.714526161540922,3,6,-3,i fell and now my leg hurts
+102,0,406,buy,roll,-0.443427113435343,1,3,-2,she bought a roll of silk to make a dress
+102,0,407,dress,roll,-0.777586858694332,9,3,6,she bought a roll of silk to make a dress
+102,0,408,make,roll,-0.05409581008413,7,3,4,she bought a roll of silk to make a dress
+102,0,409,silk,roll,0.600575380514626,5,3,2,she bought a roll of silk to make a dress
+103,0,410,bank,caller,0.215098483859369,8,1,7,the caller on the phone is from your bank
+103,0,411,phone,caller,1.62352944259189,4,1,3,the caller on the phone is from your bank
+104,0,412,make,steel,0.083866825504579,3,7,-4,that ship is made of wood and steel
+104,0,413,ship,steel,0.922511844558865,1,7,-6,that ship is made of wood and steel
+104,0,414,wood,steel,0.205852416743009,5,7,-2,that ship is made of wood and steel
+105,0,415,attack,die,0.800211967714973,11,7,4,he is very scared that he will die of a heart attack
+105,0,416,heart,die,0.381083239180452,10,7,3,he is very scared that he will die of a heart attack
+105,0,417,scared,die,1.05888186490163,3,7,-4,he is very scared that he will die of a heart attack
+105,0,418,very,die,-0.753637514649243,2,7,-5,he is very scared that he will die of a heart attack
+106,0,419,deal,waste,-0.695763948289629,5,10,-5,he is too difficult so dealing with him is a waste of time
+106,0,420,difficult,waste,-0.481865457711372,3,10,-7,he is too difficult so dealing with him is a waste of time
+106,0,421,time,waste,0.448926775282542,12,10,2,he is too difficult so dealing with him is a waste of time
+107,0,422,exam,feat,0.023258026751783,2,8,-6,passing that exam without studying was a real feat
+107,0,423,pass,feat,-0.068248093434359,0,8,-8,passing that exam without studying was a real feat
+107,0,424,real,feat,-0.345895832015443,7,8,-1,passing that exam without studying was a real feat
+107,0,425,study,feat,-0.347581392322538,4,8,-4,passing that exam without studying was a real feat
+107,0,426,without,feat,-0.676438119432567,3,8,-5,passing that exam without studying was a real feat
+108,0,427,car,allow,-0.521836234305544,8,1,7,we allowed our son to use the family car
+108,0,428,family,allow,-0.158089212712077,7,1,6,we allowed our son to use the family car
+108,0,429,son,allow,-0.256707439272898,3,1,2,we allowed our son to use the family car
+108,0,430,use,allow,0.790682998935275,5,1,4,we allowed our son to use the family car
+109,0,431,look,pale,0.314206395933604,1,2,-1,she looks pale and sick
+109,0,432,sick,pale,1.45108825520804,4,2,2,she looks pale and sick
+110,0,433,food,manner,-0.399834097250625,5,3,2,there was all manner of food at the party
+110,0,434,party,manner,-0.27745735638236,8,3,5,there was all manner of food at the party
+111,0,435,buy,cash,1.40821431669879,1,7,-6,she bought stocks for 10 years then cashed in her chips
+111,0,436,chip,cash,0.615543336188091,10,7,3,she bought stocks for 10 years then cashed in her chips
+111,0,437,stock,cash,0.967503016967709,2,7,-5,she bought stocks for 10 years then cashed in her chips
+111,0,438,ten,cash,0.876378468928645,4,7,-3,she bought stocks for 10 years then cashed in her chips
+111,0,439,year,cash,-0.446605552927666,5,7,-2,she bought stocks for 10 years then cashed in her chips
+112,0,440,city,rain,0.205143034095625,4,0,4,rain fell on the city last night
+112,0,441,fall,rain,1.35372756796668,1,0,1,rain fell on the city last night
+112,0,442,last,rain,-0.48467605237384,5,0,5,rain fell on the city last night
+112,0,443,night,rain,0.223175152893295,6,0,6,rain fell on the city last night
+113,0,444,before,time,0.960641636307262,6,2,4,we have time to have lunch before the meeting
+113,0,445,lunch,time,0.892860491910906,5,2,3,we have time to have lunch before the meeting
+113,0,446,meeting,time,1.24197922778233,8,2,6,we have time to have lunch before the meeting
+114,0,447,afford,poor,0.732623518181762,7,4,3,that family is so poor they cannot afford to buy food
+114,0,448,buy,poor,-0.062528015788289,9,4,5,that family is so poor they cannot afford to buy food
+114,0,449,family,poor,0.464091034335387,1,4,-3,that family is so poor they cannot afford to buy food
+114,0,450,food,poor,0.038564677972994,10,4,6,that family is so poor they cannot afford to buy food
+115,0,451,accuse,guilt,1.1652061653694,9,4,5,a jury decides the guilt or innocence of an accused person
+115,0,452,decide,guilt,-0.144826178221417,2,4,-2,a jury decides the guilt or innocence of an accused person
+115,0,453,innocence,guilt,1.28164517471177,6,4,2,a jury decides the guilt or innocence of an accused person
+115,0,454,jury,guilt,1.51515792216884,1,4,-3,a jury decides the guilt or innocence of an accused person
+115,0,455,person,guilt,0.563343973253571,10,4,6,a jury decides the guilt or innocence of an accused person
+116,0,456,being,err,-0.42530305849085,9,4,5,it is better to err on the side of being too safe
+116,0,457,better,err,-0.30560909935212,2,4,-2,it is better to err on the side of being too safe
+116,0,458,safe,err,-0.569853383292212,11,4,7,it is better to err on the side of being too safe
+116,0,459,side,err,-0.130442477877082,7,4,3,it is better to err on the side of being too safe
+117,0,460,evening,sun,0.274734841511143,8,1,7,the sun rises every morning and sets every evening
+117,0,461,morning,sun,1.65950626954641,4,1,3,the sun rises every morning and sets every evening
+117,0,462,rise,sun,1.19872131692978,2,1,1,the sun rises every morning and sets every evening
+117,0,463,set,sun,1.30292842585343,6,1,5,the sun rises every morning and sets every evening
+118,0,464,high,sea,0.807334606845946,8,9,-1,the ship is in the midatlantic on the high seas
+118,0,465,midatlantic,sea,1.44381228595481,5,9,-4,the ship is in the midatlantic on the high seas
+118,0,466,ship,sea,1.81742784140711,1,9,-8,the ship is in the midatlantic on the high seas
+119,0,467,student,what,-0.250644328537633,4,5,-1,the teacher told the students what to do
+119,0,468,teacher,what,-0.300436257083688,1,5,-4,the teacher told the students what to do
+119,0,469,tell,what,-0.120793909911627,2,5,-3,the teacher told the students what to do
+120,0,470,church,raiser,-0.17088437166286,9,5,4,that girl organized a fund raiser at her local church
+120,0,471,fund,raiser,1.18170202317241,4,5,-1,that girl organized a fund raiser at her local church
+120,0,472,girl,raiser,-0.740622930989988,1,5,-4,that girl organized a fund raiser at her local church
+120,0,473,local,raiser,-0.309007093602491,8,5,3,that girl organized a fund raiser at her local church
+120,0,474,organize,raiser,-0.264088454551069,2,5,-3,that girl organized a fund raiser at her local church
+1,1,1,atheism,profit,-0.825022679035292,0,4,-4,atheism is a non prophet organization
+1,1,2,non,profit,0.537295827541372,3,4,-1,atheism is a non prophet organization
+1,1,3,organization,profit,1.14790577851505,5,4,1,atheism is a non prophet organization
+2,1,4,circumference,pie,0.379966961424945,4,8,-4,i get my large circumference from too much pi
+2,1,5,large,pie,0.256550264771002,3,8,-5,i get my large circumference from too much pi
+2,1,6,much,pie,-0.155769675285503,7,8,-1,i get my large circumference from too much pi
+3,1,7,baker,need,-0.847793406929538,0,6,-6,bakers trade bread recipes on a knead to know basis
+3,1,8,basis,need,0.508149689456561,9,6,3,bakers trade bread recipes on a knead to know basis
+3,1,9,bread,need,-0.286421574470693,2,6,-4,bakers trade bread recipes on a knead to know basis
+3,1,10,know,need,0.08625955192439,8,6,2,bakers trade bread recipes on a knead to know basis
+3,1,11,recipe,need,-0.119341625524742,0,6,-6,bakers trade bread recipes on a knead to know basis
+3,1,12,trade,need,0.286805525232882,1,6,-5,bakers trade bread recipes on a knead to know basis
+4,1,13,choose,or,1.10234815748778,5,7,-2,the indecisive rower could not choose either oar
+4,1,14,either,or,1.07030039522456,6,7,-1,the indecisive rower could not choose either oar
+4,1,15,indecisive,or,1.25229450650613,1,7,-6,the indecisive rower could not choose either oar
+4,1,16,rower,or,-0.906011724627619,2,7,-5,the indecisive rower could not choose either oar
+5,1,17,cake,tear,-0.582700479362776,7,10,-3,it was an emotional wedding even the cake was in tiers
+5,1,18,emotional,tear,1.21594307492533,3,10,-7,it was an emotional wedding even the cake was in tiers
+5,1,19,even,tear,-0.535524877381776,5,10,-5,it was an emotional wedding even the cake was in tiers
+5,1,20,wedding,tear,-0.150419813659689,4,10,-6,it was an emotional wedding even the cake was in tiers
+6,1,21,conduct,pole,-0.441474931942485,5,8,-3,a new country decided to conduct a flag poll
+6,1,22,country,pole,-0.331335895533622,2,8,-6,a new country decided to conduct a flag poll
+6,1,23,decide,pole,-0.910535424328637,3,8,-5,a new country decided to conduct a flag poll
+6,1,24,flag,pole,1.45959752477869,7,8,-1,a new country decided to conduct a flag poll
+6,1,25,new,pole,-0.529708377732807,1,8,-7,a new country decided to conduct a flag poll
+7,1,26,chairman,board,1.74741551495295,7,10,-3,at some executive meetings there is a chairman of the bored
+7,1,27,executive,board,1.36851157208971,2,10,-8,at some executive meetings there is a chairman of the bored
+7,1,28,meetings,board,1.53868596524338,3,10,-7,at some executive meetings there is a chairman of the bored
+8,1,29,donut,grease,0.900077078081742,4,9,-5,did you know that donuts were first made in greece
+8,1,30,first,grease,-0.871741443409052,6,9,-3,did you know that donuts were first made in greece
+8,1,31,know,grease,-0.895528881742374,2,9,-7,did you know that donuts were first made in greece
+8,1,32,made,grease,-0.531472048878473,7,9,-2,did you know that donuts were first made in greece
+9,1,33,above,sign,0.143826371403954,14,12,2,i always prayed before my trigonometry tests i was hoping for a sine from above
+9,1,34,always,sign,-0.505156693431939,1,12,-11,i always prayed before my trigonometry tests i was hoping for a sine from above
+9,1,35,before,sign,-0.447743610494994,3,12,-9,i always prayed before my trigonometry tests i was hoping for a sine from above
+9,1,36,hoping,sign,-0.172971801008775,9,12,-3,i always prayed before my trigonometry tests i was hoping for a sine from above
+9,1,37,prayed,sign,0.348867667741489,2,12,-10,i always prayed before my trigonometry tests i was hoping for a sine from above
+9,1,38,test,sign,-0.036122222695213,6,12,-6,i always prayed before my trigonometry tests i was hoping for a sine from above
+9,1,39,trigonometry,sign,0.554545004398867,5,12,-7,i always prayed before my trigonometry tests i was hoping for a sine from above
+10,1,40,dislike,principle,-0.190645820709604,5,10,-5,it was not school john disliked it was just the principal of it
+10,1,41,john,principle,-0.455802645044885,4,10,-6,it was not school john disliked it was just the principal of it
+10,1,42,school,principle,1.01949205280251,3,10,-7,it was not school john disliked it was just the principal of it
+11,1,43,music,seedy,-0.494650579415055,1,6,-5,some music stores are in a cd part of town
+11,1,44,part,seedy,-0.806785859173703,7,6,1,some music stores are in a cd part of town
+11,1,45,store,seedy,-0.220254787285015,2,6,-4,some music stores are in a cd part of town
+11,1,46,town,seedy,0.568853266521121,9,6,3,some music stores are in a cd part of town
+12,1,47,mad,hair,-0.446788116515454,4,8,-4,the magician got so mad he pulled his hare out
+12,1,48,magician,hair,-0.52993321959984,1,8,-7,the magician got so mad he pulled his hare out
+12,1,49,out,hair,-0.602941217121019,9,8,1,the magician got so mad he pulled his hare out
+12,1,50,pulled,hair,0.714655005744273,6,8,-2,the magician got so mad he pulled his hare out
+13,1,51,admonished,naughty,1.20150495252473,5,13,-8,the young pine sapling was admonished by his father apparently he had been knotty
+13,1,52,apparently,naughty,-0.28106134788252,9,13,-4,the young pine sapling was admonished by his father apparently he had been knotty
+13,1,53,father,naughty,-0.506557275020283,8,13,-5,the young pine sapling was admonished by his father apparently he had been knotty
+13,1,54,pine,naughty,-0.607555526814842,2,13,-11,the young pine sapling was admonished by his father apparently he had been knotty
+13,1,55,sapling,naughty,-0.963003701747602,3,13,-10,the young pine sapling was admonished by his father apparently he had been knotty
+13,1,56,young,naughty,0.218343355000167,1,13,-12,the young pine sapling was admonished by his father apparently he had been knotty
+14,1,57,learn,teach,1.45899477086049,1,8,-7,to learn rope tricks you have to be taut
+14,1,58,rope,teach,-0.292679613234723,2,8,-6,to learn rope tricks you have to be taut
+14,1,59,trick,teach,-0.300934187079601,3,8,-5,to learn rope tricks you have to be taut
+15,1,60,class,mark,0.265078142263883,5,9,-4,i dropped out of communism class because of lousy marx
+15,1,61,communism,mark,-0.72341465204483,4,9,-5,i dropped out of communism class because of lousy marx
+15,1,62,drop,mark,-0.283500750136741,1,9,-8,i dropped out of communism class because of lousy marx
+15,1,63,lousy,mark,-0.159164305498618,8,9,-1,i dropped out of communism class because of lousy marx
+15,1,64,out,mark,-0.340761339752305,2,9,-7,i dropped out of communism class because of lousy marx
+16,1,65,boy,high,-0.705672140173113,1,10,-9,a boy who instinctively waves at people has a natural hi
+16,1,66,instinctively,high,-0.498601106522968,3,10,-7,a boy who instinctively waves at people has a natural hi
+16,1,67,natural,high,-0.012319950555378,9,10,-1,a boy who instinctively waves at people has a natural hi
+16,1,68,people,high,-0.412698208052517,6,10,-4,a boy who instinctively waves at people has a natural hi
+16,1,69,wave,high,0.482962181604805,4,10,-6,a boy who instinctively waves at people has a natural hi
+17,1,70,end,day,0.267239579087959,9,13,-4,a teacher having a tough time longs for the end of the school daze
+17,1,71,having,day,-0.354836527565302,2,13,-11,a teacher having a tough time longs for the end of the school daze
+17,1,72,long,day,0.388597629041385,6,13,-7,a teacher having a tough time longs for the end of the school daze
+17,1,73,school,day,0.990153412360027,12,13,-1,a teacher having a tough time longs for the end of the school daze
+17,1,74,teacher,day,-0.053209727084848,1,13,-12,a teacher having a tough time longs for the end of the school daze
+17,1,75,time,day,1.47513600142584,5,13,-8,a teacher having a tough time longs for the end of the school daze
+17,1,76,tough,day,-0.003951185069658,4,13,-9,a teacher having a tough time longs for the end of the school daze
+18,1,77,author,pro,0.225336918485853,0,5,-5,authors in jail have their prose and cons
+18,1,78,con,pro,1.28154356362381,7,5,2,authors in jail have their prose and cons
+18,1,79,jail,pro,-0.544345759521232,2,5,-3,authors in jail have their prose and cons
+19,1,80,eat,plain,0.081997827626014,4,14,-10,do not expect to eat something fancy when you are flying because it is plane food
+19,1,81,expect,plain,-0.24460729053581,2,14,-12,do not expect to eat something fancy when you are flying because it is plane food
+19,1,82,fancy,plain,0.351653509219275,6,14,-8,do not expect to eat something fancy when you are flying because it is plane food
+19,1,83,fly,plain,-0.615666790695139,10,14,-4,do not expect to eat something fancy when you are flying because it is plane food
+19,1,84,food,plain,0.249416236570178,15,14,1,do not expect to eat something fancy when you are flying because it is plane food
+19,1,85,something,plain,-0.218264018853678,5,14,-9,do not expect to eat something fancy when you are flying because it is plane food
+20,1,86,beaver,damn,-0.063336251110301,3,11,-8,i saw a beaver movie last night it was the best dam movie i have ever seen
+20,1,87,best,damn,-0.590036116761407,10,11,-1,i saw a beaver movie last night it was the best dam movie i have ever seen
+20,1,88,last,damn,-0.461702607368854,5,11,-6,i saw a beaver movie last night it was the best dam movie i have ever seen
+20,1,89,movie,damn,-0.597936503279714,12,11,1,i saw a beaver movie last night it was the best dam movie i have ever seen
+20,1,90,movie,damn,-0.632834646206393,12,11,1,i saw a beaver movie last night it was the best dam movie i have ever seen
+20,1,91,night,damn,-0.810753987223521,6,11,-5,i saw a beaver movie last night it was the best dam movie i have ever seen
+20,1,92,see,damn,-0.977045746381195,1,11,-10,i saw a beaver movie last night it was the best dam movie i have ever seen
+21,1,93,computer,hurt,-0.700567935837044,1,6,-5,my computer is so slow it hertz
+21,1,94,slow,hurt,-0.385379948922231,4,6,-2,my computer is so slow it hertz
+22,1,95,actor,roll,-0.130075067514761,1,12,-11,the actors had one great movie after another they were on a role
+22,1,96,another,roll,-0.222925928080213,7,12,-5,the actors had one great movie after another they were on a role
+22,1,97,great,roll,-0.626703462766894,4,12,-8,the actors had one great movie after another they were on a role
+22,1,98,movie,roll,0.300969281387335,5,12,-7,the actors had one great movie after another they were on a role
+22,1,99,one,roll,-0.275896542020841,3,12,-9,the actors had one great movie after another they were on a role
+23,1,100,id,caller,1.14078991644117,16,15,1,the man put his name on the neck of his shirt so he would have collar id
+23,1,101,man,caller,0.1728531964543,1,15,-14,the man put his name on the neck of his shirt so he would have collar id
+23,1,102,name,caller,0.668659091421552,4,15,-11,the man put his name on the neck of his shirt so he would have collar id
+23,1,103,neck,caller,-0.682894749380722,7,15,-8,the man put his name on the neck of his shirt so he would have collar id
+23,1,104,put,caller,-0.374559629015958,2,15,-13,the man put his name on the neck of his shirt so he would have collar id
+23,1,105,shirt,caller,-0.633592127511618,10,15,-5,the man put his name on the neck of his shirt so he would have collar id
+24,1,106,muscle,steel,0.272910017001424,2,4,-2,thieves have muscles of steal
+24,1,107,thief,steel,-0.597283712240962,0,4,-4,thieves have muscles of steal
+25,1,108,actress,die,-0.024059826505242,2,14,-12,when an actress saw her first strands of gray hair she thought she would dye
+25,1,109,first,die,-0.544839480397006,5,14,-9,when an actress saw her first strands of gray hair she thought she would dye
+25,1,110,gray,die,-0.098322787270078,8,14,-6,when an actress saw her first strands of gray hair she thought she would dye
+25,1,111,hair,die,-0.260676966503603,9,14,-5,when an actress saw her first strands of gray hair she thought she would dye
+25,1,112,saw,die,-0.483263357730087,3,14,-11,when an actress saw her first strands of gray hair she thought she would dye
+25,1,113,strand,die,-0.145139986854493,6,14,-8,when an actress saw her first strands of gray hair she thought she would dye
+25,1,114,think,die,-0.666366335760879,11,14,-3,when an actress saw her first strands of gray hair she thought she would dye
+26,1,115,belt,waste,-0.24968941435078,2,6,-4,a cardboard belt would be a waist of paper
+26,1,116,cardboard,waste,0.567217980772463,1,6,-5,a cardboard belt would be a waist of paper
+26,1,117,paper,waste,1.12933526484927,8,6,2,a cardboard belt would be a waist of paper
+27,1,118,fit,feat,-0.073491314279423,3,10,-7,being able to fit size fourteen shoes is quite a feet
+27,1,119,fourteen,feat,-0.846182777626222,5,10,-5,being able to fit size fourteen shoes is quite a feet
+27,1,120,quite,feat,-0.122767874831449,8,10,-2,being able to fit size fourteen shoes is quite a feet
+27,1,121,shoe,feat,-0.782443136926291,6,10,-4,being able to fit size fourteen shoes is quite a feet
+27,1,122,size,feat,0.067085720422618,4,10,-6,being able to fit size fourteen shoes is quite a feet
+28,1,123,mime,allow,-0.702152041876567,1,10,-9,the mime wanted to say something but he was not aloud
+28,1,124,something,allow,-0.077694918887128,5,10,-5,the mime wanted to say something but he was not aloud
+28,1,125,want,allow,0.274759661714828,2,10,-8,the mime wanted to say something but he was not aloud
+29,1,126,bucket,pale,0.030679020300575,5,8,-3,those who carry too many buckets start feeling pail
+29,1,127,carry,pale,-0.691773138173142,2,8,-6,those who carry too many buckets start feeling pail
+29,1,128,feel,pale,-0.268096684986811,7,8,-1,those who carry too many buckets start feeling pail
+29,1,129,many,pale,-0.664626165480999,4,8,-4,those who carry too many buckets start feeling pail
+29,1,130,start,pale,-0.710129104722896,6,8,-2,those who carry too many buckets start feeling pail
+29,1,131,those,pale,-0.696805216421225,0,8,-8,those who carry too many buckets start feeling pail
+30,1,132,castle,manner,-0.583318809988527,5,8,-3,a mans home is his castle in a manor of speaking
+30,1,133,home,manner,0.186411486250951,2,8,-6,a mans home is his castle in a manor of speaking
+30,1,134,man,manner,-0.413159958937049,1,8,-7,a mans home is his castle in a manor of speaking
+30,1,135,speaking,manner,1.06777889452441,10,8,2,a mans home is his castle in a manor of speaking
+31,1,136,chip,cash,0.614308536534834,12,9,3,an online poker tournament ended suddenly when the computer cached in its chips
+31,1,137,computer,cash,-0.030398628514147,8,9,-1,an online poker tournament ended suddenly when the computer cached in its chips
+31,1,138,end,cash,-0.602794301144123,4,9,-5,an online poker tournament ended suddenly when the computer cached in its chips
+31,1,139,online,cash,-0.222210622301699,1,9,-8,an online poker tournament ended suddenly when the computer cached in its chips
+31,1,140,poker,cash,1.25421693246305,2,9,-7,an online poker tournament ended suddenly when the computer cached in its chips
+31,1,141,suddenly,cash,-0.56248084644757,5,9,-4,an online poker tournament ended suddenly when the computer cached in its chips
+31,1,142,tournament,cash,0.611697549724638,3,9,-6,an online poker tournament ended suddenly when the computer cached in its chips
+32,1,143,britain,rain,0.588654976444107,0,12,-12,britain is a wet place since the queen has had a long reign
+32,1,144,long,rain,-0.099289508767626,11,12,-1,britain is a wet place since the queen has had a long reign
+32,1,145,place,rain,-0.124989392589645,4,12,-8,britain is a wet place since the queen has had a long reign
+32,1,146,queen,rain,-0.80450808433613,7,12,-5,britain is a wet place since the queen has had a long reign
+32,1,147,wet,rain,1.67160366860003,3,12,-9,britain is a wet place since the queen has had a long reign
+33,1,148,extra,time,0.37455093439788,4,6,-2,herb gardeners who work extra get thyme and a half
+33,1,149,gardener,time,-0.343649441681855,2,6,-4,herb gardeners who work extra get thyme and a half
+33,1,150,half,time,0.961374751225711,9,6,3,herb gardeners who work extra get thyme and a half
+33,1,151,herb,time,-0.555091831994207,0,6,-6,herb gardeners who work extra get thyme and a half
+33,1,152,work,time,1.16121091785501,3,6,-3,herb gardeners who work extra get thyme and a half
+34,1,153,bad,poor,0.611075463104912,5,13,-8,if you say you have bad skin i would say that was a pore excuse
+34,1,154,excuse,poor,0.073911381022293,14,13,1,if you say you have bad skin i would say that was a pore excuse
+34,1,155,skin,poor,-0.201419991622719,6,13,-7,if you say you have bad skin i would say that was a pore excuse
+35,1,156,complex,guilt,0.674946181195122,8,7,1,people who like gold paint have a gilt complex
+35,1,157,gold,guilt,-0.263432102605674,3,7,-4,people who like gold paint have a gilt complex
+35,1,158,paint,guilt,-0.872609366825695,4,7,-3,people who like gold paint have a gilt complex
+35,1,159,people,guilt,0.130056198282122,0,7,-7,people who like gold paint have a gilt complex
+36,1,160,human,err,0.436615021208746,3,1,2,to heir is human
+37,1,161,boy,sun,-0.687498464835428,2,10,-8,when their boy was little they only got rest after son down
+37,1,162,down,sun,0.714873639281546,11,10,1,when their boy was little they only got rest after son down
+37,1,163,little,sun,-0.69247622200845,4,10,-6,when their boy was little they only got rest after son down
+37,1,164,rest,sun,-0.340750066085616,8,10,-2,when their boy was little they only got rest after son down
+38,1,165,high,sea,0.642978004766509,10,11,-1,novice pirates make terrible singers because they cannot hit the high cs
+38,1,166,hit,sea,-0.860192871142623,8,11,-3,novice pirates make terrible singers because they cannot hit the high cs
+38,1,167,make,sea,-0.84873397511513,2,11,-9,novice pirates make terrible singers because they cannot hit the high cs
+38,1,168,novice,sea,0.000673399330969,0,11,-11,novice pirates make terrible singers because they cannot hit the high cs
+38,1,169,pirate,sea,1.81212499880114,1,11,-10,novice pirates make terrible singers because they cannot hit the high cs
+38,1,170,singer,sea,-0.766043355256123,4,11,-7,novice pirates make terrible singers because they cannot hit the high cs
+38,1,171,terrible,sea,-0.086708577299215,3,11,-8,novice pirates make terrible singers because they cannot hit the high cs
+39,1,172,bright,what,-0.763887552600214,4,9,-5,an electrician is a bright spark who knows whats watt
+39,1,173,electrician,what,-0.64532995441059,1,9,-8,an electrician is a bright spark who knows whats watt
+39,1,174,know,what,0.02511147764916,7,9,-2,an electrician is a bright spark who knows whats watt
+39,1,175,spark,what,-0.66477848824892,5,9,-4,an electrician is a bright spark who knows whats watt
+40,1,176,budget,raiser,-0.190045096363501,7,13,-6,when the mayor wanted to slash the budget he turned to a fund razor
+40,1,177,fund,raiser,1.32481540960982,12,13,-1,when the mayor wanted to slash the budget he turned to a fund razor
+40,1,178,mayor,raiser,-0.564695466483936,2,13,-11,when the mayor wanted to slash the budget he turned to a fund razor
+40,1,179,slash,raiser,-0.802998641103167,5,13,-8,when the mayor wanted to slash the budget he turned to a fund razor
+40,1,180,turn,raiser,-0.830925624491081,9,13,-4,when the mayor wanted to slash the budget he turned to a fund razor
+40,1,181,want,raiser,-0.675236659525123,3,13,-10,when the mayor wanted to slash the budget he turned to a fund razor
+41,1,182,biblical,profit,-0.385346756773982,3,4,-1,daniel is a biblical prophet known for interpreting dreams
+41,1,183,daniel,profit,-0.8228096289801,0,4,-4,daniel is a biblical prophet known for interpreting dreams
+41,1,184,dream,profit,-0.090587571496364,8,4,4,daniel is a biblical prophet known for interpreting dreams
+41,1,185,interpreting,profit,-0.167611856613276,7,4,3,daniel is a biblical prophet known for interpreting dreams
+41,1,186,known,profit,-0.155517957835815,5,4,1,daniel is a biblical prophet known for interpreting dreams
+42,1,187,decimal,pie,0.107668833732929,9,5,4,he can recite the number pi up to 10 decimal places
+42,1,188,number,pie,-0.155361651393749,4,5,-1,he can recite the number pi up to 10 decimal places
+42,1,189,place,pie,-0.717172001901282,10,5,5,he can recite the number pi up to 10 decimal places
+42,1,190,recite,pie,-0.624687614571513,2,5,-3,he can recite the number pi up to 10 decimal places
+42,1,191,ten,pie,-0.662057990470628,8,5,3,he can recite the number pi up to 10 decimal places
+42,1,192,up,pie,-0.909208080442562,6,5,1,he can recite the number pi up to 10 decimal places
+43,1,193,baker,need,-0.437258705886807,0,1,-1,bakers knead flour and milk together to make bread dough
+43,1,194,bread,need,-0.216317881468296,8,1,7,bakers knead flour and milk together to make bread dough
+43,1,195,dough,need,-0.13363093997205,9,1,8,bakers knead flour and milk together to make bread dough
+43,1,196,flour,need,-0.238400426559326,2,1,1,bakers knead flour and milk together to make bread dough
+43,1,197,make,need,0.102641274770208,7,1,6,bakers knead flour and milk together to make bread dough
+43,1,198,milk,need,-0.282660628303782,4,1,3,bakers knead flour and milk together to make bread dough
+43,1,199,together,need,0.436270432215891,5,1,4,bakers knead flour and milk together to make bread dough
+44,1,200,dip,or,-0.828290514220088,2,4,-2,the fisherman dipped the oar in the river
+44,1,201,fisherman,or,-0.553970983101291,1,4,-3,the fisherman dipped the oar in the river
+44,1,202,river,or,-0.902876433517343,7,4,3,the fisherman dipped the oar in the river
+45,1,203,box,tear,-0.38184386584009,0,4,-4,boxes are stacked in tiers in the warehouse
+45,1,204,stack,tear,-0.698845274229794,2,4,-2,boxes are stacked in tiers in the warehouse
+45,1,205,warehouse,tear,-0.7301501425976,7,4,3,boxes are stacked in tiers in the warehouse
+46,1,206,candidate,pole,-0.525938003297062,10,3,7,pollsters conducted a poll on the popularity of the political candidates
+46,1,207,conduct,pole,-0.18531999646156,1,3,-2,pollsters conducted a poll on the popularity of the political candidates
+46,1,208,political,pole,-0.297399899251824,9,3,6,pollsters conducted a poll on the popularity of the political candidates
+46,1,209,pollster,pole,-0.551685412458166,0,3,-3,pollsters conducted a poll on the popularity of the political candidates
+46,1,210,popularity,pole,-0.084685471998395,6,3,3,pollsters conducted a poll on the popularity of the political candidates
+47,1,211,alone,board,-0.728703676999275,4,10,-6,the old man is alone all the time and is bored to tears
+47,1,212,man,board,-0.042517868680529,2,10,-8,the old man is alone all the time and is bored to tears
+47,1,213,old,board,-0.288635892475087,1,10,-9,the old man is alone all the time and is bored to tears
+47,1,214,tear,board,-0.865109391319632,12,10,2,the old man is alone all the time and is bored to tears
+47,1,215,time,board,-0.045769822945025,7,10,-3,the old man is alone all the time and is bored to tears
+48,1,216,country,grease,-0.793462080007332,3,0,3,greece is a country in the the southern portion of europe
+48,1,217,europe,grease,-0.571703577905549,10,0,10,greece is a country in the the southern portion of europe
+48,1,218,portion,grease,-0.197962811569149,8,0,8,greece is a country in the the southern portion of europe
+48,1,219,southern,grease,0.374540943857204,7,0,7,greece is a country in the the southern portion of europe
+49,1,220,angle,sign,-0.07164121877851,10,3,7,in mathematics the sine function is a function of an angle
+49,1,221,function,sign,0.19620525755338,7,3,4,in mathematics the sine function is a function of an angle
+49,1,222,function,sign,0.4762792350899,7,3,4,in mathematics the sine function is a function of an angle
+49,1,223,mathematics,sign,0.660708768471901,1,3,-2,in mathematics the sine function is a function of an angle
+50,1,224,high,principle,0.411359269806399,8,4,4,ms wu is the principal of our local high school
+50,1,225,local,principle,-0.400028315865126,7,4,3,ms wu is the principal of our local high school
+50,1,226,school,principle,0.333891892149103,9,4,5,ms wu is the principal of our local high school
+51,1,227,bought,seedy,-0.730696099778969,1,4,-3,i bought a new cd today with classical music
+51,1,228,classical,seedy,-0.60173551719832,7,4,3,i bought a new cd today with classical music
+51,1,229,music,seedy,-0.498784399714115,8,4,4,i bought a new cd today with classical music
+51,1,230,new,seedy,-0.552774730140536,3,4,-1,i bought a new cd today with classical music
+51,1,231,today,seedy,-0.821675049134907,5,4,1,i bought a new cd today with classical music
+52,1,232,field,hair,-0.624687614571513,6,1,5,the hare ran rapidly through the fields
+52,1,233,ran,hair,-0.711861421151457,2,1,1,the hare ran rapidly through the fields
+52,1,234,rapidly,hair,-0.553630561815109,3,1,2,the hare ran rapidly through the fields
+52,1,235,through,hair,-0.628415489434781,4,1,3,the hare ran rapidly through the fields
+53,1,236,cabin,naughty,-0.697300115383507,1,5,-4,that cabin is made of knotty pine
+53,1,237,made,naughty,-0.939699893131526,3,5,-2,that cabin is made of knotty pine
+53,1,238,pine,naughty,-0.898306565899094,6,5,1,that cabin is made of knotty pine
+54,1,239,between,teach,-0.687696440435206,4,3,1,the clothesline hangs taut between two poles
+54,1,240,clothesline,teach,-0.867978311245919,1,3,-2,the clothesline hangs taut between two poles
+54,1,241,hang,teach,-0.547337118780227,2,3,-1,the clothesline hangs taut between two poles
+54,1,242,pole,teach,-0.441255113934532,6,3,3,the clothesline hangs taut between two poles
+54,1,243,two,teach,-0.239264401994546,5,3,2,the clothesline hangs taut between two poles
+55,1,244,german,mark,-0.345539742773012,4,1,3,karl marx was a german philosopher
+55,1,245,karl,mark,0.142198544792298,0,1,-1,karl marx was a german philosopher
+55,1,246,philosopher,mark,-0.737321519840565,5,1,4,karl marx was a german philosopher
+56,1,247,today,high,-0.184066612748708,4,0,4,hi how are you today
+57,1,248,bad,day,0.215850480322923,8,4,4,she was in a daze after learning the bad news
+57,1,249,learning,day,0.032893290317993,6,4,2,she was in a daze after learning the bad news
+57,1,250,new,day,0.358097278276772,9,4,5,she was in a daze after learning the bad news
+58,1,251,essay,pro,-0.572685127090723,2,6,-4,novels and essays are written in prose
+58,1,252,novel,pro,-0.375243220221992,0,6,-6,novels and essays are written in prose
+58,1,253,written,pro,0.08510842557606,4,6,-2,novels and essays are written in prose
+59,1,254,airport,plain,-0.663126969969225,5,1,4,our plane landed at the airport
+59,1,255,land,plain,0.761673583101659,2,1,1,our plane landed at the airport
+60,1,256,beaver,damn,0.245460151866032,1,5,-4,that beaver is building a dam with logs and sticks
+60,1,257,building,damn,-0.391431554776257,3,5,-2,that beaver is building a dam with logs and sticks
+60,1,258,log,damn,-0.811315360804819,7,5,2,that beaver is building a dam with logs and sticks
+60,1,259,stick,damn,-0.639296094680372,9,5,4,that beaver is building a dam with logs and sticks
+61,1,260,computer,hurt,-0.791644591004511,1,9,-8,this computer has a processing speed of 33 mega hertz
+61,1,261,mega,hurt,-0.793984972734586,8,9,-1,this computer has a processing speed of 33 mega hertz
+61,1,262,process,hurt,-0.618687874638788,4,9,-5,this computer has a processing speed of 33 mega hertz
+61,1,263,speed,hurt,0.664450928168503,5,9,-4,this computer has a processing speed of 33 mega hertz
+62,1,264,leading,roll,-0.301160250656282,3,4,-1,she plays the leading role in a television show
+62,1,265,play,roll,0.311130584487625,1,4,-3,she plays the leading role in a television show
+62,1,266,show,roll,-0.434346294250957,8,4,4,she plays the leading role in a television show
+62,1,267,television,roll,-0.420373182129671,7,4,3,she plays the leading role in a television show
+63,1,268,before,caller,-0.259174685978653,7,3,4,he puts a collar on his dog before walking it
+63,1,269,dog,caller,0.013824800507994,6,3,3,he puts a collar on his dog before walking it
+63,1,270,put,caller,-0.71143515258152,1,3,-2,he puts a collar on his dog before walking it
+63,1,271,walking,caller,-0.668622349874287,8,3,5,he puts a collar on his dog before walking it
+64,1,272,boy,steel,-0.673197295101216,2,5,-3,the little boy wanted to steal his friends candy but decided not to
+64,1,273,candy,steel,-0.823749319778029,8,5,3,the little boy wanted to steal his friends candy but decided not to
+64,1,274,decide,steel,-0.561463092584531,10,5,5,the little boy wanted to steal his friends candy but decided not to
+64,1,275,friend,steel,-0.622295912950623,7,5,2,the little boy wanted to steal his friends candy but decided not to
+64,1,276,little,steel,-0.745469692703728,1,5,-4,the little boy wanted to steal his friends candy but decided not to
+64,1,277,want,steel,-0.909853097244372,3,5,-2,the little boy wanted to steal his friends candy but decided not to
+65,1,278,hair,die,-0.421547725359185,8,6,2,some people do not like to dye their hair
+65,1,279,people,die,0.711971214359944,1,6,-5,some people do not like to dye their hair
+66,1,280,belt,waste,-0.472295703585056,10,5,5,she must have a small waist look how tiny her belt is
+66,1,281,look,waste,-0.690854503667474,6,5,1,she must have a small waist look how tiny her belt is
+66,1,282,small,waste,-0.340515838370061,4,5,-1,she must have a small waist look how tiny her belt is
+66,1,283,tiny,waste,-0.873368975886021,8,5,3,she must have a small waist look how tiny her belt is
+67,1,284,hurting,feat,-0.391604978372473,4,6,-2,these new shoes are hurting my feet
+67,1,285,new,feat,-0.1594655874989,1,6,-5,these new shoes are hurting my feet
+67,1,286,shoe,feat,-0.966995576977254,2,6,-4,these new shoes are hurting my feet
+68,1,287,class,allow,-0.370615666910936,7,5,2,the student read her poem aloud in class
+68,1,288,poem,allow,-0.742848919110281,4,5,-1,the student read her poem aloud in class
+68,1,289,read,allow,-0.486211025988048,2,5,-3,the student read her poem aloud in class
+68,1,290,student,allow,-0.32884152900711,1,5,-4,the student read her poem aloud in class
+69,1,291,clean,pale,-0.349255067633114,8,4,4,a worker filled a pail with water to clean the floor
+69,1,292,fill,pale,-0.280111861863352,2,4,-2,a worker filled a pail with water to clean the floor
+69,1,293,floor,pale,-0.56131447304107,10,4,6,a worker filled a pail with water to clean the floor
+69,1,294,water,pale,-0.165235526086258,6,4,2,a worker filled a pail with water to clean the floor
+69,1,295,worker,pale,-0.476089460993053,1,4,-3,a worker filled a pail with water to clean the floor
+70,1,296,huge,manner,-0.388144891384882,6,7,-1,those wealthy people live in a huge manor
+70,1,297,live,manner,-0.082752990532553,3,7,-4,those wealthy people live in a huge manor
+70,1,298,people,manner,0.318376524983918,2,7,-5,those wealthy people live in a huge manor
+70,1,299,those,manner,-0.664934083153729,0,7,-7,those wealthy people live in a huge manor
+70,1,300,wealthy,manner,0.142617684724405,1,7,-6,those wealthy people live in a huge manor
+71,1,301,copy,cash,-0.409417580870067,1,0,1,cached copies of the web pages are stored in the database
+71,1,302,database,cash,-0.333104376994235,10,0,10,cached copies of the web pages are stored in the database
+71,1,303,page,cash,-0.881949542602217,5,0,5,cached copies of the web pages are stored in the database
+71,1,304,store,cash,0.691846442557002,7,0,7,cached copies of the web pages are stored in the database
+71,1,305,web,cash,-0.349216665163546,4,0,4,cached copies of the web pages are stored in the database
+72,1,306,end,rain,-0.384778413220962,7,1,6,the reign of louis xiv of france ended in 1715
+72,1,307,france,rain,-0.16209715755146,6,1,5,the reign of louis xiv of france ended in 1715
+72,1,308,louis,rain,-0.901060207584626,3,1,2,the reign of louis xiv of france ended in 1715
+73,1,309,chicken,time,-0.568731071816946,6,13,-7,one of my favorite meals is chicken in a creamy sauce flavored with thyme
+73,1,310,creamy,time,-0.78052214974286,9,13,-4,one of my favorite meals is chicken in a creamy sauce flavored with thyme
+73,1,311,favorite,time,-0.035406858482555,3,13,-10,one of my favorite meals is chicken in a creamy sauce flavored with thyme
+73,1,312,flavor,time,-0.683657821819545,11,13,-2,one of my favorite meals is chicken in a creamy sauce flavored with thyme
+73,1,313,meal,time,0.37287072808796,4,13,-9,one of my favorite meals is chicken in a creamy sauce flavored with thyme
+73,1,314,one,time,0.136981949220995,0,13,-13,one of my favorite meals is chicken in a creamy sauce flavored with thyme
+73,1,315,sauce,time,-0.681535218475917,10,13,-3,one of my favorite meals is chicken in a creamy sauce flavored with thyme
+74,1,316,opening,poor,-0.866198013404969,6,1,5,a pore is a very small opening on the surface of your skin
+74,1,317,skin,poor,0.080568282689935,12,1,11,a pore is a very small opening on the surface of your skin
+74,1,318,small,poor,0.068243185977779,5,1,4,a pore is a very small opening on the surface of your skin
+74,1,319,surface,poor,-0.37589696234453,9,1,8,a pore is a very small opening on the surface of your skin
+74,1,320,very,poor,-0.060842393338452,4,1,3,a pore is a very small opening on the surface of your skin
+75,1,321,cover,guilt,0.215459598630176,1,5,-4,she covered the frame with gilt
+75,1,322,frame,guilt,0.235668047622973,3,5,-2,she covered the frame with gilt
+76,1,323,british,err,-0.570791774427102,6,3,3,prince william is heir to the british throne
+76,1,324,prince,err,-0.709840827300464,0,3,-3,prince william is heir to the british throne
+76,1,325,throne,err,-0.625794569156995,7,3,4,prince william is heir to the british throne
+76,1,326,william,err,-0.963003701747602,1,3,-2,prince william is heir to the british throne
+77,1,327,daughter,sun,-0.514973548036949,6,3,3,they have a son and a daughter
+78,1,328,c,sea,-0.622603830543707,8,8,0,the soprano c is sometimes called the high c
+78,1,329,called,sea,-0.58195548759316,5,8,-3,the soprano c is sometimes called the high c
+78,1,330,high,sea,0.53492798339533,7,8,-1,the soprano c is sometimes called the high c
+78,1,331,sometimes,sea,-0.811835242888445,4,8,-4,the soprano c is sometimes called the high c
+78,1,332,soprano,sea,-0.749050902036944,1,8,-7,the soprano c is sometimes called the high c
+79,1,333,bulb,what,-0.792935521439807,8,6,2,my desk lamp uses a 60 watt light bulb
+79,1,334,desk,what,-0.725932313981326,1,6,-5,my desk lamp uses a 60 watt light bulb
+79,1,335,lamp,what,-0.963476309045807,2,6,-4,my desk lamp uses a 60 watt light bulb
+79,1,336,light,what,-0.91282493926799,7,6,1,my desk lamp uses a 60 watt light bulb
+79,1,337,use,what,-0.335029209500105,3,6,-3,my desk lamp uses a 60 watt light bulb
+80,1,338,beard,raiser,-0.654193382617067,7,3,4,he used a razor to shave his beard
+80,1,339,shave,raiser,0.343061940236266,5,3,2,he used a razor to shave his beard
+80,1,340,use,raiser,-0.579624430848461,1,3,-2,he used a razor to shave his beard
+81,1,341,business,prophet,-0.513638141823349,1,6,-5,that business made a 1 million profit last year
+81,1,342,last,prophet,-0.273388709816024,7,6,1,that business made a 1 million profit last year
+81,1,343,make,prophet,0.046192758990298,2,6,-4,that business made a 1 million profit last year
+81,1,344,million,prophet,-0.796865907163347,5,6,-1,that business made a 1 million profit last year
+81,1,345,year,prophet,-0.176605791139114,8,6,2,that business made a 1 million profit last year
+82,1,346,apple,pi,-0.155601557285693,4,5,-1,would you like some apple pie for dessert
+82,1,347,dessert,pi,-0.977045746381195,7,5,2,would you like some apple pie for dessert
+83,1,348,company,knead,-0.807693537655598,1,4,-3,the company has a need for computer programmers
+83,1,349,computer,knead,-0.678141091784575,6,4,2,the company has a need for computer programmers
+83,1,350,programmer,knead,-0.883813115415919,7,4,3,the company has a need for computer programmers
+84,1,351,car,oar,-0.605782898798345,4,5,-1,take care of your car or else you will have problems
+84,1,352,care,oar,-0.671890882022154,1,5,-4,take care of your car or else you will have problems
+84,1,353,problem,oar,-0.787937639132293,10,5,5,take care of your car or else you will have problems
+84,1,354,take,oar,-0.797577882480123,0,5,-5,take care of your car or else you will have problems
+85,1,355,cheek,tier,-0.813012721789439,4,0,4,tears ran down her cheeks as she watched a sad movie
+85,1,356,down,tier,0.065246558221518,2,0,2,tears ran down her cheeks as she watched a sad movie
+85,1,357,movie,tier,-0.426850740637108,10,0,10,tears ran down her cheeks as she watched a sad movie
+85,1,358,run,tier,-0.648985232284013,1,0,1,tears ran down her cheeks as she watched a sad movie
+85,1,359,sad,tier,-1.0432461869947,9,0,9,tears ran down her cheeks as she watched a sad movie
+85,1,360,watch,tier,-0.64905983784821,7,0,7,tears ran down her cheeks as she watched a sad movie
+86,1,361,flag,poll,0.496956289965143,3,6,-3,she raised a flag up the pole
+86,1,362,raise,poll,-0.25854836829672,1,6,-5,she raised a flag up the pole
+86,1,363,up,poll,-0.012527486184469,4,6,-2,she raised a flag up the pole
+87,1,364,company,bore,-0.558384397451808,6,7,-1,he has a meeting with the companys board of directors
+87,1,365,director,bore,-0.468827325575231,9,7,2,he has a meeting with the companys board of directors
+87,1,366,meeting,bore,0.316592859387636,3,7,-4,he has a meeting with the companys board of directors
+88,1,367,much,greece,-0.891404845441757,3,4,-1,there was too much grease on the plate
+88,1,368,plate,greece,-0.527160722041039,7,4,3,there was too much grease on the plate
+89,1,369,boutique,sine,-0.56239893323289,8,1,7,the sign on our store says the clothes boutique
+89,1,370,clothe,sine,-0.615439022793923,7,1,6,the sign on our store says the clothes boutique
+89,1,371,store,sine,-0.843161675703568,4,1,3,the sign on our store says the clothes boutique
+90,1,372,believe,principal,-0.111001090003292,1,4,-3,i believe in the principle of physics
+90,1,373,physics,principal,0.150078260725792,6,4,2,i believe in the principle of physics
+91,1,374,bar,cd,-0.244883307421765,2,1,1,the seedy bar was full of drunken unwashed people
+91,1,375,drunk,cd,-0.797199357559795,6,1,5,the seedy bar was full of drunken unwashed people
+91,1,376,full,cd,0.133524685226406,4,1,3,the seedy bar was full of drunken unwashed people
+91,1,377,people,cd,-0.239061380229804,8,1,7,the seedy bar was full of drunken unwashed people
+91,1,378,unwashed,cd,-0.843662976286842,7,1,6,the seedy bar was full of drunken unwashed people
+92,1,379,head,hare,-0.473363524520127,8,5,3,most people have lots of hair on their heads
+92,1,380,lot,hare,-0.817996500819195,3,5,-2,most people have lots of hair on their heads
+92,1,381,people,hare,-0.462838887777725,1,5,-4,most people have lots of hair on their heads
+93,1,382,boy,knotty,-0.87277364946702,1,4,-3,that boy is a naughty child
+93,1,383,child,knotty,-0.901060207584626,5,4,1,that boy is a naughty child
+94,1,384,college,taut,-0.779473800922541,4,1,3,she taught mathematics to college students
+94,1,385,mathematics,taut,-0.778077427096274,2,1,1,she taught mathematics to college students
+94,1,386,student,taut,-0.918368977013436,2,1,1,she taught mathematics to college students
+95,1,387,high,marx,-0.448955925209902,5,1,4,she got high marks in high school
+95,1,388,school,marx,0.017616419988198,6,1,5,she got high marks in high school
+96,1,389,feet,hi,-1.02005310437571,4,5,-1,the statue is 10 feet high
+96,1,390,statue,hi,-0.480319262693074,1,5,-4,the statue is 10 feet high
+96,1,391,ten,hi,-0.492742952898448,3,5,-2,the statue is 10 feet high
+97,1,392,seven,daze,-0.702152041876567,2,3,-1,there are seven days in a week
+97,1,393,week,daze,-0.583746366733306,6,3,3,there are seven days in a week
+98,1,394,con,prose,-0.075610411837827,5,3,2,what are the pros and cons of social networking sites
+98,1,395,network,prose,-0.567065520145023,8,3,5,what are the pros and cons of social networking sites
+98,1,396,site,prose,-0.540976113854544,9,3,6,what are the pros and cons of social networking sites
+98,1,397,social,prose,-0.108844177416427,7,3,4,what are the pros and cons of social networking sites
+99,1,398,beautiful,plane,-0.686565970306596,6,2,4,she felt plain next to her beautiful sister
+99,1,399,feel,plane,-0.718570286977479,1,2,-1,she felt plain next to her beautiful sister
+99,1,400,next,plane,-0.25798051833799,3,2,1,she felt plain next to her beautiful sister
+99,1,401,sister,plane,-0.773128754514199,7,2,5,she felt plain next to her beautiful sister
+100,1,402,give,dam,-0.615439022793923,3,5,-2,i do not give a damn what you say
+101,1,403,fall,hertz,-0.841812122232493,1,6,-5,i fell and now my leg hurts
+101,1,404,leg,hertz,-0.73474206550725,5,6,-1,i fell and now my leg hurts
+101,1,405,now,hertz,-0.702555276989702,3,6,-3,i fell and now my leg hurts
+102,1,406,buy,role,-0.678832048763985,1,3,-2,she bought a roll of silk to make a dress
+102,1,407,dress,role,0.101847382208021,9,3,6,she bought a roll of silk to make a dress
+102,1,408,make,role,-0.557135921153756,7,3,4,she bought a roll of silk to make a dress
+102,1,409,silk,role,-0.921034871012368,5,3,2,she bought a roll of silk to make a dress
+103,1,410,bank,collar,-0.191166635871159,8,1,7,the caller on the phone is from your bank
+103,1,411,phone,collar,-0.728413724436924,4,1,3,the caller on the phone is from your bank
+104,1,412,make,steal,-0.581205477902811,3,7,-4,that ship is made of wood and steel
+104,1,413,ship,steal,-0.442891221614658,1,7,-6,that ship is made of wood and steel
+104,1,414,wood,steal,-0.2881613251311,5,7,-2,that ship is made of wood and steel
+105,1,415,attack,dye,-0.78446480281094,11,7,4,he is very scared that he will die of a heart attack
+105,1,416,heart,dye,-0.691277561250593,10,7,3,he is very scared that he will die of a heart attack
+105,1,417,scared,dye,-0.705378127540803,3,7,-4,he is very scared that he will die of a heart attack
+105,1,418,very,dye,-0.981876870882112,2,7,-5,he is very scared that he will die of a heart attack
+106,1,419,deal,waist,-0.732995555544918,5,10,-5,he is too difficult so dealing with him is a waste of time
+106,1,420,difficult,waist,-0.691925186648423,3,10,-7,he is too difficult so dealing with him is a waste of time
+106,1,421,time,waist,-0.271579062080419,12,10,2,he is too difficult so dealing with him is a waste of time
+107,1,422,exam,foot,0.086882273117077,2,8,-6,passing that exam without studying was a real feat
+107,1,423,pass,foot,-0.2247519266992,0,8,-8,passing that exam without studying was a real feat
+107,1,424,real,foot,-0.86179147173976,7,8,-1,passing that exam without studying was a real feat
+107,1,425,study,foot,-0.56874670625804,4,8,-4,passing that exam without studying was a real feat
+107,1,426,without,foot,-0.936703037669011,3,8,-5,passing that exam without studying was a real feat
+108,1,427,car,aloud,-0.643042369973917,8,1,7,we allowed our son to use the family car
+108,1,428,family,aloud,-0.339194925454803,7,1,6,we allowed our son to use the family car
+108,1,429,son,aloud,-0.570565760120313,3,1,2,we allowed our son to use the family car
+108,1,430,use,aloud,-0.636997932893896,5,1,4,we allowed our son to use the family car
+109,1,431,look,pail,-0.605210211226776,1,2,-1,she looks pale and sick
+109,1,432,sick,pail,0.131856318745953,4,2,2,she looks pale and sick
+110,1,433,food,manor,-0.331540966394026,5,3,2,there was all manner of food at the party
+110,1,434,party,manor,0.10043337084221,8,3,5,there was all manner of food at the party
+111,1,435,buy,cache,-0.377323279312555,1,7,-6,she bought stocks for 10 years then cashed in her chips
+111,1,436,chip,cache,0.080139225108531,10,7,3,she bought stocks for 10 years then cashed in her chips
+111,1,437,stock,cache,0.547454810212062,2,7,-5,she bought stocks for 10 years then cashed in her chips
+111,1,438,ten,cache,-0.622847393446341,4,7,-3,she bought stocks for 10 years then cashed in her chips
+111,1,439,year,cache,-0.698594318538269,5,7,-2,she bought stocks for 10 years then cashed in her chips
+112,1,440,city,reign,-0.281913805501794,4,0,4,rain fell on the city last night
+112,1,441,fall,reign,0.209111785798445,1,0,1,rain fell on the city last night
+112,1,442,last,reign,0.302905011888248,5,0,5,rain fell on the city last night
+112,1,443,night,reign,-0.642203929572549,6,0,6,rain fell on the city last night
+113,1,444,before,thyme,-0.687320460667362,6,2,4,we have time to have lunch before the meeting
+113,1,445,lunch,thyme,-0.249824208915727,5,2,3,we have time to have lunch before the meeting
+113,1,446,meeting,thyme,-0.781250756321343,8,2,6,we have time to have lunch before the meeting
+114,1,447,afford,pore,-0.660529443616379,7,4,3,that family is so poor they cannot afford to buy food
+114,1,448,buy,pore,-0.891351142323991,9,4,5,that family is so poor they cannot afford to buy food
+114,1,449,family,pore,-0.943509597324284,1,4,-3,that family is so poor they cannot afford to buy food
+114,1,450,food,pore,-0.488892983115533,10,4,6,that family is so poor they cannot afford to buy food
+115,1,451,accuse,gilt,-0.460462340555363,9,4,5,a jury decides the guilt or innocence of an accused person
+115,1,452,decide,gilt,-0.717401872121769,2,4,-2,a jury decides the guilt or innocence of an accused person
+115,1,453,innocence,gilt,0.213413822084493,6,4,2,a jury decides the guilt or innocence of an accused person
+115,1,454,jury,gilt,-0.614823792376017,1,4,-3,a jury decides the guilt or innocence of an accused person
+115,1,455,person,gilt,-0.797503386812913,10,4,6,a jury decides the guilt or innocence of an accused person
+116,1,456,being,heir,-0.059928509925509,9,4,5,it is better to err on the side of being too safe
+116,1,457,better,heir,-0.597391093519909,2,4,-2,it is better to err on the side of being too safe
+116,1,458,safe,heir,0.017427688233438,11,4,7,it is better to err on the side of being too safe
+116,1,459,side,heir,-0.575158610594821,7,4,3,it is better to err on the side of being too safe
+117,1,460,evening,son,-0.62409839595838,8,1,7,the sun rises every morning and sets every evening
+117,1,461,morning,son,-0.456913352347395,4,1,3,the sun rises every morning and sets every evening
+117,1,462,rise,son,-0.061480844753509,2,1,1,the sun rises every morning and sets every evening
+117,1,463,set,son,-0.864680372380044,6,1,5,the sun rises every morning and sets every evening
+118,1,464,high,c,-0.181968517679681,8,9,-1,the ship is in the midatlantic on the high seas
+118,1,465,midatlantic,c,-0.790698851752433,5,9,-4,the ship is in the midatlantic on the high seas
+118,1,466,ship,c,-0.707732711067019,1,9,-8,the ship is in the midatlantic on the high seas
+119,1,467,student,watt,-0.859463702850211,4,5,-1,the teacher told the students what to do
+119,1,468,teacher,watt,-0.706285160880822,1,5,-4,the teacher told the students what to do
+119,1,469,tell,watt,-0.763513280716189,2,5,-3,the teacher told the students what to do
+120,1,470,church,razor,-0.696412732594987,9,5,4,that girl organized a fund raiser at her local church
+120,1,471,fund,razor,-0.668267826684113,4,5,-1,that girl organized a fund raiser at her local church
+120,1,472,girl,razor,-0.040051763186612,1,5,-4,that girl organized a fund raiser at her local church
+120,1,473,local,razor,-0.702166384878252,8,5,3,that girl organized a fund raiser at her local church
+120,1,474,organize,razor,-0.840709499875473,2,5,-3,that girl organized a fund raiser at her local church

@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{natbib}
+\begin{document}
+\title{Pun documentation}
+\maketitle
+
+\section{Sentence sources}
+\begin{itemize}
+\item[] Puns $\times 40 \leftarrow$ punoftheday.com
+\item[] Nonpuns $\times 80 \leftarrow$ Newbury House Dictionary: http://nhd.heinle.com
+\end{itemize}
+
+\section{Terminology}
+
+\emph{``Original" and ``modified" describe whether a word or sentence is presented as it naturally occurs in the wild (web); ``observed" and ``unobserved" describe whether the word is actually spelled out to the reader}
+
+\begin{itemize}
+\item[] Original pun = pun sentence in its original form as discovered on punoftheday.com, e.g. ``Thieves have muscles of steal."
+
+\item[] Original homophone = target homophone as spelled in the original sentence, e.g. "steal"
+
+\item[] Modified pun = pun sentence in which we replaced the original homophone with its alternative spelling, e.g. ``Thieves have muscles of steel."
+
+\item[] Modified homophone = the alternative spelling of the homophone that was originally in the sentence
+
+\item[] Original non pun = non pun sentence in its original form as discovered in the dictionary example sentences, e.g ``The hare ran rapidly through the fields"
+
+\item[] Modified non pun = non pun sentence in which we replaced the original homophone with its alternative spelling, e.g. ``The hair ran rapidly through the fields."
+
+\item[] Observed homophone = the spelling in which the target homophone appears in a sentence. e.g., in the original pun: ``Thieves have muscles of \emph{steal}," the original homophone "steal" is the observed homophone; while in the modified pun: "Thieves have muscles of \emph{steel}," the modified homophone "steel" is the observed homophone.
+
+\item[] Unobserved homophone = the spelling in which the target homophone does not appear in a sentence--namely an alternative phonetically identical word that is different from how the homophone is actually spelled out. e.g., in the original pun: ``Thieves have muscles of \emph{steal}," "steel" is the unobserved homophone.
+
+\end{itemize}
+
+\section{Funniness measures}
+
+\subsection*{Measure1: Observed relatedness}
+
+\emph{A big value indicates that the content words strongly support the observed homophone.}
+
+\begin{itemize}
+
+\item[] measure1.ave = average relatedness of content words to the observed homophone
+
+\item[] measure1.max = maximal relatedness of content words to the observed homophone
+
+\end{itemize}
+
+\subsection*{Measure 2: Relatedness difference between observed and unobserved}
+
+\emph{A small value indicates that the observed and unobserved homophones receive balanced support}
+
+\begin{itemize}
+\item[] measure2.ave = average difference between the relatedness of a content word to the observed and unobserved homophones
+
+\item[] measure2.max = maximal difference between the relatedness of a content word to the observed and unobserved homophones
+
+\end{itemize}
+
+\subsection*{Measure 3: Absolute relatedness difference between observed and unobserved}
+
+\emph{ A large value indicates that the observed and unobserved homophones are strongly supported by content words (but unclear which homophone receives stronger support)}
+ 
+\begin{itemize}
+\item[] measure3.ave = average absolute difference between observed and unobserved relatedness
+
+\end{itemize}
+
+\subsection*{Measure 4: Degree to which homophones have strong and biased supporters}
+\emph{Like Measure 3, a large value indicates that the observed and unobserved homophones are strongly supported by content words (but unclear which homophone receives stronger support)}
+
+\begin{itemize}
+\item[] measure4.max = $max(R(w, h_{Obs}) - R(w, h_{Unobs})) + max(R(w, h_{Uobs}) - R(w, h_{Obs}))$
+
+\item[] an observed supporter is a word $w$ such that $R(w, h_{Obs}) > R(w, h_{Unobs})$
+
+\item[] measure4.sum = $sum(R(observedSupporter, h_{Obs})) + sum(R(unobservedSupporter, h_{Unobs}))$
+
+
+\end{itemize}
+
+\subsection*{Measure 5:  Difference between strength of supporters for observed and unobserved homophone}
+\emph{Like Measure 2, a small value indicates that the observed and unobserved homophones receive balanced support from content words.}
+
+\begin{itemize}
+\item[] measure5.max = $max(R(w, h_{obs}) - R(w, h_{unobs})) - max(R(w, h_{unobs}) - R(w, h_{obs}))$
+  
+\item[] measure5.sum = $sum(R(observedSupporter, h_{Obs})) - sum(R(unobservedSupporter, h_{Unobs}))$
+  
+\end{itemize}
+\end{document}
