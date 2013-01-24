@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: cogsci_pun_2013.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: pun_bib.bib
+apacite.bst [2007/09/03 v4.00 APA bibliography style]
+Warning--No journal in bergenverb
+Warning--No journal in binsted1996machine
+Warning--No address in frank1989humor
+Warning--No journal in gibsonnoisy
+Warning--No address in hurley2011inside
+Warning--No publisher in johnson2002use
+Warning--No address in johnson2002use
+Warning--No publisher in kiddon2011s
+Warning--No address in kiddon2011s
+Warning--No publisher in levy2008noisy
+Warning--No address in levy2008noisy
+Warning--No publisher in levy2011integrating
+Warning--No address in levy2011integrating
+Warning--No address in martin2007psychology
+Warning--No address in mcghee1979humor
+Warning--No address in semantic2010
+You've used 21 entries,
+            6345 wiz_defined-function locations,
+            1304 strings with 13245 characters,
+and the built_in function-call counts, 38021 in all, are:
+= -- 4700
+> -- 321
+< -- 1826
++ -- 1770
+- -- 42
+* -- 2461
+:= -- 7082
+add.period$ -- 94
+call.type$ -- 21
+change.case$ -- 110
+chr.to.int$ -- 0
+cite$ -- 58
+duplicate$ -- 907
+empty$ -- 1511
+format.name$ -- 486
+if$ -- 7223
+int.to.chr$ -- 0
+int.to.str$ -- 42
+missing$ -- 0
+newline$ -- 486
+num.names$ -- 170
+pop$ -- 713
+preamble$ -- 1
+purify$ -- 84
+quote$ -- 0
+skip$ -- 2493
+stack$ -- 0
+substring$ -- 1980
+swap$ -- 582
+text.length$ -- 74
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 2000
+warning$ -- 16
+while$ -- 177
+width$ -- 0
+write$ -- 590
+(There were 16 warnings)

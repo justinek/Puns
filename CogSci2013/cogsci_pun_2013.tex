@@ -8,6 +8,8 @@
 \usepackage{amssymb}
 \usepackage{apacite}
 \usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 
 \title{The Funny Thing About Incongruity: A Computational Model of Humor}
  
@@ -151,6 +153,13 @@ Normal & ``Some people have lots of hair on their heads."\\\hline
 \end{tabular}\\\\
 
 \subsection{Human ratings of semantic relatedness}
+
+\begin{figure}[t]
+\scalebox{0.44}{\includegraphics{Plots/hare_pun.png}}
+\caption{Relatedness of word pairs in example pun.}
+\end{figure}
+
+
 As described in the model section, in order to compute interpretation probabilities of the homophone word given different contexts, we need the conditional probabilities of each word in the context given the homophone word $P(c_i | m)$. However, $P(c_i | m)$ is difficult to obtain through corpora (due to data sparsity) as well as through empirical measures of association strength (due to the large number of subjects one must recruit in order to obtain a good estimation of subjects' likelihood of thinking of $c_i$ given $m$). As a result, we chose to approximate $P(c_i | m)$ using empirical measures of the semantic relatedness between $c_i$ and $m$, denoted as $R(c_i, m)$. We use $R(c_i, m)$ as an approximate measure of point wise mutual information between $c_i$ and $h$, defined as follows:
 $$
 R(c_i, m)  = pmi(c_i, m)= {\log \frac{P(c_i, m)}{P(c_i)P(m)}}
@@ -168,15 +177,10 @@ Figure 1 and 2 show the relatedness of content words in the sentence with the tw
 Figure 3 shows the average relatedness ratings of words and the two homophone interpretations across the three types of sentences. We see that in pun sentences, the average relatedness of words to the two homophone interpretations are roughly equivalent. In the non-pun sentences, the average relatedness of words to the observed homophone is significantly higher than to the alternative homophone. This analysis of human ratings of relatedness supports the intuition on which our model is based that funnier sentences are those in which different contexts support incongruous interpretations of the homophone.
 
 \begin{figure}[t]
-\scalebox{0.45}{\includegraphics{Plots/hare_pun.png}}
-\caption{Relatedness of word pairs in example pun.}
-\end{figure}
-
-\begin{figure}[t]
 \scalebox{0.45}{\includegraphics{Plots/hare_nonpun.png}}
 \caption{Relatedness of word pairs in example non pun.}
-\end{figure}
 
+\end{figure}
 
 \begin{figure}[t]
 \scalebox{0.45}{\includegraphics{Plots/ave_relatedness.png}}
