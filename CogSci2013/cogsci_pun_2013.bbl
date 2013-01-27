@@ -1,29 +1,6 @@
 \begin{thebibliography}{}
 
 \bibitem[\protect\citeauthoryear{%
-Abed%
-}{%
-Abed%
-}{%
-{\protect\APACyear{1994}}%
-}]{%
-abed1994visual}%
-\APACinsertmetastar{%
-abed1994visual}%
-Abed, F.%
-%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1994}{}{}.
-\newblock
-\BBOQ{}\APACrefatitle{Visual puns as interactive illustrations: Their effects
-  on recognition memory}{Visual puns as interactive illustrations: Their
-  effects on recognition memory}.\BBCQ{}
-\newblock
-\APACjournalVolNumPages{Metaphor and Symbol}{9}{1}{45--60}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem[\protect\citeauthoryear{%
 Bergen%
 , Levy%
 \BCBL{}\ \BBA{} Gibson%
@@ -70,6 +47,32 @@ Binsted, K.%
   humour: An implemented model of puns}.\BBCQ{}
 \newblock
 
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Burke%
+\ \BBA{} Yee%
+}{%
+Burke%
+\ \BBA{} Yee%
+}{%
+{\protect\APACyear{1984}}%
+}]{%
+burke1984semantic}%
+\APACinsertmetastar{%
+burke1984semantic}%
+Burke, D.%
+\BCBT{}\ \BBA{} Yee, P.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1984}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Semantic priming during sentence processing by young and
+  older adults.}{Semantic priming during sentence processing by young and older
+  adults.}\BBCQ{}
+\newblock
+\APACjournalVolNumPages{Developmental Psychology}{20}{5}{903}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem[\protect\citeauthoryear{%
@@ -332,6 +335,36 @@ Levy, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem[\protect\citeauthoryear{%
+Levy%
+, Bicknell%
+, Slattery%
+\BCBL{}\ \BBA{} Rayner%
+}{%
+Levy%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{2009}}%
+}]{%
+levy2009eye}%
+\APACinsertmetastar{%
+levy2009eye}%
+Levy, R.%
+, Bicknell, K.%
+, Slattery, T.%
+\BCBL{}\ \BBA{} Rayner, K.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Eye movement evidence that readers maintain and act on
+  uncertainty about past linguistic input}{Eye movement evidence that readers
+  maintain and act on uncertainty about past linguistic input}.\BBCQ{}
+\newblock
+\APACjournalVolNumPages{Proceedings of the National Academy of
+  Sciences}{106}{50}{21086--21090}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
 Martin%
 }{%
 Martin%
@@ -430,6 +463,89 @@ Reyes, A.%
   language processing and information systems}\ (\BVOL\ 5723, \BPG~130-141).
 \newblock
 \APACaddressPublisher{}{Springer Berlin / Heidelberg}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Seidenberg%
+, Tanenhaus%
+, Leiman%
+\BCBL{}\ \BBA{} Bienkowski%
+}{%
+Seidenberg%
+\ \protect\BOthers{.}}{%
+{\protect\APACyear{1982}}%
+}]{%
+seidenberg1982automatic}%
+\APACinsertmetastar{%
+seidenberg1982automatic}%
+Seidenberg, M.%
+, Tanenhaus, M.%
+, Leiman, J.%
+\BCBL{}\ \BBA{} Bienkowski, M.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1982}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Automatic access of the meanings of ambiguous words in
+  context: Some limitations of knowledge-based processing}{Automatic access of
+  the meanings of ambiguous words in context: Some limitations of
+  knowledge-based processing}.\BBCQ{}
+\newblock
+\APACjournalVolNumPages{Cognitive psychology}{14}{4}{489--537}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Simpson%
+}{%
+Simpson%
+}{%
+{\protect\APACyear{1981}}%
+}]{%
+simpson1981meaning}%
+\APACinsertmetastar{%
+simpson1981meaning}%
+Simpson, G.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1981}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Meaning dominance and semantic context in the processing
+  of lexical ambiguity}{Meaning dominance and semantic context in the
+  processing of lexical ambiguity}.\BBCQ{}
+\newblock
+\APACjournalVolNumPages{Journal of Verbal Learning and Verbal
+  Behavior}{20}{1}{120--136}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem[\protect\citeauthoryear{%
+Smith%
+\ \BBA{} Levy%
+}{%
+Smith%
+\ \BBA{} Levy%
+}{%
+{\protect\APACyear{2011}}%
+}]{%
+smith2011cloze}%
+\APACinsertmetastar{%
+smith2011cloze}%
+Smith, N.%
+\BCBT{}\ \BBA{} Levy, R.%
+%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+\BBOQ{}\APACrefatitle{Cloze but no cigar: The complex relationship between
+  cloze, corpus, and subjective probabilities in language processing}{Cloze but
+  no cigar: The complex relationship between cloze, corpus, and subjective
+  probabilities in language processing}.\BBCQ{}
+\newblock
+\BIn{} \APACrefbtitle{Proceedings of the 33rd Annual Meeting of the Cognitive
+  Science Conference.}{Proceedings of the 33rd annual meeting of the cognitive
+  science conference.}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem[\protect\citeauthoryear{%

@@ -27,45 +27,47 @@ Warning--No address in levy2011integrating
 Warning--No address in martin2007psychology
 Warning--No address in mcghee1979humor
 Warning--No address in semantic2010
-You've used 21 entries,
+Warning--No publisher in smith2011cloze
+Warning--No address in smith2011cloze
+You've used 25 entries,
             6345 wiz_defined-function locations,
-            1304 strings with 13245 characters,
-and the built_in function-call counts, 38021 in all, are:
-= -- 4700
-> -- 321
-< -- 1826
-+ -- 1770
-- -- 42
-* -- 2461
-:= -- 7082
-add.period$ -- 94
-call.type$ -- 21
-change.case$ -- 110
+            1331 strings with 14189 characters,
+and the built_in function-call counts, 46897 in all, are:
+= -- 5770
+> -- 395
+< -- 2331
++ -- 2271
+- -- 50
+* -- 3090
+:= -- 8857
+add.period$ -- 112
+call.type$ -- 25
+change.case$ -- 131
 chr.to.int$ -- 0
-cite$ -- 58
-duplicate$ -- 907
-empty$ -- 1511
-format.name$ -- 486
-if$ -- 7223
+cite$ -- 68
+duplicate$ -- 1116
+empty$ -- 1813
+format.name$ -- 616
+if$ -- 8810
 int.to.chr$ -- 0
-int.to.str$ -- 42
+int.to.str$ -- 50
 missing$ -- 0
-newline$ -- 486
-num.names$ -- 170
-pop$ -- 713
+newline$ -- 588
+num.names$ -- 202
+pop$ -- 852
 preamble$ -- 1
-purify$ -- 84
+purify$ -- 100
 quote$ -- 0
-skip$ -- 2493
+skip$ -- 2998
 stack$ -- 0
-substring$ -- 1980
-swap$ -- 582
-text.length$ -- 74
+substring$ -- 2509
+swap$ -- 712
+text.length$ -- 82
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 2000
-warning$ -- 16
-while$ -- 177
+type$ -- 2384
+warning$ -- 18
+while$ -- 219
 width$ -- 0
-write$ -- 590
-(There were 16 warnings)
+write$ -- 726
+(There were 18 warnings)
