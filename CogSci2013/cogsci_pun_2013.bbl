@@ -1,33 +1,6 @@
 \begin{thebibliography}{}
 
 \bibitem[\protect\citeauthoryear{%
-Bergen%
-, Levy%
-\BCBL{}\ \BBA{} Gibson%
-}{%
-Bergen%
-\ \protect\BOthers{.}}{%
-{\protect\APACyear{2012}}%
-}]{%
-bergenverb}%
-\APACinsertmetastar{%
-bergenverb}%
-Bergen, L.%
-, Levy, R.%
-\BCBL{}\ \BBA{} Gibson, E.%
-%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2012}{}{}.
-\newblock
-\BBOQ{}\APACrefatitle{Verb omission errors: Evidence of rational processing of
-  noisy language inputs}{Verb omission errors: Evidence of rational processing
-  of noisy language inputs}.\BBCQ{}
-\newblock
-
-\PrintBackRefs{\CurrentBib}
-
-\bibitem[\protect\citeauthoryear{%
 Binsted%
 }{%
 Binsted%
@@ -179,37 +152,38 @@ Gelkopf, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem[\protect\citeauthoryear{%
-Gibson%
+Griffiths%
+, Steyvers%
+, Blei%
+\BCBL{}\ \BBA{} Tenenbaum%
+}{%
+Griffiths%
 \ \protect\BOthers{.}}{%
-Gibson%
-\ \protect\BOthers{.}}{%
-{\protect\APACyear{2013}}%
+{\protect\APACyear{2005}}%
 }]{%
-gibsonnoisy}%
+griffiths2005integrating}%
 \APACinsertmetastar{%
-gibsonnoisy}%
-Gibson, E.%
-, Piantadosi, S.%
-, Brink, K.%
-, Bergen, L.%
-, Lim, E.%
-\BCBL{}\ \BBA{} Saxe, R.%
+griffiths2005integrating}%
+Griffiths, T.%
+, Steyvers, M.%
+, Blei, D.%
+\BCBL{}\ \BBA{} Tenenbaum, J.%
 %
 \unskip\
 \newblock
-\APACrefYearMonthDay{2013}{}{}.
+\APACrefYearMonthDay{2005}{}{}.
 \newblock
-\BBOQ{}\APACrefatitle{A noisy-channel account of crosslinguistic word order
-  variation}{A noisy-channel account of crosslinguistic word order
-  variation}.\BBCQ{}
+\BBOQ{}\APACrefatitle{Integrating topics and syntax}{Integrating topics and
+  syntax}.\BBCQ{}
 \newblock
-
+\APACjournalVolNumPages{Advances in neural information processing
+  systems}{17}{}{537--544}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem[\protect\citeauthoryear{%
 Hurley%
 , Dennett%
-\BCBL{}\ \BBA{} Adams~Jr%
+\BCBL{}\ \BBA{} Adams%
 }{%
 Hurley%
 \ \protect\BOthers{.}}{%
@@ -220,7 +194,7 @@ hurley2011inside}%
 hurley2011inside}%
 Hurley, M.%
 , Dennett, D.%
-\BCBL{}\ \BBA{} Adams~Jr, R.%
+\BCBL{}\ \BBA{} Adams, R.%
 %
 \unskip\
 \newblock
@@ -307,31 +281,6 @@ Levy, R.%
 \BIn{} \APACrefbtitle{Proceedings of the Conference on Empirical Methods in
   Natural Language Processing}{Proceedings of the conference on empirical
   methods in natural language processing}\ (\BPGS\ 234--243).
-\PrintBackRefs{\CurrentBib}
-
-\bibitem[\protect\citeauthoryear{%
-Levy%
-}{%
-Levy%
-}{%
-{\protect\APACyear{2011}}%
-}]{%
-levy2011integrating}%
-\APACinsertmetastar{%
-levy2011integrating}%
-Levy, R.%
-%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2011}{}{}.
-\newblock
-\BBOQ{}\APACrefatitle{Integrating surprisal and uncertain-input models in
-  online sentence comprehension: formal techniques and empirical
-  results}{Integrating surprisal and uncertain-input models in online sentence
-  comprehension: formal techniques and empirical results}.\BBCQ{}
-\newblock
-\BIn{} \APACrefbtitle{Proceedings of the Association for Computational
-  Linguistics.}{Proceedings of the association for computational linguistics.}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem[\protect\citeauthoryear{%
