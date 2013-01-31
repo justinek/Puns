@@ -11,19 +11,26 @@
 \usepackage{etex}
 \usepackage{tikz}
 \usepackage{array}
+
+%\usepackage{todonotes}
+
 \usetikzlibrary{decorations.shapes}
 \title{The Funny Thing About Incongruity: A Noisy Channel Model of Puns}
  
-\author{{\large \bf Justine Kao (justinek@stanford.edu)} \\
-  Department of Psychology \\
-  Stanford, USA
-  \AND {\large \bf Noah Goodman (ngoodman@stanford.edu)} \\
-  Department of Psychology \\
-  Stanford, USA
-   \AND {\large \bf Roger Levy (rlevy@ucsd.edu)} \\
-  Department of Linguistics \\
-  UCSD, USA
-  }
+ \author{{\large {\bf Justine Kao$^1$} (justinek@stanford.edu)}, {\large {\bf Roger Levy$^2$} (rlevy@ucsd.edu)}, {\large {\bf Noah D.~Goodman$^1$} (ngoodman@stanford.edu)}\\
+  $^1$Department of Psychology, Stanford University. $^2$Department of Linguistics, UCSD. }
+ 
+ 
+%\author{{\large \bf Justine Kao (justinek@stanford.edu)} \\
+%  Department of Psychology \\
+%  Stanford, USA
+%  \AND {\large \bf Noah Goodman (ngoodman@stanford.edu)} \\
+%  Department of Psychology \\
+%  Stanford, USA
+%   \AND {\large \bf Roger Levy (rlevy@ucsd.edu)} \\
+%  Department of Linguistics \\
+%  UCSD, USA
+%  }
 
 
 \begin{document}
@@ -38,13 +45,18 @@
 Humor; language understanding; noisy channel; probabilistic models; sentence processing
 \end{abstract}
 \section{Introduction}
-Humor plays an essential role in human interactions. In a study on gender differences in desired characteristics of relationship partners, both men and women rated sense of humor as more important than physical attractiveness and earning potential \cite{stewart2000sex}. Humor has important positive effects on children's development \cite{frank1989humor}, success in the work place \cite{duncan1990humor}, marital satisfaction \cite{ziv1989humor}, and coping with illness and traumatic events \cite{johnson2002use, gelkopf1996humor}. In this paper, we are interested in understanding how this fundamental and ubiquitous phenomenon works from the perspective of cognitive science. What makes something funny? How might the defining characteristics of humor shed light on the ways in which the mind processes and evaluates information?
+Humor plays an essential role in human interactions: It has important positive effects on children's development \cite{frank1989humor}, success in the work place \cite{duncan1990humor}, coping with illness and traumatic events \cite{johnson2002use, gelkopf1996humor}, and marital satisfaction \cite{ziv1989humor}.
+Indeed, in a study on gender differences in desired characteristics of relationship partners, both men and women rated sense of humor as more important than physical attractiveness and earning potential \cite{stewart2000sex}. 
+In this paper, we are interested in understanding how this fundamental and ubiquitous phenomenon works from the perspective of cognitive science. What makes something funny? How might the defining characteristics of humor shed light on the ways in which the mind processes and evaluates information?
 
-A leading theory of humor posits that incongruity is a necessary condition for sensations of mirth \cite{veale2004incongruity, forabosco1992cognitive, mcghee1979humor, martin2007psychology, hurley2011inside}. The concept of incongruity---perceiving a situation from different viewpoints and finding the subsequent interpretations of the same situation to be incompatible---and its role in humor dates back to Kant's theories about laughter and the sublime \cite{veatch1998theory, forabosco1992cognitive}. Although there is disagreement in the literature about whether incongruity alone is sufficient, most theorists accept that incongruity is necessary for producing sensations of humor. As Veale (2004) states, ``Of the few sweeping generalizations one can make about humor that are neither controversial or trivially false, one is surely that humor is a phenomenon that relies on incongruity." 
+A leading theory of humor posits that incongruity---perceiving a situation from different viewpoints and finding the resulting interpretations to be incompatible---contributes to sensations of mirth \cite{veale2004incongruity, forabosco1992cognitive, mcghee1979humor, martin2007psychology, hurley2011inside}; an idea that dates to Kant's theories about laughter and the sublime \cite{veatch1998theory, forabosco1992cognitive}. Although there is disagreement about whether incongruity alone is sufficient, most theorists accept that incongruity is necessary for producing humor: as Veale (2004) states, ``Of the few sweeping generalizations one can make about humor that are neither controversial or trivially false, one is surely that humor is a phenomenon that relies on incongruity." 
+%(dating to Kant's theories about laughter and the sublime \cite{veatch1998theory, forabosco1992cognitive})
+However, definitions of incongruity are often ambiguous and difficult to operationalize in empirical research. In this paper, we use a computational model of language understanding to formalize a notion of incongruity and tests its relationship to humor. 
 
-While the importance of incongruity has long been recognized, its definitions are often ambiguous and difficult to operationalize in empirical research. In this paper, we propose a computational model of humor that formalizes the concept of incongruity and tests its relationship to humor. Since humor in its entirety relies on commonsense knowledge, reasoning, and discourse understanding that are beyond the scope of this paper, we focus on applying formalizations of incongruity to a subset of linguistic humor: puns.
+Language understanding in general, and particularly humor, relies on rich commonsense knowledge, reasoning, and discourse understanding. To somewhat limit the scope of our task, we focus on applying formalizations of incongruity to a subset of linguistic humor: puns.
+Writer and philosopher Henri Bergson defined a pun as ``a sentence or utterance in which two ideas are expressed, and we are confronted with only one series of words." This definition highlights the fact that one sentence must evoke two different interpretations in order to be a pun, which aligns with the concept of incongruity as a requisite of humor. 
 
-Writer and philosopher Henri Bergson defined a pun as ``a sentence or utterance in which two ideas are expressed, and we are confronted with only one series of words." This definition highlights the fact that one sentence must evoke two different interpretations in order to count as a pun, which aligns with the concept of incongruity as a requisite of humor. We chose to develop our model on homophone puns---puns that contain homophone words---because the space of possible interpretations of a homophone pun is relatively constrained and well-defined. Since distinct interpretations of a homophone pun hinges on one phonetically ambiguous word, interpretations at the sentence level can be approximated by the two lexical forms of the homophone word. An example helps illustrate this idea: 
+We develop our model on homophone puns---puns that contain homophone words---because the space of possible interpretations of a homophone pun is relatively constrained and well-defined. An example helps to illustrate: 
 \begin{itemize}
 \item [] \emph{``The magician got so mad he pulled his hare out."} 
 \end{itemize}
@@ -53,10 +65,11 @@ This sentence allows for two interpretations:
 \item[(a)] The magician got so mad he performed the trick of pulling a rabbit out of his hat.
 \item[(b)] The magician got so mad he (idiomatically) pulled out the hair on his head.
 \end{itemize}
+If the comprehender interprets the word ``hare" as itself, he will arrive at interpretation (a); if he interprets the word as its homophone ``hair," he will arrive at interpretation (b). In other words, the sentence-level differences between interpretations (a) and (b) can be approximated by the two interpretations of the observed word ``hare." In general, distinct interpretations of a homophone pun hinges on one phonetically ambiguous word, allowing the two lexical forms of the homophone word to stand in for competing interpretations of the entire sentence. 
 
-If the comprehender interprets the word ``hare" as itself, he will arrive at interpretation (a); if he interprets the word as its homophone ``hair," he will arrive at interpretation (b). In other words, the sentence-level differences between interpretations (a) and (b) can be approximated by the two interpretations of the observed word ``hare." 
-
-Critically, even though the example we gave was a written pun and the reader sees the word ``hare" explicitly on the page, the ``hair" interpretation is still present and even salient in the context of the sentence. We propose that the reason why two ideas can be communicated through one set of words is because comprehenders maintain uncertainty about the input and consider alternative meanings distinct from what is directly observed. This is inspired by noisy channel models of sentence processing, which posit that language comprehension is a rational process that incorporates uncertainty about the input at the word level to arrive at sentence-level interpretations that are globally coherent \cite{levy2008noisy, levy2009eye}. This process allows the comprehender to maintain multiple word-level interpretations and arrive at more than one interpretations of a sentence that may each be coherent but incongruous with each other. The notion of incongruity thus fits naturally into a noisy channel model of sentence comprehension and can be formalized as such to explain its role in humor.
+Critically, even though the example we gave was a written pun and the reader sees the word ``hare" explicitly on the page, the ``hair" interpretation is still present and even salient in the context of the sentence. 
+%We propose that the reason why two ideas can be communicated through one set of words is because comprehenders maintain uncertainty about the input and consider alternative meanings distinct from what is directly observed. 
+Noisy channel models of sentence processing posit that language comprehension is a rational process that incorporates uncertainty about the input at the word level to arrive at sentence-level interpretations that are globally coherent \cite{levy2008noisy, levy2009eye}. This process allows the comprehender to consider multiple word-level interpretations (``viewpoints'') to arrive at more than one interpretation of a sentence, each coherent but potentially incongruous with each other. The notion of incongruity thus fits naturally into a noisy channel model of sentence comprehension.
 
 Our purposes for developing a formal model of linguistic humor are two-fold. First, we wish to formalize the concept of incongruity and test assumptions adopted by leading theories in humor research. Secondly, we aim to show that a noisy channel of language processing allows for flexible context selection and sentence comprehension that gives rise to sophisticated linguistic and social meaning such as humor. 
 
@@ -221,7 +234,11 @@ Beyond predicting how funny a sentence is, our model can also tell us which part
 \begin{tabular}{ m{6cm}  m{0.7cm}  m{0.7cm} }
 \textbf{Semantic focus sets} & \textbf{D} & \textbf{Funniness}\\\hline
 The $magician$ was so mad he $\underline{\text{pulled}}$ his $hare$ out. & $2.3$ & $1.7$ \\[2ex]\hline
-It was an $\underline{\text{emotional}}$ $\underline{wedding}$. Even the $cake$ was in $tiers$ & $2.3$ & $1.5$\\[2ex]\hlineThe professor got so mad he $\underline{\text{pulled}}$ his $hare$ out & $1.6$ & $0.3$ \\[2ex]\hlineIt was an $\underline{\text{emotional}}$ $\underline{wedding}$. Even the $\underline{\text{mother-in-law}}$ was in $tiers$. & $1.8$ & $0.05$ \\[2ex]\hlineThe $hare$ $ran$ $rapidly$ through the $fields$. & $1.67$ & $-0.4$\\[2ex]\hline$Boxes$ are $stacked$ in $tiers$ in the warehouse. & $2.1$ & $-0.5$\\[2ex]\hline
+It was an $\underline{\text{emotional}}$ $\underline{wedding}$. Even the $cake$ was in $tiers$ & $2.3$ & $1.5$\\[2ex]\hline
+The professor got so mad he $\underline{\text{pulled}}$ his $hare$ out & $1.6$ & $0.3$ \\[2ex]\hline
+It was an $\underline{\text{emotional}}$ $\underline{wedding}$. Even the $\underline{\text{mother-in-law}}$ was in $tiers$. & $1.8$ & $0.05$ \\[2ex]\hline
+The $hare$ $ran$ $rapidly$ through the $fields$. & $1.67$ & $-0.4$\\[2ex]\hline
+$Boxes$ are $stacked$ in $tiers$ in the warehouse. & $2.1$ & $-0.5$\\[2ex]\hline
 \end{tabular}
 
 

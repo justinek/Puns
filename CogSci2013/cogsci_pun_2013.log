@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  31 JAN 2013 04:04
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  31 JAN 2013 08:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -499,24 +499,24 @@ s.code.tex
 brarydecorations.shapes.code.tex)) (./cogsci_pun_2013.aux)
 \openout1 = `cogsci_pun_2013.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 29.
-LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 29
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 36.
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 36
 .
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/apacite/english.apc
 File: english.apc 2012/02/25 v6.01 apacite language file
@@ -634,82 +634,94 @@ Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
-LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 31
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 38
 .
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 31
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 38
 .
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omlptmcm.fd
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+psycm on input line 31
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 38
 .
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omxpsycm.fd
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
-LaTeX Font Info:    Try loading font information for U+msa on input line 31.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 31.
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
- [1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+
+Underfull \hbox (badness 1400) in paragraph at lines 52--55
+[]\OT1/ptm/m/n/10 A lead-ing the-ory of hu-mor posits that incongruity---
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 52--55
+\OT1/ptm/m/n/10 to sen-sa-tions of mirth []Veale, 2004; Fora-bosco, 1992;
+ []
+
+[1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
 ]
-Underfull \hbox (badness 1755) in paragraph at lines 109--110
+Underfull \hbox (badness 1755) in paragraph at lines 122--123
 []\OT1/ptm/m/n/10 We de-rive two mea-sures sep-a-rately from the fac-tors
  []
 
-[2]
 Missing character: There is no Ð in font ptmr7t!
+[2]
 Missing character: There is no Ò in font ptmr7t!
 Missing character: There is no Ó in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--158
+Underfull \hbox (badness 10000) in paragraph at lines 163--171
 
  []
 
 
-Overfull \hbox (17.76694pt too wide) in paragraph at lines 150--158
+Overfull \hbox (17.76694pt too wide) in paragraph at lines 163--171
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--158
+Underfull \hbox (badness 10000) in paragraph at lines 163--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--158
+Underfull \hbox (badness 10000) in paragraph at lines 163--171
 
  []
 
 
-Overfull \hbox (13.3272pt too wide) detected at line 163
+Overfull \hbox (13.3272pt too wide) detected at line 176
 \OML/ptmcm/m/it/10 R\OT1/ptmcm/m/n/10 (\OML/ptmcm/m/it/10 w; m\OT1/ptmcm/m/n/10
  ) = [] = [] [] = [] \OML/ptmcm/m/it/10 P\OT1/ptmcm/m/n/10 (\OML/ptmcm/m/it/10 
 w\OMS/pzccm/m/n/10 j\OML/ptmcm/m/it/10 m\OT1/ptmcm/m/n/10 ) \OMS/pzccm/m/n/10 ^
@@ -717,66 +729,63 @@ w\OMS/pzccm/m/n/10 j\OML/ptmcm/m/it/10 m\OT1/ptmcm/m/n/10 ) \OMS/pzccm/m/n/10 ^
 /10 )
  []
 
-[3] <Plots/relatedness_example.png, id=23, 572.1375pt x 451.6875pt>
+<Plots/relatedness_example.png, id=20, 572.1375pt x 451.6875pt>
 File: Plots/relatedness_example.png Graphic file (type png)
 
 <use Plots/relatedness_example.png>
-Package pdftex.def Info: Plots/relatedness_example.png used on input line 175.
+Package pdftex.def Info: Plots/relatedness_example.png used on input line 188.
 (pdftex.def)             Requested size: 572.1361pt x 451.68639pt.
 
-<Plots/ave_relatedness_funniness.png, id=25, 572.1375pt x 451.6875pt>
+<Plots/ave_relatedness_funniness.png, id=22, 572.1375pt x 451.6875pt>
 File: Plots/ave_relatedness_funniness.png Graphic file (type png)
 
 <use Plots/ave_relatedness_funniness.png>
 Package pdftex.def Info: Plots/ave_relatedness_funniness.png used on input line
- 180.
+ 193.
 (pdftex.def)             Requested size: 572.1361pt x 451.68639pt.
 
-Overfull \hbox (19.27518pt too wide) in paragraph at lines 180--181
+Overfull \hbox (19.27518pt too wide) in paragraph at lines 193--194
 [][] 
  []
 
-
-Underfull \vbox (badness 3229) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1817) in paragraph at lines 195--202
+[3]
+Underfull \hbox (badness 1817) in paragraph at lines 208--215
 []\OT1/ptm/m/n/10 Using both am-bi-gu-ity and dis-joint-ed-ness as the two
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--202
+Underfull \hbox (badness 10000) in paragraph at lines 208--215
 \OT1/ptm/m/n/10 di-men-sions that for-mal-ize in-con-gruity, we can dis-
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 195--202
+Underfull \hbox (badness 4634) in paragraph at lines 208--215
 \OT1/ptm/m/n/10 tin-guish among puns, non-puns, and de-punned sen-
  []
 
 
-Underfull \hbox (badness 3690) in paragraph at lines 195--202
+Underfull \hbox (badness 3690) in paragraph at lines 208--215
 \OT1/ptm/m/n/10 tences. Both am-bi-gu-ity and dis-joint-ed-ness mea-sures
  []
 
 
-Underfull \hbox (badness 1062) in paragraph at lines 195--202
+Underfull \hbox (badness 1062) in paragraph at lines 208--215
 \OT1/ptm/m/n/10 are sig-nif-i-cant pre-dic-tors of hu-man rat-ings of fun-ni-ne
 ss
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--202
+Underfull \hbox (badness 10000) in paragraph at lines 208--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--202
+Underfull \hbox (badness 10000) in paragraph at lines 208--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--202
+Underfull \hbox (badness 10000) in paragraph at lines 208--215
 
  []
 
@@ -785,10 +794,10 @@ File: Plots/ambiguity_disjointedness_ellipse.png Graphic file (type png)
 
 <use Plots/ambiguity_disjointedness_ellipse.png>
 Package pdftex.def Info: Plots/ambiguity_disjointedness_ellipse.png used on inp
-ut line 205.
+ut line 218.
 (pdftex.def)             Requested size: 572.1361pt x 451.68639pt.
 
-Overfull \hbox (13.54823pt too wide) in paragraph at lines 205--206
+Overfull \hbox (13.54823pt too wide) in paragraph at lines 218--219
 [][] 
  []
 
@@ -799,10 +808,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Plots/contour_plot.png Graphic file (type png)
 
 <use Plots/contour_plot.png>
-Package pdftex.def Info: Plots/contour_plot.png used on input line 211.
+Package pdftex.def Info: Plots/contour_plot.png used on input line 224.
 (pdftex.def)             Requested size: 572.1361pt x 451.68639pt.
 
-Overfull \hbox (13.54823pt too wide) in paragraph at lines 211--212
+Overfull \hbox (13.54823pt too wide) in paragraph at lines 224--225
 [][] 
  []
 
@@ -810,54 +819,56 @@ Overfull \hbox (13.54823pt too wide) in paragraph at lines 211--212
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (23.43251pt too wide) in paragraph at lines 222--222
+Overfull \hbox (23.43251pt too wide) in paragraph at lines 235--235
 []|\OT1/ptm/b/n/10 Funniness| 
  []
 
 
-Overfull \hbox (0.62296pt too wide) in paragraph at lines 227--227
+Overfull \hbox (0.62296pt too wide) in paragraph at lines 240--240
 []|$\OMS/pzccm/m/n/10 ^^@\OT1/ptmcm/m/n/10 0\OML/ptmcm/m/it/10 :\OT1/ptmcm/m/n/
 10 4$|| 
  []
 
 
-Overfull \hbox (0.62296pt too wide) in paragraph at lines 228--228
+Overfull \hbox (0.62296pt too wide) in paragraph at lines 241--241
 []|$\OMS/pzccm/m/n/10 ^^@\OT1/ptmcm/m/n/10 0\OML/ptmcm/m/it/10 :\OT1/ptmcm/m/n/
 10 5$|| 
  []
 
 
-Overfull \hbox (2.63895pt too wide) in paragraph at lines 217--230
+Overfull \hbox (2.63895pt too wide) in paragraph at lines 230--243
 [] 
  []
 
 [4 <./Plots/relatedness_example.png> <./Plots/ave_relatedness_funniness.png>]
-(./cogsci_pun_2013.bbl [5 <./Plots/ambiguity_disjointedness_ellipse.png> <./Plo
-ts/contour_plot.png>]
+(./cogsci_pun_2013.bbl
 Missing character: There is no Õ in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
-) [6] (./cogsci_pun_2013.aux) ) 
+ [5 <./Plots/ambiguity_disjointedness_ellipse.png> <./Plots/contour_plot.png>])
+ [6
+
+] (./cogsci_pun_2013.aux) ) 
 Here is how much of TeX's memory you used:
- 12847 strings out of 493488
- 243562 string characters out of 3141326
- 286104 words of memory out of 3000000
- 15861 multiletter control sequences out of 15000+200000
- 33417 words of font info for 68 fonts, out of 3000000 for 9000
+ 12867 strings out of 493488
+ 243832 string characters out of 3141326
+ 287089 words of memory out of 3000000
+ 15877 multiletter control sequences out of 15000+200000
+ 41848 words of font info for 87 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,14n,77p,1137b,631s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dv
-ips/base/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmex10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/symbol/usyr.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/
-2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cogsci_pun_2013.pdf (6 pages, 201502 bytes).
+ 56i,14n,77p,1014b,631s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/
+base/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmex10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012
+/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on cogsci_pun_2013.pdf (6 pages, 200129 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
