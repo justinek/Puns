@@ -10,6 +10,7 @@
 \usepackage{subcaption}
 \usepackage{etex}
 \usepackage{tikz}
+\usepackage{array}
 \usetikzlibrary{decorations.shapes}
 \title{The Funny Thing About Incongruity: A Noisy Channel Model of Puns}
  
@@ -62,7 +63,7 @@ Our purposes for developing a formal model of linguistic humor are two-fold. Fir
 \section{Model}
 Our model adopts a noisy channel approach in which a comprehender maintains uncertainty about an observed word and considers alternative interpretations. Given two candidate interpretations of the word, the comprehender determines whether one or both interpretations are likely by selectively using contextual information from the sentence. 
 
-Previous research suggests that semantic priming plays an important role in lexical disambiguation during sentence processing. In particular, efficient processing of sentences that contain lexical ambiguity involves leveraging semantic association with neighboring words \cite{seidenberg1982automatic, simpson1981meaning, burke1984semantic, smith2011cloze}. Based on these findings, we propose that comprehenders use semantic information from the surrounding words to compute the probabilities of a candidate interpretation. Motivated by the incongruity theory of humor, we then predict that a sentence in which the target homophone word has two candidate interpretations that are similarly likely and supported by different viewpoints of the sentence is more likely to be funny. 
+Previous research suggests that semantic priming plays an important role in lexical disambiguation during sentence processing. In particular, efficient processing of sentences that contain lexical ambiguity involves leveraging semantic association with neighboring words \cite{seidenberg1982automatic, simpson1981meaning, burke1984semantic}. Based on these findings, we propose that comprehenders use semantic information from the surrounding words to compute the probabilities of a candidate interpretation. Motivated by the incongruity theory of humor, we then predict that a sentence in which the target homophone word has two candidate interpretations that are similarly likely and supported by different viewpoints of the sentence is more likely to be funny. 
 
 Suppose a sentence is composed of a vector of content words $\vec w = \{w_1, \dots ,w_n\}$ and a phonetically ambiguous word $h$ (remains to be decided if we want to say that $h$ is part of $\vec w$ or distinct). Since we assume that the candidate interpretations of $h$ are constrained by phonetic similarity, we make the simplifying assumption that only the two homophone interpretations of $h$ are salient and probable: $m_1$ and $m_2$. For example, in the magician pun described above, $h$ is the observed lexical item ``hare," and $m_1$ and $m_2$ are the interpretations \emph{hare} and \emph{hair}.
 
@@ -150,7 +151,7 @@ Below are example sentences from each category.\\\\
 \begin{tabular}{| l | l |}\hline
 \textbf{Type} & \textbf{Example} \\\hline
 Pun & ``The magician got so mad he pulled his hare out." \\
-De-pun & ``The teacher got so mad he pulled his hare out."\\
+De-pun & ``The professor got so mad he pulled his hare out."\\
 Non-pun& ``The hare ran rapidly across the field."\\
 Non-pun& ``Some people have lots of hair on their heads."\\\hline
 \end{tabular}\\\\
@@ -202,18 +203,26 @@ Disjointedness & $0.237$ & $0.054$ & $1.81e^{-05}$ ***\\\hline
 
 \begin{figure}[h]
 \scalebox{0.45}{\includegraphics{Plots/ambiguity_disjointedness_ellipse.png}}
-\caption{Ambiguity and disjointedness across sentence types}
+\caption{Standard error ellipses of ambiguity and disjointedness across sentence types}
 \end{figure}
 
 
 \begin{figure}[h]
 \scalebox{0.45}{\includegraphics{Plots/contour_plot.png}}
-\caption{Ambiguity and disjointedness across sentence types}
+\caption{Ambiguity and disjointedness with funniness contours}
 \end{figure}
 
 \subsubsection{Semantic focus sets}
 
-Show that our model is able to select contexts that give maximal incongruity and maximal justification, which can tell us \emph{why} a pun is funny in addition to when it is funny. 
+Beyond predicting how funny a sentence is, our model can also tell us which particular features of a pun make it so amusing. By finding the semantic focus sets $\vec f$ that are most likely given the observed words and latent meaning variable $m$, we can identify words in a sentence that are likely to be in semantic focus given each of the two values of $m$. We present a few examples in the table below.
+%\newcolumntype{C}{ >{\centering\arraybackslash} m{4cm} }
+%\newcolumntype{D}{ >{\centering\arraybackslash} m{1cm} }
+%\newcolumntype{E}{ >{\centering\arraybackslash} m{1cm} }
+\begin{tabular}{ m{6cm}  m{0.7cm}  m{0.7cm} }
+\textbf{Semantic focus sets} & \textbf{D} & \textbf{Funniness}\\\hline
+The $magician$ was so mad he $\underline{\text{pulled}}$ his $hare$ out. & $2.3$ & $1.7$ \\[2ex]\hline
+It was an $\underline{\text{emotional}}$ $\underline{wedding}$. Even the $cake$ was in $tiers$ & $2.3$ & $1.5$\\[2ex]\hlineThe professor got so mad he $\underline{\text{pulled}}$ his $hare$ out & $1.6$ & $0.3$ \\[2ex]\hlineIt was an $\underline{\text{emotional}}$ $\underline{wedding}$. Even the $\underline{\text{mother-in-law}}$ was in $tiers$. & $1.8$ & $0.05$ \\[2ex]\hlineThe $hare$ $ran$ $rapidly$ through the $fields$. & $1.67$ & $-0.4$\\[2ex]\hline$Boxes$ are $stacked$ in $tiers$ in the warehouse. & $2.1$ & $-0.5$\\[2ex]\hline
+\end{tabular}
 
 
 \section{Discussion}
