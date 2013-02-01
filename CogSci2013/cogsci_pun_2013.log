@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  1 FEB 2013 00:30
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  1 FEB 2013 00:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -835,7 +835,7 @@ Missing character: There is no ± in font ptmr7t!
 Here is how much of TeX's memory you used:
  13170 strings out of 493488
  249089 string characters out of 3141326
- 301934 words of memory out of 3000000
+ 301935 words of memory out of 3000000
  16159 multiletter control sequences out of 15000+200000
  40735 words of font info for 85 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -849,7 +849,7 @@ cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/symbol/usyr.pfb>
 </usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loca
 l/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/
 2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cogsci_pun_2013.pdf (6 pages, 218754 bytes).
+Output written on cogsci_pun_2013.pdf (6 pages, 218774 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
