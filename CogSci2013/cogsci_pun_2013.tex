@@ -1,16 +1,23 @@
 \documentclass[10pt,letterpaper]{article}
-
+\usepackage{multirow}
 \usepackage{cogsci}
 \usepackage{pslatex}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage{setspace}
 \usepackage{apacite}
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{etex}
+\usepackage{color}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{tikz}
 \usepackage{array}
+
+
+
 
 %\usepackage{todonotes}
 
@@ -45,7 +52,7 @@
 Humor; language understanding; noisy channel; probabilistic models; sentence processing
 \end{abstract}
 \section{Introduction}
-Humor plays an essential role in human interactions: It has important positive effects on children's development \cite{frank1989humor}, success in the work place \cite{duncan1990humor}, coping with illness and traumatic events \cite{johnson2002use, gelkopf1996humor}, and marital satisfaction \cite{ziv1989humor}.
+Humor plays an essential role in human interactions: it has important positive effects on children's development \cite{frank1989humor}, success in the work place \cite{duncan1990humor}, coping with illness and traumatic events \cite{johnson2002use, gelkopf1996humor}, and marital satisfaction \cite{ziv1989humor}.
 Indeed, in a study on gender differences in desired characteristics of relationship partners, both men and women rated sense of humor as more important than physical attractiveness and earning potential \cite{stewart2000sex}. 
 In this paper, we are interested in understanding how this fundamental and ubiquitous phenomenon works from the perspective of cognitive science. What makes something funny? How might the defining characteristics of humor shed light on the ways in which the mind processes and evaluates information?
 
@@ -163,10 +170,10 @@ The $130$ non-pun sentences were chosen to match each pun sentence on its ambigu
 Below are example sentences from each category.\\\\
 \begin{tabular}{| l | l |}\hline
 \textbf{Type} & \textbf{Example} \\\hline
-Pun & ``The magician got so mad he pulled his hare out." \\
-De-pun & ``The professor got so mad he pulled his hare out."\\
-Non-pun& ``The hare ran rapidly across the field."\\
-Non-pun& ``Some people have lots of hair on their heads."\\\hline
+Pun & The magician got so mad he pulled his hare out. \\
+De-pun & The professor got so mad he pulled his hare out.\\
+Non-pun& The hare ran rapidly across the field.\\
+Non-pun& Some people have lots of hair on their heads.\\\hline
 \end{tabular}\\\\
 \subsection{Human ratings of semantic relatedness}
 
@@ -221,25 +228,38 @@ Disjointedness & $0.237$ & $0.054$ & $1.81e^{-05}$ ***\\\hline
 
 
 \begin{figure}[h]
-\scalebox{0.45}{\includegraphics{Plots/contour_plot.png}}
+\scalebox{0.47}{\includegraphics{Plots/contour_plot.png}}
 \caption{Ambiguity and disjointedness with funniness contours}
 \end{figure}
 
 \subsubsection{Semantic focus sets}
 
 Beyond predicting how funny a sentence is, our model can also tell us which particular features of a pun make it so amusing. By finding the semantic focus sets $\vec f$ that are most likely given the observed words and latent meaning variable $m$, we can identify words in a sentence that are likely to be in semantic focus given each of the two values of $m$. We present a few examples in the table below.
-%\newcolumntype{C}{ >{\centering\arraybackslash} m{4cm} }
-%\newcolumntype{D}{ >{\centering\arraybackslash} m{1cm} }
-%\newcolumntype{E}{ >{\centering\arraybackslash} m{1cm} }
-\begin{tabular}{ m{6cm}  m{0.7cm}  m{0.7cm} }
-\textbf{Semantic focus sets} & \textbf{D} & \textbf{Funniness}\\\hline
-The $magician$ was so mad he $\underline{\text{pulled}}$ his $hare$ out. & $2.3$ & $1.7$ \\[2ex]\hline
-It was an $\underline{\text{emotional}}$ $\underline{wedding}$. Even the $cake$ was in $tiers$ & $2.3$ & $1.5$\\[2ex]\hline
-The professor got so mad he $\underline{\text{pulled}}$ his $hare$ out & $1.6$ & $0.3$ \\[2ex]\hline
-It was an $\underline{\text{emotional}}$ $\underline{wedding}$. Even the $\underline{\text{mother-in-law}}$ was in $tiers$. & $1.8$ & $0.05$ \\[2ex]\hline
-The $hare$ $ran$ $rapidly$ through the $fields$. & $1.67$ & $-0.4$\\[2ex]\hline
-$Boxes$ are $stacked$ in $tiers$ in the warehouse. & $2.1$ & $-0.5$\\[2ex]\hline
+\begin{spacing}{2.5}
+\begin{center}
+\begin{table*}[ht]
+\hfill{}
+\begin{tabular}{|c|c|l|l|c|c|r|}
+\hline
+\textbf{$m1$}& \textbf{$m2$} & \textbf{Type} & \textbf{Semantic focus sets}& \textbf{Amb.} & \textbf{Disj.} & \textbf{Funniness}\\\hline
+\multirow{4}{*}{{\color{Red} hare}} & \multirow{4}{*}{{\color{Emerald} hair}} & Pun & The \textbf{{\color{Red}magician}} got so mad he \textbf{{\color{Emerald}pulled}} his \textbf{{\color{Red}hare}} out. & $0.378$ & $2.291$ & $1.714$\\
+&&De-pun & The professor got so mad he \textbf{{\color{Emerald} pulled}} his \textbf{{\color{Red} hare}} out. & $0.048$ & $1.832$ & $-0.103$\\
+&&Non-pun & The \textbf{{\color{Red} hare}} \textbf{{\color{Red} ran}} \textbf{{\color{Red} rapidly}} through the \textbf{{\color{Red} fields}}. & $0.447$ &	$1.677$ &	$-0.400$\\
+&&Non-pun & Most \textbf{{\color{Emerald} people}} have \textbf{{\color{Emerald} lots}} of \textbf{{\color{Emerald} hair}} on their \textbf{{\color{Emerald} heads}}. & $0.0004$ &	$2.807$ & $-0.343$ \\\hline
+\multirow{4}{*}{{\color{Red} tiers}} & \multirow{4}{*}{{\color{Emerald} tears}} & Pun & It was an \textbf{{\color{Emerald} emotional}} \textbf{{\color{NavyBlue} wedding}}. Even the \textbf{{\color{Red} cake}} was in \textbf{{\color{Red} tiers.}} & $0.612$ & $2.311$ & $1.541$\\
+&&De-pun & It was an \textbf{{\color{Emerald} emotional}} \textbf{{\color{NavyBlue} wedding}}. Even the \textbf{{\color{Emerald} mother-in-law}} was in \textbf{{\color{Red} tiers}}. & $0.189$ & $1.802$ &	$0.057$ \\
+
+&&Non-pun & \textbf{{\color{Red} Boxes}} are \textbf{{\color{Red}stacked}} in \textbf{{\color{Red} tiers}} in the warehouse. & $0.194$ & 	$2.089$ &	$-0.560$\\
+
+&&Non-pun & \textbf{{\color{Emerald} Tears}} ran down her \textbf{{\color{Emerald} cheeks}} as she watched a \textbf{{\color{Emerald} sad}} \textbf{{\color{Emerald} movie}}.& $0.0003$	& $3.283$ &	$-0.569$ \\
+\hline
 \end{tabular}
+\hfill{}
+\caption{Semantic focus sets of example sentences}
+\label{tb:focusExamples}
+\end{table*}
+\end{center}
+\end{spacing}
 
 
 \section{Discussion}
