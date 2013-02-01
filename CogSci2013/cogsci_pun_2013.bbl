@@ -469,35 +469,6 @@ Simpson, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem[\protect\citeauthoryear{%
-Smith%
-\ \BBA{} Levy%
-}{%
-Smith%
-\ \BBA{} Levy%
-}{%
-{\protect\APACyear{2011}}%
-}]{%
-smith2011cloze}%
-\APACinsertmetastar{%
-smith2011cloze}%
-Smith, N.%
-\BCBT{}\ \BBA{} Levy, R.%
-%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2011}{}{}.
-\newblock
-\BBOQ{}\APACrefatitle{Cloze but no cigar: The complex relationship between
-  cloze, corpus, and subjective probabilities in language processing}{Cloze but
-  no cigar: The complex relationship between cloze, corpus, and subjective
-  probabilities in language processing}.\BBCQ{}
-\newblock
-\BIn{} \APACrefbtitle{Proceedings of the 33rd Annual Meeting of the Cognitive
-  Science Conference.}{Proceedings of the 33rd annual meeting of the cognitive
-  science conference.}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem[\protect\citeauthoryear{%
 Stewart%
 , Stinnett%
 \BCBL{}\ \BBA{} Rosenfeld%

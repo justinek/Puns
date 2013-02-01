@@ -10,6 +10,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{etex}
+%\usepackage{subfigure}
 \usepackage{color}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage[usenames,dvipsnames]{xcolor}
@@ -58,7 +59,7 @@ In this paper, we are interested in understanding how this fundamental and ubiqu
 
 A leading theory of humor posits that incongruity---perceiving a situation from different viewpoints and finding the resulting interpretations to be incompatible---contributes to sensations of mirth \cite{veale2004incongruity, forabosco1992cognitive, mcghee1979humor, martin2007psychology, hurley2011inside}; an idea that dates to Kant's theories about laughter and the sublime \cite{veatch1998theory, forabosco1992cognitive}. Although there is disagreement about whether incongruity alone is sufficient, most theorists accept that incongruity is necessary for producing humor: as Veale (2004) states, ``Of the few sweeping generalizations one can make about humor that are neither controversial or trivially false, one is surely that humor is a phenomenon that relies on incongruity." 
 %(dating to Kant's theories about laughter and the sublime \cite{veatch1998theory, forabosco1992cognitive})
-However, definitions of incongruity are often ambiguous and difficult to operationalize in empirical research. In this paper, we use a computational model of language understanding to formalize a notion of incongruity and tests its relationship to humor. 
+However, definitions of incongruity are often ambiguous and difficult to operationalize in empirical research. In this paper, we use a computational model of language understanding to formalize a notion of incongruity and test its relationship to humor. 
 
 Language understanding in general, and particularly humor, relies on rich commonsense knowledge, reasoning, and discourse understanding. To somewhat limit the scope of our task, we focus on applying formalizations of incongruity to a subset of linguistic humor: puns.
 Writer and philosopher Henri Bergson defined a pun as ``a sentence or utterance in which two ideas are expressed, and we are confronted with only one series of words." This definition highlights the fact that one sentence must evoke two different interpretations in order to be a pun, which aligns with the concept of incongruity as a requisite of humor. 
@@ -81,14 +82,13 @@ Noisy channel models of sentence processing posit that language comprehension is
 Our purposes for developing a formal model of linguistic humor are two-fold. First, we wish to formalize the concept of incongruity and test assumptions adopted by leading theories in humor research. Secondly, we aim to show that a noisy channel of language processing allows for flexible context selection and sentence comprehension that gives rise to sophisticated linguistic and social meaning such as humor. 
 
 \section{Model}
-Our model adopts a noisy channel approach in which a comprehender maintains uncertainty about an observed word and considers alternative interpretations. Given two candidate interpretations of the word, the comprehender determines whether one or both interpretations are likely by selectively using contextual information from the sentence. 
+We propose a computational model for general sentence comprehension that incorporates a noisy channel approach and semantic information to arrive at optimal global interpretations of a sentence. Based on the incongruity theory of humor, we derive measures of incongruity from the model to predict humans' judgements of funniness. Given a sentence that contains a phonetically ambiguous target word, a comprehender maintains uncertainty over the observed input and uses contextual cues to infer the latent interpretation of the target word. If the resulting interpretation is unambiguous, then no incongruity exists and the sentence is unlikely to be funny. If the resulting interpretation is ambiguous, and furthermore if each interpretation is supported by an aspect or ``viewpoint" of the sentence, then the sentence is likely to evoke a sense of incongruity and humor. 
 
-Previous research suggests that semantic priming plays an important role in lexical disambiguation during sentence processing. In particular, efficient processing of sentences that contain lexical ambiguity involves leveraging semantic association with neighboring words \cite{seidenberg1982automatic, simpson1981meaning, burke1984semantic}. Based on these findings, we propose that comprehenders use semantic information from the surrounding words to compute the probabilities of a candidate interpretation. Motivated by the incongruity theory of humor, we then predict that a sentence in which the target homophone word has two candidate interpretations that are similarly likely and supported by different viewpoints of the sentence is more likely to be funny. 
+Previous research suggests that semantic priming plays an important role in lexical disambiguation during sentence processing. In particular, efficient processing of sentences that contain lexical ambiguity involves leveraging semantic association with neighboring words \cite{seidenberg1982automatic, simpson1981meaning, burke1984semantic}. We begin with a bag-of-words model of language and make the simplifying assumption that comprehenders use only semantic association information to compute the probabilities of a candidate interpretation. 
 
-Suppose a sentence is composed of a vector of content words $\vec w = \{w_1, \dots ,w_n\}$ and a phonetically ambiguous word $h$ (remains to be decided if we want to say that $h$ is part of $\vec w$ or distinct). Since we assume that the candidate interpretations of $h$ are constrained by phonetic similarity, we make the simplifying assumption that only the two homophone interpretations of $h$ are salient and probable: $m_1$ and $m_2$. For example, in the magician pun described above, $h$ is the observed lexical item ``hare," and $m_1$ and $m_2$ are the interpretations \emph{hare} and \emph{hair}.
-
-We propose a generative model of a sentence in which the latent variable $m$ and a latent indicator variable $\vec f$ are responsible for generating the observed words. $\vec f$ is a vector of indicator values that determines whether each word in a sentence is in semantic focus. When $f_i = 1$, $w_i$ is in semantic focus and is generated due to semantic relevance to $m$. Otherwise if $f_i = 0$, $w_i$ is simply drawn from a default unigram distribution. Similar approaches have been used in generative models of language to account for words that serve purposes in a sentence beyond providing semantic information, such as topic models that incorporate syntax \cite{griffiths2005integrating}. For our purposes, the indicator variable allows the model to consider subsets of the sentence as viewpoints that differentially support the two candidate interpretations of $h$. 
-\begin{center}
+Suppose a sentence is composed of a vector of content words $\vec w = \{w_1, \dots ,w_n\}$ and a phonetically ambiguous word $h$. We make the simplifying assumption that candidate interpretations of $h$ are constrained by phonetic similarity. As a result, only the two homophone interpretations of $h$ are salient and probable: $m_1$ and $m_2$. For example, in the magician pun described above, $h$ is the phonetically ambiguous target word ``hare," and  $m_1$ and $m_2$ are the candidate interpretations \emph{hare} and \emph{hair}, respectively. 
+\begin{figure}
+\centering
 \tikzset{decorate sep/.style 2 args=
 {decorate,decoration={shape backgrounds,shape=circle,shape size=#1,shape sep=#2}}}
 \begin{tikzpicture}
@@ -117,26 +117,28 @@ We propose a generative model of a sentence in which the latent variable $m$ and
 \draw[decorate sep={0.3mm}{1.65mm},fill] (1.09,1) -- (1.45,1);
 \draw[decorate sep={0.3mm}{1.65mm},fill] (1.09,-0.5) -- (1.45,-0.5);
 \end{tikzpicture}
+\caption{Generative model of a sentence}
+\label{generativeModel}
+\end{figure}
 
+We propose a generative model of a sentence in which the latent meaning variable $m$ and a latent indicator variable $\vec f$ are responsible for generating the observed words (see Figure~\ref{generativeModel}). Although the target word $h$ is special in the sense that it constrains the space of interpretations to its homophone meanings $m_1$ and $m_2$, in the model we treat $h$ as a contextual cue similar to other words in its relationship to the latent meaning variable $m$ and indicator variable $f_h$. For simplicity of notation, in the following derivations, $\vec w$ includes the target word $h$, and $\vec f$ includes the indicator variable for $h$, $f_h$. $\vec f$ is a vector of indicator values that determines whether each word in a sentence is in semantic focus. When $f_i = 1$, $w_i$ is in semantic focus and is generated due to semantic relevance to $m$. Otherwise if $f_i = 0$, $w_i$ is simply drawn from a default unigram distribution. Similar approaches have been used in generative models of language to account for words that serve purposes in a sentence beyond providing semantic information, such as topic models that incorporate syntax \cite{griffiths2005integrating}. For our purposes, the indicator variable allows the model to consider subsets of the sentence as viewpoints that may differentially support the two candidate interpretations $m_1$ and $m_2$. 
 
-\end{center}
-
-Given our generative model and the observed words $w$ and $h$, we can infer the joint probability distribution of the latent variables $m$ and $\vec f$ given the observed words. This distribution can be factorized into:
+Using the generative model of a sentence, we can infer the joint probability distribution of the latent variables $m$ and $\vec f$ given the observed words $\vec w$ and $h$. This distribution can be factorized into:
 $$
 P(m, \vec f | \vec w) = P(m | \vec w) P(\vec f | m, \vec w) 
 $$
 
-We derive two measures separately from the factors $P(m | \vec w)$ and $P(\vec f | m, \vec w)$, which we will call ambiguity and disjointedness. Together, these two measures represent our formalization of incongruity. A sentence should support two interpretations (and is therefore ambiguous) in order to generate incongruous interpretations. In addition, the two interpretations should also be supported by different viewpoints of the sentence, which we approximate as the disjointedness of the subsets of the sentence that are in semantic focus with the two values of $m$. We derive these two measures more formally in the following paragraphs.
+We derive two measures separately from the factors $P(m | \vec w)$ and $P(\vec f | m, \vec w)$, which we will call \emph{ambiguity} and \emph{distinctiveness}. Ambiguity means the presence of two similarly likely interpretations, which is required for incongruity because a single unambiguous interpretation cannot be incongruous with itself. Distinctiveness means the two interpretations are supported by different viewpoints of the sentence, which we approximate as words that are in semantic focus with the two values of $m$. Together, these two measures represent our formalization of incongruity. 
 
-\subsubsection{Ambiguity} Let $M$ denote the distribution $P(m | \vec w)$, a binomial distribution over the two meaning values $m_1$ and $m_2$ given the observed words. If the entropy of this distribution $H(M)$ is low, this means that the probability mass is concentrated on only one meaning, and the alternative meaning is unlikely given the observed words. If $H(M)$ is high, on the other hand, this means that the probability mass is more evenly distributed among $m_1$ and $m_1$, and the two interpretations are similarly likely given the contexts. $H(M)$ is thus a natural measure of the degree of ambiguity present in a sentence. 
+\subsubsection{Ambiguity} Let $M$ denote the distribution $P(m | \vec w)$, a binomial distribution over the two meaning values $m_1$ and $m_2$ given the observed words. If the entropy of this distribution $H(M)$ is low, this means that the probability mass is concentrated on only one meaning, and the alternative meaning is unlikely given the observed words. If $H(M)$ is high, this means that the probability mass is more evenly distributed among $m_1$ and $m_1$, and the two interpretations are similarly likely given the contexts. $H(M)$ is thus a natural measure of the degree of ambiguity present in a sentence. 
 
-From conditional probability, we compute $P(m | \vec w)$ as follows:
+We compute $P(m | \vec w)$ as follows:
 $$
 P(m | \vec w) = \sum_{\vec f} P(m, \vec f | \vec w) 
 $$
 From Bayes' theorem, this is proportional to the following:
 $$
-\sum_{\vec f} P(\vec w | m, \vec f) P(m) P(\vec f)= \sum_{\vec f} P(m)P(\vec f)\prod_i P(w_i | m, f_i)
+\sum_{\vec f} P(\vec w | m, \vec f) P(m) P(\vec f)= \sum_{\vec f} \bigg (P(m)P(\vec f)\prod_i P(w_i | m, f_i) \bigg)
 $$
 From the generative model, 
 \[
@@ -148,36 +150,40 @@ From the generative model,
 \]
 We then compute the entropy of $P(m | w)$ as a measure of ambiguity.
 
-\subsubsection{Disjointedness} Let $F_1$ denote the distribution $P(f | m_1, \vec w)$ and $F_2$ denote the distribution $P(f | m_2, \vec w)$. $F_1$ and $F_2$ represent the distributions over semantic focus sets given the observed words and $m_1$ and $m_2$, respectively. We use a symmetrised Kullback–Leibler divergence score $D_{KL}(F_1 || F_2) + D_{KL}(F_2 || F_1)$ to measure the distance between the two distributions. This score approximates the disjointedness of the semantic focus sets given $m_1$ and $m_2$. A low KL score would indicate that $m_1$ and $m_2$ are likely to be in semantic focus with similar subsets of the sentence; a high KL score would indicate that $m_1$ and $m_2$ are likely to be in semantic focus with different subsets of the sentence.
+\subsubsection{Distinctiveness} Let $F_1$ denote the distribution $P(f | m_1, \vec w)$ and $F_2$ denote the distribution $P(f | m_2, \vec w)$. $F_1$ and $F_2$ represent the distributions over semantic focus sets given the observed words and $m_1$ and $m_2$, respectively. We use a symmetrised Kullback–Leibler divergence score $D_{KL}(F_1 || F_2) + D_{KL}(F_2 || F_1)$ to measure the distance between the two distributions. This score measures how ``distinct" the semantic focus sets are given $m_1$ and $m_2$. A low KL score would indicate that $m_1$ and $m_2$ are likely to be in semantic focus with similar subsets of the sentence; a high KL score would indicate that $m_1$ and $m_2$ are likely to be in semantic focus with different subsets of the sentence.
 
-From conditional probability,
+We compute the measure as follows:
 $$ 
 P(\vec f | m, \vec w) \propto P(\vec f, \vec w | m) = P(\vec w | m, \vec f) P(\vec f | m)
 $$
-From the generative model, since $\vec f$ and $m$ are independent, $P(\vec f | m) = P(\vec f)$. We then compute the symmetrised KL divergence for $F_1$ and $F_2$ as a measure of disjointedness.
+From the generative model, since $\vec f$ and $m$ are independent, $P(\vec f | m) = P(\vec f)$. We assume a uniform probability over focus sets in our computations.
 
-We have described a generative model of sentences containing phonetically ambiguous words that incorporates the idea of semantic focus sets. We then used the model to derive two measures that formalize incongruity. By combining a noisy channel model of language processing and standard information theoretic measures, our model presents a formalization of incongruity to be tested on humans' judgments of potentially humorous sentences.  
+We have described a generative model of sentences containing phonetically ambiguous words that incorporates the idea of semantic focus sets. We then used the model to derive two measures that formalize incongruity. By combining a noisy channel model of language comprehension and standard information theoretic measures, our model presents a formalization of incongruity to be tested on humans' judgments of potentially humorous sentences.  
 
 \section{Evaluation}
-We evaluate our model and measures on a set of $235$ sentences, consisting of $65$ puns, $40$ ``de-punned" control sentences that are matched with a subset of the puns with certain manipulations described below, and $130$ control non-pun sentences that match the puns in containing the same phonetically ambiguous words. We evaluate our model based on how well it predicts people's funniness ratings of these sentences.
+We evaluate our model and measures on a set of $235$ sentences, consisting of $65$ puns, $40$ ``de-punned" control sentences that are matched with a subset of the puns, and $130$ control non-pun sentences that match the puns in containing the same phonetically ambiguous words.
 \subsection{Materials}
-We selected $40$ pun sentences from a large collection of puns on a website called “Pun of the Day,” which contains over one thousand puns. Puns were selected such that the ambiguous item is a single phonetically ambiguous word, and such that no two puns in the collection have the same ambiguous item. To obtain more homophone pun items, a research assistant generated an addition $25$ pun sentences based on a separate list of homophone words.
+We selected $40$ pun sentences from a large collection of puns on a website called “Pun of the Day,” which contains over one thousand puns. Puns were selected such that the ambiguous item is a single phonetically ambiguous word, and no two puns in the collection have the same ambiguous item. To obtain more homophone pun items, a research assistant generated an addition $25$ pun sentences based on a separate list of homophone words.
 
 We constructed $40$ sentences to be minimally different from the pun sentences that we collected from ``Pun of the Day," which we will call de-punned sentences. A second research assistant who was blind to the hypothesis was asked to replace one word in each of the pun sentences (without changing the homophone word itself) so that the sentence is still grammatical but is no longer a pun. This resulted in sentences that were only one word different from the pun sentences. 
 
 The $130$ non-pun sentences were chosen to match each pun sentence on its ambiguous word as well as the alternative homophone. The sentences were taken from an online version of Heinle's Newbury House Dictionary of American English (http://nhd.heinle.com/). We selected sample sentences included in the definition of the homophone word. This design ensured that puns and non-pun sentences contain the same phonetically ambiguous words.
 
-Below are example sentences from each category.\\\\
+Figure~\ref{exampleSentences} shows example sentences from each category.\\\\
+\begin{figure}[h]
 \begin{tabular}{| l | l |}\hline
 \textbf{Type} & \textbf{Example} \\\hline
 Pun & The magician got so mad he pulled his hare out. \\
 De-pun & The professor got so mad he pulled his hare out.\\
 Non-pun& The hare ran rapidly across the field.\\
 Non-pun& Some people have lots of hair on their heads.\\\hline
-\end{tabular}\\\\
-\subsection{Human ratings of semantic relatedness}
+\end{tabular}
+\caption{Example sentences from each category}
+\label{exampleSentences}
+\end{figure}
 
-As described in the model section, in order to compute our measures, we need the prior probabilities of the interpretations $P(m)$, the prior probabilities of the words $P(w)$, and the conditional probabilities of each word in the sentence given an interpretation $P(w | m)$. We computed $P(w)$ and $P(m)$ directly from the Google unigram corpus. However, $P(w | m)$ is difficult to obtain through corpora (due to data sparsity) as well as through empirical measures of association strength. Given these constraints, we approximate $P(w | m)$ using empirical measures of the semantic relatedness between $w$ and $m$, denoted as $R(c, m)$. We use $R(c, m)$ as a proxy for point wise mutual information between $c$ and $m$, defined as follows:
+\subsection{Human ratings of semantic relatedness}
+As described in the model section, in order to compute our measures, we need the prior probabilities of the interpretations $P(m)$, the prior probabilities of the words $P(w)$, and the conditional probabilities of each word in the sentence given an interpretation $P(w | m)$. We computed $P(w)$ and $P(m)$ directly from the Google unigram corpus. However, $P(w | m)$ is difficult to obtain through corpora due to data sparsity. Given these constraints, we approximate $P(w | m)$ using empirical measures of the semantic relatedness between $w$ and $m$, denoted as $R(c, m)$. We use $R(c, m)$ as a proxy for point wise mutual information between $c$ and $m$, defined as follows:
 $$
 R(w, m)= {\log \frac{P(w, m)}{P(w)P(m)}} = \log \frac{P(w | m)}{P(w)} = \log P(w | m) - \log P(w)
 $$
@@ -185,40 +191,66 @@ With the proper substitutions and transformations,
 $$
 P(w | m) = e^{R(w, m)} P(w)
 $$
+
+\begin{figure*}[t]
+
+\mbox{
+\begin{subfigure}{0.45\textwidth}
+\scalebox{0.4}{\includegraphics{Plots/relatedness_example.png}}
+\subcaption{Relatedness of word pairs in example pun and non-pun}
+\end{subfigure}
+\begin{subfigure}{0.29\textwidth}
+\scalebox{0.4}{\includegraphics{Plots/ave_relatedness.png}}
+\subcaption{Average relatedness}
+\end{subfigure}
+\begin{subfigure}{0.31\textwidth}
+\scalebox{0.4}{\includegraphics{Plots/ave_funniness.png}}
+\subcaption{Average funniness}
+\end{subfigure}
+}
+\caption{Analyses of human ratings}
+\label{ratings_analyses}
+\end{figure*}
 To obtain $R(w, m)$ for each of the words $w$ in the stimuli sentences, we recruited $200$ subjects on Amazon's Mechanical Turk to rate distinct word pairs on their semantic relatedness. Function words were removed from the sentences, and the remaining words were paired with each of the interpretations of the homophone sequence (e.g., ``magician" and ``hare" is a legitimate word pair, as well as ``magician" and ``hair"). This resulted in $1460$ distinct word pairs. Each subject saw $146$ pairs of words in random order and were asked to rate how related each word pair is from $1$ to $10$. The average split-half correlation of the relatedness ratings was $0.916$. 
 
-Figure 1 and 2 show the relatedness of content words in the sentence with the two homophone interpretations. We see that in the pun sentence, the word ``magician" is rated as significantly more related to ``hare" than it is to ``hair", while the word ``pulled" is rated as significantly more related to ``hair" than it is to ``hare." On the other hand, all words in the non-pun example are significantly more related to the word ``hare" than to ``hair."
+Figure~\ref{ratings_analyses} (a) shows the relatedness of each content word with the two homophone interpretations for two example sentences. In the top sentence, which is a pun, the word ``magician" is rated as significantly more related to ``hare" than it is to ``hair", while the word ``pulled" is rated as significantly more related to ``hair" than it is to ``hare." In the bottom sentence, which is a non-pun, all words except the neutral word ``through" are more related to the word ``hare" than to ``hair." 
 
-Figure 3 shows the average relatedness ratings of words and the two homophone interpretations across the three types of sentences. In pun sentences, the average relatedness of words to the two homophone interpretations are roughly equivalent. In the non-pun sentences, the average relatedness of words to the observed homophone is significantly higher than to the alternative homophone. This analysis of human ratings of relatedness supports the intuition on which our model is based that funnier sentences are those in which different contexts support incongruous interpretations of the homophone.
+Figure~\ref{ratings_analyses} (b) shows the average relatedness ratings of words and the two homophone interpretations across the three types of sentences. In pun sentences, the average relatedness of words to the two homophone interpretations are roughly equivalent. In the de-punned sentences, the average relatedness of words to the observed homophone is significantly lower than to the alternative homophone. In the non-pun sentences,the average relatedness of words to the observed homophone is significantly higher than to the alternative homophone. These analyses suggest that relatedness ratings for the two candidate meanings capture the presence of alternative interpretations in puns, de-punned sentences, and non-puns. It further supports the intuition that ambiguity of meaning and the distinctiveness of supporting context words can help distinguish among the three types of sentences.
 
-\begin{figure}[t]
-\scalebox{0.4}{\includegraphics{Plots/relatedness_example.png}}
-\caption{Relatedness of word pairs in example pun and non-pun.}
-\end{figure}
+%\begin{figure}[t]
+%\scalebox{0.4}{\includegraphics{Plots/relatedness_example.png}}
+%\caption{Relatedness of word pairs in example pun and non-pun.}
+%\label{example_relatedness}
+%\end{figure}
 
-\begin{figure}[t]
-\scalebox{0.46}{\includegraphics{Plots/ave_relatedness_funniness.png}}
-\caption{Average relatedness and funniness ratings across sentence types}
-\end{figure}
+
+%\begin{figure}[t]
+%\scalebox{0.46}{\includegraphics{Plots/ave_relatedness_funniness.png}}
+%\caption{Average relatedness and funniness ratings across sentence types}
+%\label{ave_relatedness_funniness}
+%\end{figure}
 
 
 \subsection{Human Ratings of Funniness}
-We obtained funniness ratings of the sentences from $100$ subjects on Amazon's Mechanical Turk. Each subject read $58$ - $59$ sentences in random order, counterbalanced for the sentence types, and rated each sentence on funniness and correctness. The average split-half correlation of the funniness ratings was $0.83$. Figure 4 shows the average funniness ratings of puns, non-puns, and de-punned sentences. Pun sentences are rated as significantly funnier than de-punned sentences, and de-punned sentences are rated as significantly funnier than non-pun sentences.
-
+We obtained funniness ratings of the $235$ sentences from $100$ subjects on Amazon's Mechanical Turk. Each subject read roughly $60$ sentences in random order, counterbalanced for the sentence types, and rated each sentence on funniness and correctness. The average split-half correlation of the funniness ratings was $0.83$. Figure~\ref{ratings_analyses} (c) shows the average funniness ratings of puns, de-punned, and non-pun sentences. Pun sentences are rated as significantly funnier than de-punned sentences, and de-punned sentences are rated as significantly funnier than non-pun sentences ($F(2, 232) = 415.3, p < 0.0001$). Figure~\ref{ratings_analyses} (b) and Figure~\ref{ratings_analyses} (c) together suggest that the balance of relatedness between the two interpretations is a predictor of funniness.
 
 \section{Results}
-We computed an ambiguity and disjointedness value for each of the $235$ sentences following the derivations described in the model section and using the relatedness measures described above. 
+We computed an ambiguity and distinctiveness value for each of the $235$ sentences following the derivations described in the model section and using the relatedness measures described above. 
 
-As predicted, ambiguity differs significantly across sentence types ($F(2, 232) = 11.94, p < 0.0001 $) and correlates significantly with human ratings of funniness across the $235$ sentences ($r = 0.27, p < 0.0001$). Furthermore, disjointedness differs significantly across sentence types as well ($F(2, 232) =  5.76, p < 0.005$) and correlates significantly with human ratings of funniness, although less strongly ($r = 0.21, p < 0.005$).
+As predicted, ambiguity differs significantly across sentence types ($F(2, 232) = 11.94, p < 0.0001 $) and correlates significantly with human ratings of funniness across the $235$ sentences ($r = 0.27, p < 0.0001$). Furthermore, distinctiveness of semantic focus sets differs significantly across sentence types as well ($F(2, 232) =  5.76, p < 0.005$) and correlates significantly with human ratings of funniness, although less strongly ($r = 0.21, p < 0.005$).
 
 
-Using both ambiguity and disjointedness as the two dimensions that formalize incongruity, we can distinguish among puns, non-puns, and de-punned sentences. Both ambiguity and disjointedness measures are significant predictors of human ratings of funniness ($F(2,232) =19.6,  R^2 = 0.137, p < 0.001$).\\\\
+Using both ambiguity and distinctiveness as the two dimensions that formalize incongruity, we can distinguish among puns, non-puns, and de-punned sentences. We built a linear regression model using ambiguity and distinctiveness as predictors of human ratings of funniness. Results showed that both ambiguity and distinctiveness are significant predictors of funniness and together capture a significant amount of the variance in funniness ratings ($F(2,232) =19.6,  R^2 = 0.137, p < 0.001$) (see Table~\ref{coefficients}).
+\begin{table}[h]
 \begin{tabular}{| l | r | r | l |}\hline
 & {Estimate} & Std. Error & {p value} \\\hline
-Intercept & $-0.687$ & $0.140$ & $1.75e^{-06}$ *** \\
-Ambiguity & $1.011$ & $0.193$ & $3.49e^{-07}$ ***\\
-Disjointedness & $0.237$ & $0.054$ & $1.81e^{-05}$ ***\\\hline
-\end{tabular}\\\\
+Intercept & $-0.687$ & $0.140$ & $< 0.0001$ \\
+Ambiguity & $1.011$ & $0.193$ & $< 0.0001$\\
+Distinctiveness & $0.237$ & $0.054$ & $< 0.0001$\\\hline
+\end{tabular}
+\caption{Regression model for funniness ratings}
+\label{coefficients}
+\end{table}
 
 
 \begin{figure}[h]
@@ -234,14 +266,14 @@ Disjointedness & $0.237$ & $0.054$ & $1.81e^{-05}$ ***\\\hline
 
 \subsubsection{Semantic focus sets}
 
-Beyond predicting how funny a sentence is, our model can also tell us which particular features of a pun make it so amusing. By finding the semantic focus sets $\vec f$ that are most likely given the observed words and latent meaning variable $m$, we can identify words in a sentence that are likely to be in semantic focus given each of the two values of $m$. We present a few examples in the table below.
+Beyond predicting the funniness of a sentence, our model can also tell us which particular features of a pun make it amusing. By finding the semantic focus sets $\vec f$ that are most likely given the observed words and latent meaning variable $m$, we can identify words in a sentence that are likely to be in semantic focus given each of the two values of $m$. Table~\ref{focusExamples} shows the most likely semantic focus sets given each meaning, the ambiguity and distinctiveness scores, and funniness ratings for two sets of sentences. Although each sentence 
 \begin{spacing}{2.5}
 \begin{center}
 \begin{table*}[ht]
 \hfill{}
 \begin{tabular}{|c|c|l|l|c|c|r|}
 \hline
-\textbf{$m1$}& \textbf{$m2$} & \textbf{Type} & \textbf{Semantic focus sets}& \textbf{Amb.} & \textbf{Disj.} & \textbf{Funniness}\\\hline
+\textbf{$m1$}& \textbf{$m2$} & \textbf{Type} & \textbf{Sentence and Semantic Focus Sets}& \textbf{Amb.} & \textbf{Disj.} & \textbf{Funniness}\\\hline
 \multirow{4}{*}{{\color{Red} hare}} & \multirow{4}{*}{{\color{Emerald} hair}} & Pun & The \textbf{{\color{Red}magician}} got so mad he \textbf{{\color{Emerald}pulled}} his \textbf{{\color{Red}hare}} out. & $0.378$ & $2.291$ & $1.714$\\
 &&De-pun & The professor got so mad he \textbf{{\color{Emerald} pulled}} his \textbf{{\color{Red} hare}} out. & $0.048$ & $1.832$ & $-0.103$\\
 &&Non-pun & The \textbf{{\color{Red} hare}} \textbf{{\color{Red} ran}} \textbf{{\color{Red} rapidly}} through the \textbf{{\color{Red} fields}}. & $0.447$ &	$1.677$ &	$-0.400$\\
@@ -255,8 +287,8 @@ Beyond predicting how funny a sentence is, our model can also tell us which part
 \hline
 \end{tabular}
 \hfill{}
-\caption{Semantic focus sets of example sentences}
-\label{tb:focusExamples}
+\caption{Semantic focus sets of example sentences. Words in red are in semantic focus with $m_1$; green with $m_2$; navy blue with both.}
+\label{focusExamples}
 \end{table*}
 \end{center}
 \end{spacing}
