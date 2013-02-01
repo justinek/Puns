@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  1 FEB 2013 00:57
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  1 FEB 2013 10:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -705,15 +705,15 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 46.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--57
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
 
 Underfull \hbox (badness 1400) in paragraph at lines 62--65
 []\OT1/ptm/m/n/10 A lead-ing the-ory of hu-mor posits that incongruity---
@@ -729,31 +729,26 @@ Underfull \hbox (badness 1546) in paragraph at lines 62--65
 
 
 ]
-Underfull \hbox (badness 1755) in paragraph at lines 133--134
-[]\OT1/ptm/m/n/10 We de-rive two mea-sures sep-a-rately from the fac-tors
- []
-
 [2]
-Missing character: There is no Ð in font ptmr7t!
 Missing character: There is no Ò in font ptmr7t!
 Missing character: There is no Ó in font ptmr7t!
 
-Overfull \hbox (9.58698pt too wide) in paragraph at lines 169--176
+Overfull \hbox (9.58698pt too wide) in paragraph at lines 194--201
 [][] 
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 167--179
+Underfull \hbox (badness 1859) in paragraph at lines 192--204
 \OT1/ptm/m/n/10 (http://nhd.heinle.com/). We se-lected sam-ple sen-tences
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--179
+Underfull \hbox (badness 10000) in paragraph at lines 192--204
 
  []
 
 
-Overfull \hbox (13.3272pt too wide) detected at line 184
+Overfull \hbox (13.3272pt too wide) detected at line 210
 \OML/ptmcm/m/it/10 R\OT1/ptmcm/m/n/10 (\OML/ptmcm/m/it/10 w; m\OT1/ptmcm/m/n/10
  ) = [] = [] [] = [] \OML/ptmcm/m/it/10 P\OT1/ptmcm/m/n/10 (\OML/ptmcm/m/it/10 
 w\OMS/pzccm/m/n/10 j\OML/ptmcm/m/it/10 m\OT1/ptmcm/m/n/10 ) \OMS/pzccm/m/n/10 ^
@@ -765,10 +760,10 @@ w\OMS/pzccm/m/n/10 j\OML/ptmcm/m/it/10 m\OT1/ptmcm/m/n/10 ) \OMS/pzccm/m/n/10 ^
 File: Plots/relatedness_example.png Graphic file (type png)
 
 <use Plots/relatedness_example.png>
-Package pdftex.def Info: Plots/relatedness_example.png used on input line 204.
+Package pdftex.def Info: Plots/relatedness_example.png used on input line 230.
 (pdftex.def)             Requested size: 572.1361pt x 451.68639pt.
 
-Overfull \hbox (1.202pt too wide) in paragraph at lines 204--204
+Overfull \hbox (1.202pt too wide) in paragraph at lines 230--230
 [][] 
  []
 
@@ -776,83 +771,92 @@ Overfull \hbox (1.202pt too wide) in paragraph at lines 204--204
 File: Plots/ave_relatedness.png Graphic file (type png)
 
 <use Plots/ave_relatedness.png>
-Package pdftex.def Info: Plots/ave_relatedness.png used on input line 204.
+Package pdftex.def Info: Plots/ave_relatedness.png used on input line 230.
 (pdftex.def)             Requested size: 349.30414pt x 435.62643pt.
 
 <Plots/ave_funniness.png, id=23, 361.35pt x 429.605pt>
 File: Plots/ave_funniness.png Graphic file (type png)
 
 <use Plots/ave_funniness.png>
-Package pdftex.def Info: Plots/ave_funniness.png used on input line 204.
+Package pdftex.def Info: Plots/ave_funniness.png used on input line 230.
 (pdftex.def)             Requested size: 361.34912pt x 429.60394pt.
 
-Overfull \hbox (35.2883pt too wide) in paragraph at lines 204--205
+Overfull \hbox (35.2883pt too wide) in paragraph at lines 230--231
 [][] 
  []
 
 [3]
-Overfull \hbox (22.2455pt too wide) in paragraph at lines 235--252
+Underfull \vbox (badness 7704) has occurred while \output is active []
+
+ [4 <./Plots/relatedness_example.png> <./Plots/ave_relatedness.png> <./Plots/av
+e_funniness.png>]
+Overfull \hbox (22.2455pt too wide) in paragraph at lines 261--278
  [] 
  []
 
-<Plots/ambiguity_distinctiveness_ellipse.png, id=27, 572.1375pt x 451.6875pt>
+<Plots/ambiguity_distinctiveness_ellipse.png, id=31, 572.1375pt x 451.6875pt>
 File: Plots/ambiguity_distinctiveness_ellipse.png Graphic file (type png)
 
 <use Plots/ambiguity_distinctiveness_ellipse.png>
 Package pdftex.def Info: Plots/ambiguity_distinctiveness_ellipse.png used on in
-put line 257.
+put line 283.
 (pdftex.def)             Requested size: 572.1361pt x 451.68639pt.
 
-Overfull \hbox (7.83002pt too wide) in paragraph at lines 257--258
+Overfull \hbox (7.83002pt too wide) in paragraph at lines 283--284
 [][] 
  []
 
-<Plots/contour_plot.png, id=28, 572.1375pt x 451.6875pt>
+<Plots/contour_plot.png, id=32, 572.1375pt x 451.6875pt>
 File: Plots/contour_plot.png Graphic file (type png)
 
 <use Plots/contour_plot.png>
-Package pdftex.def Info: Plots/contour_plot.png used on input line 263.
+Package pdftex.def Info: Plots/contour_plot.png used on input line 289.
 (pdftex.def)             Requested size: 572.1361pt x 451.68639pt.
 
-Overfull \hbox (7.83002pt too wide) in paragraph at lines 263--264
+Overfull \hbox (7.83002pt too wide) in paragraph at lines 289--290
 [][] 
  []
 
 
-Underfull \hbox (badness 2443) in paragraph at lines 268--269
+Underfull \hbox (badness 2443) in paragraph at lines 294--295
 []\OT1/ptm/m/n/10 Figure 5[] shows the fun-ni-ness con-tours in the two-
  []
 
-[4 <./Plots/relatedness_example.png> <./Plots/ave_relatedness.png> <./Plots/ave
-_funniness.png>] [5 <./Plots/ambiguity_distinctiveness_ellipse.png> <./Plots/co
-ntour_plot.png>] (./cogsci_pun_2013.bbl
+
+Underfull \vbox (badness 1448) has occurred while \output is active []
+
+ [5 <./Plots/ambiguity_distinctiveness_ellipse.png> <./Plots/contour_plot.png>]
+
+(./cogsci_pun_2013.bbl
 Missing character: There is no Õ in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no © in font ptmr7t!
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ± in font ptmr7t!
-) [6] (./cogsci_pun_2013.aux) ) 
+ [6]) [7
+
+] (./cogsci_pun_2013.aux) ) 
 Here is how much of TeX's memory you used:
- 13170 strings out of 493488
- 249089 string characters out of 3141326
- 301935 words of memory out of 3000000
- 16159 multiletter control sequences out of 15000+200000
- 40735 words of font info for 85 fonts, out of 3000000 for 9000
+ 13172 strings out of 493488
+ 249110 string characters out of 3141326
+ 301936 words of memory out of 3000000
+ 16160 multiletter control sequences out of 15000+200000
+ 42419 words of font info for 87 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,13n,77p,1741b,695s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dv
-ips/base/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmex10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/symbol/usyr.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loca
-l/texlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/
-2012/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cogsci_pun_2013.pdf (6 pages, 218774 bytes).
+ 56i,13n,77p,1757b,695s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/
+base/8r.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmex10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012
+/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on cogsci_pun_2013.pdf (7 pages, 226674 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
