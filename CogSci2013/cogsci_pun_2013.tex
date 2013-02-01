@@ -46,14 +46,14 @@
 \maketitle
 
 \begin{abstract}
+\emph{Researchers showed the robot ten puns, hoping that one of them would make it laugh. Unfortunately, no pun in ten did.}\\
+
 What makes something funny? Humor theorists posit that incongruity---perceiving a situation from different viewpoints and finding the resulting interpretations to be incompatible---contributes to sensations of mirth. In this paper, we use a computational model of sentence comprehension to formalize incongruity and test its relationship to humor in puns. By combining a noisy channel model of language comprehension and standard information theoretic measures, we derive two dimensions of incongruity---ambiguity of meaning and distinctiveness of viewpoints---and use them to predict humans' judgments of funniness. Results showed that both ambiguity and distinctiveness are significant predictors of humor. Moreover, our measures are able to identify specific features of a pun that make it amusing. We show that a probabilistic model of language comprehension can help explain complex social phenomena such as humor.
 
 \textbf{Keywords:} 
 Humor; language understanding; noisy channel; probabilistic models; sentence processing
 \end{abstract}
 \section{Introduction}
-\emph{Researchers showed the robot ten puns, hoping that one of them would make it laugh. Unfortunately, no pun in ten did.}
-\\
 
 Humor plays an essential role in human interactions: it has important positive effects on children's development \cite{frank1989humor}, success in the work place \cite{duncan1990humor}, coping with illness and traumatic events \cite{johnson2002use, gelkopf1996humor}, and marital satisfaction \cite{ziv1989humor}.
 Indeed, in a study on gender differences in desired characteristics of relationship partners, both men and women rated sense of humor as more important than physical attractiveness and earning potential \cite{stewart2000sex}. 
@@ -83,9 +83,25 @@ Noisy channel models of sentence processing posit that language comprehension is
 Our purposes for developing a formal model of linguistic humor are two-fold. First, we wish to formalize the concept of incongruity and test assumptions adopted by leading theories in humor research. Secondly, we aim to show that a noisy channel of language processing allows for flexible context selection and sentence comprehension that gives rise to sophisticated linguistic and social meaning such as humor. 
 
 \section{Model}
-We propose a computational model for general sentence comprehension that incorporates a noisy channel approach to arrive at coherent global interpretations of a sentence. Given a sentence that contains a phonetically ambiguous target word, a comprehender maintains uncertainty over the observed input and uses contextual cues to infer the latent interpretation of the target word. If the resulting interpretation is unambiguous, then no incongruity exists and the sentence is unlikely to be funny. If the resulting interpretation is ambiguous, and furthermore if each interpretation is supported by an aspect or ``viewpoint" of the sentence, then the sentence is likely to evoke a sense of incongruity and thus humor. 
+Incongruity is a property of the interpretations derived from a sentence.
+In order to formalize incongruity we thus first describe a probabilistic model of sentence comprehension.
+Our model aims to infer the topic of a sentence (a course representation of its meaning) from the observed words. 
+However we take a noisy channel approach, assuming that the comprehender maintains uncertainty over which words reflect the sentence topic and which are noise.
+From this model we derive two quantities that may contribute to humor: ambiguity and distinctiveness.
+If the resulting interpretation is unambiguous, then no incongruity exists and the sentence is unlikely to be funny. If the resulting interpretation is ambiguous, and furthermore if each interpretation is supported by a distinct topical subset of the sentence (or ``viewpoint''), then the sentence is likely to evoke a sense of incongruity and thus humor. 
 
-Suppose a sentence is composed of a vector of content words $\vec w = \{w_1, \dots ,w_n\}$ and a phonetically ambiguous word $h$. We make the simplifying assumption that candidate interpretations of $h$ are constrained by phonetic similarity. As a result, only the two homophone interpretations of $h$ are salient and probable: $m_1$ and $m_2$. For example, in the magician pun described above, $h$ is the phonetically ambiguous target word ``hare," and  $m_1$ and $m_2$ are the candidate interpretations \emph{hare} and \emph{hair}, respectively. Previous research suggests that semantic priming plays an important role in lexical disambiguation during sentence processing \cite{seidenberg1982automatic, simpson1981meaning, burke1984semantic}. As a result, we make a second simplifying assumption that comprehenders use only semantic association information to compute the probabilities of a candidate interpretation. 
+Assume our sentence is composed of a vector of content words $\vec w = \{w_1, \dots, w_i, h, w_{i+1}, \dots ,w_n\}$, including a phonetically ambiguous word $h$. 
+We will use a simple generative model for $\vec w$ (see Figure~\ref{generativeModel}): given the latent sentence topic $m$, each word is generated independently by first deciding if it reflects the topic (the indicator variable $f_i$), if so it is sampled based on semantic relevance to $m$, if not it is sampled from a fixed unigram prior over words. We thus view the sentence as a mixture of topical and non-topical words. Similar approaches have been used in generative models of language to account for words that serve purposes in a sentence distinct from providing semantic information, such as topic models that incorporate syntax \cite{griffiths2005integrating}. 
+Our model is motivated by the important role that semantic priming plays in lexical disambiguation during sentence processing \cite{seidenberg1982automatic, simpson1981meaning, burke1984semantic}; while ignoring the other non-semantic factors of interpretation (which may also be important).
+
+We make the simplifying assumption that the plausible candidate topics $m$ of the sentence will correspond to the potential interpretations of the homophone word $h$, which are themselves constrained by phonetic similarity to two alternatives, $m_1$ and $m_2$. For example, in the magician pun described above, $h$ is the phonetically ambiguous target word ``hare," and  $m_1$ and $m_2$ are the candidate interpretations \emph{hare} and \emph{hair}, respectively. The two potential topics of the sentence can be identified by the two interpretations \emph{hare} and \emph{hair}. This assumption reduces the ill-defined space of sentence meanings to the simple proxy of alternate spellings for phonetically ambiguous words.
+
+
+%We propose a generative model of sentences in which the latent meaning variable $m$ and a latent indicator variable $\vec f$ are responsible for generating the observed words (see Figure~\ref{generativeModel}). Although the target word $h$ is special in the sense that it constrains the space of interpretations to its homophone meanings $m_1$ and $m_2$, in the model we treat $h$ as a contextual cue similar to other words in its relationship to the latent meaning variable $m$ and indicator variable $f_h$. For simplicity of notation, in the following derivations, $\vec w$ includes the target word $h$, and $\vec f$ includes the indicator variable for $h$. 
+%
+%Previous research suggests that semantic priming plays an important role in lexical disambiguation during sentence processing \cite{seidenberg1982automatic, simpson1981meaning, burke1984semantic}. As a result, we make a second simplifying assumption that comprehenders use only semantic association information to compute the probabilities of a candidate interpretation. 
+
+%$\vec f$ is a vector of indicator values that determines whether each word in a sentence is in semantic focus. When $f_i = 1$, $w_i$ is in semantic focus and is generated due to semantic relevance to $m$. Otherwise if $f_i = 0$, $w_i$ is simply drawn from a default unigram distribution. Similar approaches have been used in generative models of language to account for words that serve purposes in a sentence distinct from providing semantic information, such as topic models that incorporate syntax \cite{griffiths2005integrating}. For our purposes, the indicator variable allows the model to consider subsets of the sentence as viewpoints that may differentially support the two candidate interpretations $m_1$ and $m_2$. 
 
 \begin{figure}
 \centering
@@ -117,29 +133,31 @@ Suppose a sentence is composed of a vector of content words $\vec w = \{w_1, \do
 \draw[decorate sep={0.3mm}{1.65mm},fill] (1.09,1) -- (1.45,1);
 \draw[decorate sep={0.3mm}{1.65mm},fill] (1.09,-0.5) -- (1.45,-0.5);
 \end{tikzpicture}
-\caption{Generative model of a sentence}
+\caption{Generative model of a sentence. Each word $w_i$ is generated based on the sentence topic $m$ if the indicator variable $f_i$ puts it in semantic focus; otherwise it is generated as noise (from a unigram distribution). }
 \label{generativeModel}
 \end{figure}
 
-We propose a generative model of sentences in which the latent meaning variable $m$ and a latent indicator variable $\vec f$ are responsible for generating the observed words (see Figure~\ref{generativeModel}). Although the target word $h$ is special in the sense that it constrains the space of interpretations to its homophone meanings $m_1$ and $m_2$, in the model we treat $h$ as a contextual cue similar to other words in its relationship to the latent meaning variable $m$ and indicator variable $f_h$. For simplicity of notation, in the following derivations, $\vec w$ includes the target word $h$, and $\vec f$ includes the indicator variable for $h$. 
 
-$\vec f$ is a vector of indicator values that determines whether each word in a sentence is in semantic focus. When $f_i = 1$, $w_i$ is in semantic focus and is generated due to semantic relevance to $m$. Otherwise if $f_i = 0$, $w_i$ is simply drawn from a default unigram distribution. Similar approaches have been used in generative models of language to account for words that serve purposes in a sentence distinct from providing semantic information, such as topic models that incorporate syntax \cite{griffiths2005integrating}. For our purposes, the indicator variable allows the model to consider subsets of the sentence as viewpoints that may differentially support the two candidate interpretations $m_1$ and $m_2$. 
 
-Using the generative model of language, we can infer the joint probability distribution of the latent variables $m$ and $\vec f$ given the observed words $\vec w$ and $h$. This distribution can be factorized into:
+
+
+Using the above generative model, we can infer the joint probability distribution $P(m, \vec f | \vec w) $ of the sentence topic $m$ and the indicator variables $\vec f$ that determine whether each word is in semantic focus. This distribution can be factorized into:
 $$
 P(m, \vec f | \vec w) = P(m | \vec w) P(\vec f | m, \vec w) 
 $$
 
-We derive two measures separately from the factors $P(m | \vec w)$ and $P(\vec f | m, \vec w)$, which we will call \emph{ambiguity} and \emph{distinctiveness}. Ambiguity means the presence of two similarly likely interpretations, which is required for incongruity because a single unambiguous interpretation cannot produce incongruity. Distinctiveness measures the degree to which two interpretations are supported by different viewpoints of the sentence, which we represent as sets of words that are in semantic focus with the two values of $m$. Together, these two measures form our formalization of incongruity. 
+We derive a measure from each of the factors $P(m | \vec w)$ and $P(\vec f | m, \vec w)$, which we will call \emph{ambiguity} and \emph{distinctiveness} respectively. Ambiguity means the presence of two similarly likely interpretations, which is required for incongruity because a single unambiguous interpretation rules out incompatible interpretations. Distinctiveness measures the degree to which two interpretations are supported by different viewpoints of the sentence, which we represent as distinct sets of words that are in semantic focus given the two values of $m$. Together, these two measures form our formalization of incongruity. 
 
 \subsubsection{Ambiguity} Let $M$ denote the distribution $P(m | \vec w)$, a binomial distribution over the two meaning values $m_1$ and $m_2$ given the observed words. If the entropy of this distribution is low, this means that the probability mass is concentrated on only one meaning, and the alternative meaning is unlikely given the observed words. If entropy is high, this means that the probability mass is more evenly distributed among $m_1$ and $m_1$, and the two interpretations are similarly likely given the contexts. The entropy of $P(m | \vec w)$ is thus a natural measure of the degree of ambiguity present in a sentence. We compute $P(m | \vec w)$ as follows:
-$$
-P(m | \vec w) = \sum_{\vec f} P(m, \vec f | \vec w) 
-$$
-From Bayes' theorem, this is proportional to the following:
-$$
-\sum_{\vec f} P(\vec w | m, \vec f) P(m) P(\vec f)= \sum_{\vec f} \bigg (P(m)P(\vec f)\prod_i P(w_i | m, f_i) \bigg)
-$$
+\begin{align}
+P(m | \vec w) &= \sum_{\vec f} P(m, \vec f | \vec w) \\
+&\propto \sum_{\vec f} P(\vec w | m, \vec f) P(m) P(\vec f) \\
+&= \sum_{\vec f} \bigg (P(m)P(\vec f)\prod_i P(w_i | m, f_i) \bigg)
+\end{align}
+%From Bayes' theorem, this is proportional to the following:
+%$$
+%\sum_{\vec f} P(\vec w | m, \vec f) P(m) P(\vec f)= \sum_{\vec f} \bigg (P(m)P(\vec f)\prod_i P(w_i | m, f_i) \bigg)
+%$$
 From the generative model, 
 \[
     P(w_i | m, f_i) = 
@@ -150,11 +168,15 @@ From the generative model,
 \]
 Once we derive $P(m | \vec w)$, we then compute its entropy as a measure of ambiguity.
 
-\subsubsection{Distinctiveness} Let $F_1$ denote the distribution $P(f | m_1, \vec w)$ and $F_2$ denote the distribution $P(f | m_2, \vec w)$. $F_1$ and $F_2$ represent the distributions over semantic focus sets given the observed words and $m_1$ and $m_2$, respectively. We use a symmetrised Kullback–Leibler divergence score $D_{KL}(F_1 || F_2) + D_{KL}(F_2 || F_1)$ to measure the distance between $F_1$ and $F_2$. This score measures how ``distinct" the semantic focus sets are given $m_1$ and $m_2$. A low KL score would indicate that $m_1$ and $m_2$ are likely to be in semantic focus with similar subsets of the sentence; a high KL score would indicate that $m_1$ and $m_2$ are likely to be in semantic focus with different subsets of the sentence. We compute the measure as follows:
+\subsubsection{Distinctiveness} We next turn to the distribution over focus sets, given sentence topic. This may be computed as follows:
 $$ 
-P(\vec f | m, \vec w) \propto P(\vec f, \vec w | m) = P(\vec w | m, \vec f) P(\vec f | m)
+P(\vec f | m, \vec w) \propto P(\vec w | m, \vec f) P(\vec f | m)
 $$
-From the generative model, since $\vec f$ and $m$ are independent, $P(\vec f | m) = P(\vec f)$. We assume a uniform probability over focus sets in our computations. Once we derive $P(\vec f | m_1, \vec w)$ and $P(\vec f | m_2, \vec w)$, we compute its symmetrised KL divergence as a measure of distinctiveness.
+Since $\vec f$ and $m$ are independent, $P(\vec f | m) = P(\vec f)$. We assume a uniform probability that each words is in focus.
+
+Let $F_1$ denote the distribution $P(f | m_1, \vec w)$ and $F_2$ denote the distribution $P(f | m_2, \vec w)$. $F_1$ and $F_2$ represent the distributions over semantic focus sets assuming the sentence topic $m_1$ and $m_2$, respectively. We use a symmetrized Kullback-Leibler divergence score $D_{KL}(F_1 || F_2) + D_{KL}(F_2 || F_1)$ to measure the distance between $F_1$ and $F_2$. This score measures how ``distinct" the semantic focus sets are given $m_1$ and $m_2$. A low KL score would indicate that meanings $m_1$ and $m_2$ are supported by similar subsets of the sentence; a high KL score would indicate that $m_1$ and $m_2$ are supported by distinct subsets of the sentence. 
+
+ %Once we derive $P(\vec f | m_1, \vec w)$ and $P(\vec f | m_2, \vec w)$, we compute its symmetrised KL divergence as a measure of distinctiveness.
 
 \section{Evaluation}
 %We have described a generative model of sentences that incorporates the idea of semantic focus sets and used the model to derive two measures that formalize incongruity. 
