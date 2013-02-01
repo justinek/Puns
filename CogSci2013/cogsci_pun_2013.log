@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  1 FEB 2013 14:14
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  1 FEB 2013 15:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -257,13 +257,14 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (/usr/local/texlive/2012/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(./apacite.sty
-Package: apacite 2007/09/03 v4.00 APA citation
+(/usr/local/texlive/2012/texmf-dist/tex/latex/apacite/apacite.sty
+Package: apacite 2012/02/25 v6.01 APA citation
 \c@BibCnt=\count109
 \bibleftmargin=\skip47
 \bibindent=\skip48
 \bibparsep=\skip49
 \bibitemsep=\skip50
+\biblabelsep=\skip51
 )
 (/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
@@ -335,11 +336,11 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen124
 \extrarowheight=\dimen125
 \NC@list=\toks20
-\extratabsurround=\skip51
-\backup@length=\skip52
+\extratabsurround=\skip52
+\backup@length=\skip53
 )
 \everycr=\toks21
-\minrowclearance=\skip53
+\minrowclearance=\skip54
 )
 LaTeX Info: Redefining \color on input line 702.
 \rownum=\count115
@@ -675,69 +676,25 @@ LaTeX Info: Redefining \nameref on input line 41.
 \@outlinefile=\write4
 \openout4 = `cogsci_pun_2013.out'.
 
+\c@maskedRefs=\count137
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/apacite/english.apc
 File: english.apc 2012/02/25 v6.01 apacite language file
-
-
-/usr/local/texlive/2012/texmf-dist/tex/latex/apacite/english.apc:55: LaTeX Erro
-r: \onemaskedcitationmsg undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55 \renewcommand{\onemaskedcitationmsg}
-                                         [1]{%
-? 
-
-/usr/local/texlive/2012/texmf-dist/tex/latex/apacite/english.apc:57: LaTeX Erro
-r: \maskedcitationsmsg undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 \renewcommand{\maskedcitationsmsg}
-                                       [1]{%
-? 
-
-/usr/local/texlive/2012/texmf-dist/tex/latex/apacite/english.apc:118: LaTeX Err
-or: \BRetrievedFrom undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.118 \renewcommand{\BRetrievedFrom}
-                                    {Retrieved from\ }% Websites; note the s...
-
-? 
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
-
-/usr/local/texlive/2012/texmf-dist/tex/latex/apacite/english.apc:162: LaTeX Err
-or: \PrintOrdinal undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.162 \renewcommand{\PrintOrdinal}
-                                  [1]{%
-? 
-) (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+)
+(/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count137
+\scratchcounter=\count138
 \scratchdimen=\dimen176
 \scratchbox=\box39
-\nofMPsegments=\count138
-\nofMParguments=\count139
+\nofMPsegments=\count139
+\nofMParguments=\count140
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count140
+\MPscratchCnt=\count141
 \MPscratchDim=\dimen177
-\MPnumerator=\count141
-\makeMPintoPDFobject=\count142
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
 \everyMPtoPDFconversion=\toks32
 ) (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -929,17 +886,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
 Package rerunfilecheck Info: File `cogsci_pun_2013.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
  ) 
 Here is how much of TeX's memory you used:
- 16590 strings out of 493488
- 301028 string characters out of 3141326
- 388043 words of memory out of 3000000
- 19506 multiletter control sequences out of 15000+200000
+ 16676 strings out of 493488
+ 302333 string characters out of 3141326
+ 389879 words of memory out of 3000000
+ 19592 multiletter control sequences out of 15000+200000
  51831 words of font info for 113 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  56i,13n,77p,1760b,708s stack positions out of 5000i,500n,10000p,200000b,50000s
