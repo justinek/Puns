@@ -1,5 +1,6 @@
 \documentclass[10pt,letterpaper]{article}
 \usepackage{multirow}
+\usepackage{hyperref}
 \usepackage{cogsci}
 \usepackage{pslatex}
 \usepackage{amsmath}
@@ -10,15 +11,11 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{etex}
-%\usepackage{subfigure}
 \usepackage{color}
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{tikz}
 \usepackage{array}
-
-
-
 
 %\usepackage{todonotes}
 
@@ -48,7 +45,7 @@
 \begin{abstract}
 \emph{Researchers showed the robot ten puns, hoping that one of them would make it laugh. Unfortunately, no pun in ten did.}\\
 
-What makes something funny? Humor theorists posit that incongruity---perceiving a situation from different viewpoints and finding the resulting interpretations to be incompatible---contributes to sensations of mirth. In this paper, we use a computational model of sentence comprehension to formalize incongruity and test its relationship to humor in puns. By combining a noisy channel model of language comprehension and standard information theoretic measures, we derive two dimensions of incongruity---ambiguity of meaning and distinctiveness of viewpoints---and use them to predict humans' judgments of funniness. Results showed that both ambiguity and distinctiveness are significant predictors of humor. Moreover, our measures are able to identify specific features of a pun that make it amusing. We show that a probabilistic model of language comprehension can help explain complex social phenomena such as humor.
+What makes something funny? Humor theorists posit that incongruity---perceiving a situation from different viewpoints and finding the resulting interpretations to be incompatible---contributes to sensations of mirth. In this paper, we use a computational model of sentence comprehension to formalize incongruity and test its relationship to humor in puns. By combining a noisy channel model of language comprehension and standard information theoretic measures, we derive two dimensions of incongruity---ambiguity of meaning and distinctiveness of viewpoints---and use them to predict humans' judgments of funniness. Results showed that both ambiguity and distinctiveness are significant predictors of humor.Our measures are also able to identify specific features of a pun that make it amusing. We show that a probabilistic model of sentence comprehension can help explain complex phenomena such as linguistic humor.
 
 \textbf{Keywords:} 
 Humor; language understanding; noisy channel; probabilistic models; sentence processing
@@ -158,6 +155,7 @@ P(m | \vec w) &= \sum_{\vec f} P(m, \vec f | \vec w) \\
 %$$
 %\sum_{\vec f} P(\vec w | m, \vec f) P(m) P(\vec f)= \sum_{\vec f} \bigg (P(m)P(\vec f)\prod_i P(w_i | m, f_i) \bigg)
 %$$
+Note that $P(m | \vec w)$ is driven in part by the semantic relationship between $m$ and $\vec w$ and in part by the prior probability of $m$, which we approximate using the unigram probability of the words $m_1$ and $m_2$.
 From the generative model, 
 \[
     P(w_i | m, f_i) = 
@@ -216,26 +214,26 @@ $$
 \begin{figure*}[t]
 \mbox{
 \begin{subfigure}{0.45\textwidth}
-\scalebox{0.4}{\includegraphics{Plots/relatedness_example.png}}
-\subcaption{Relatedness of word pairs in example pun and non-pun}
+\scalebox{0.38}{\includegraphics{Plots/relatedness_example.png}}
+\subcaption{Relatedness of each word with two candidate meanings of $h$ for a pun and non-pun}
 \end{subfigure}
 \begin{subfigure}{0.29\textwidth}
 \scalebox{0.4}{\includegraphics{Plots/ave_relatedness.png}}
-\subcaption{Average relatedness of word pairs}
+\subcaption{Average relatedness of content words with two candidate meanings of $h$}
 \end{subfigure}
 \begin{subfigure}{0.31\textwidth}
 \scalebox{0.4}{\includegraphics{Plots/ave_funniness.png}}
-\subcaption{Average funniness of sentences}
+\subcaption{Average funniness ratings for different sentence types}
 \end{subfigure}
 }
-\caption{Analyses of human ratings}
+\caption{(a) In the example pun (top), two candidate meanings of $h$ are each more related to a subset of the content words. In the non-pun, only one candidate meaning is more related. (b) Content words are similarly related to both candidate meanings in puns; more related to alternative meanings in de-puns; more related to observed meanings in non-pun. (c) Funniness varies across the sentence types in a pattern that reflects the balance of relatedness to candidate meanings shown in (b).}
 \label{ratings_analyses}
 \end{figure*}
 To obtain $R(w, m)$ for each of the words $w$ in the stimuli sentences, we recruited $200$ subjects on Amazon's Mechanical Turk to rate distinct word pairs on their semantic relatedness. Function words were removed from the sentences, and the remaining words were paired with each of the interpretations of the homophone sequence (e.g., ``magician" and ``hare" is a legitimate word pair, as well as ``magician" and ``hair"). This resulted in $1460$ distinct word pairs. Each subject saw $146$ pairs of words in random order and were asked to rate how related each word pair is using a scale from $1$ to $10$. The average split-half correlation of the relatedness ratings was $0.916$, indicating that semantic relatedness was a reliable measure. 
 
 Figure~\ref{ratings_analyses} (a) shows the relatedness of each content word with the two homophone interpretations for two example sentences. In the top sentence, which is a pun, the word ``magician" is rated as significantly more related to ``hare" than it is to ``hair", while the word ``pulled" is rated as significantly more related to ``hair" than it is to ``hare." In the bottom sentence, which is a non-pun, all words except the neutral word ``through" are more related to the word ``hare" than to ``hair." 
 
-Figure~\ref{ratings_analyses} (b) shows the average relatedness ratings of words and the two homophone interpretations across the three types of sentences. In pun sentences, the average relatedness of words to the two homophone interpretations are roughly equivalent. In the de-punned sentences, the average relatedness of words to the observed homophone is significantly lower than to the alternative homophone. In the non-pun sentences,the average relatedness of words to the observed homophone is significantly higher than to the alternative homophone. These analyses suggest that relatedness ratings for the two candidate meanings capture the presence or absence of multiple interpretations in puns, de-punned sentences, and non-puns. It further supports our model's prediction that ambiguity of meaning and the distinctiveness of supporting context words can help distinguish among the three types of sentences.
+Figure~\ref{ratings_analyses} (b) shows the average relatedness ratings of words and the two homophone interpretations across the three types of sentences. In pun sentences, the average relatedness of words to the two homophone interpretations are not significantly different. In the de-punned sentences, the average relatedness of words to the alternative meaning is significantly higher than to the observed meaning. In the non-pun sentences,the average relatedness of words to the observed meaning is significantly higher than to the alternative meaning. These analyses suggest that relatedness ratings for the two candidate meanings capture the presence or absence of multiple interpretations in a sentence. It further supports our model's prediction that ambiguity of meaning and the distinctiveness of supporting context words can help distinguish among the three types of sentences.
 
 \subsection{Human Ratings of Funniness}
 We obtained funniness ratings of the $235$ sentences from $100$ subjects on Amazon's Mechanical Turk. Each subject read roughly $60$ sentences in random order, counterbalanced for the sentence types, and rated each sentence on funniness and correctness. The average split-half correlation of funniness ratings was $0.83$. Figure~\ref{ratings_analyses} (c) shows the average funniness ratings of puns, de-punned, and non-pun sentences. Pun sentences are rated as significantly funnier than de-punned sentences, and de-punned sentences are rated as significantly funnier than non-pun sentences ($F(2, 232) = 415.3, p < 0.0001$). Figure~\ref{ratings_analyses} (b) and Figure~\ref{ratings_analyses} (c) together suggest that the balance of relatedness between the two interpretations is a predictor of funniness.
@@ -250,11 +248,9 @@ Intercept & $-0.687$ & $0.140$ & $< 0.0001$ \\
 Ambiguity & $1.011$ & $0.193$ & $< 0.0001$\\
 Distinctiveness & $0.237$ & $0.054$ & $< 0.0001$\\\hline
 \end{tabular}
-\caption{Regression model for funniness ratings}
+\caption{Regression coefficients using ambiguity and distinctiveness measures to predict funniness ratings}
 \label{coefficients}
 \end{table}
-
-A linear regression model showed that both ambiguity and distinctiveness are significant predictors of funniness. Together, the two predictors capture a modest but significant amount of the variance in funniness ratings ($F(2,232) =19.6,  R^2 = 0.137, p < 0.001$) (see Table~\ref{coefficients}). Using both ambiguity and distinctiveness as dimensions that formalize incongruity, we can distinguish among puns, non-puns, and de-punned sentences, as shown in Figure~\ref{ellipse}. Figure~\ref{ellipse} shows the standard error ellipses for each of the three sentence types in the two-dimensional space of ambiguity and distinctiveness. Although there is a fair amount of noise in the predictors (likely due to simplifying assumptions, the need to use empirical measures of relatedness, and the inherent complexity of humor) we see that pun sentences tend to cluster at a space with higher ambiguity and distinctiveness. While de-punned sentences are also fairly high on ambiguity (e.g. it is ambiguous whether the word ``hare" in ``The professor got so mad he pulled his hare out" should be interpreted as \emph{hair}), they tend to have lower distinctiveness measures. Non-pun sentences score the lowest on ambiguity and have moderate distinctiveness measures.
 
 \begin{table*}[!htbp]
 \centering
@@ -275,21 +271,23 @@ A linear regression model showed that both ambiguity and distinctiveness are sig
 \hline
 \end{tabular}
 \hfill{}
-\caption{Semantic focus sets of example sentences. Words in red are in semantic focus with $m_1$; green with $m_2$; blue with both.}
+\caption{Semantic focus sets, ambiguity/disjointedness scores, and funniness ratings for two groups of sentences. Words in red are in semantic focus with $m_1$; green with $m_2$; blue with both. Semantic focus sets for all sentences can be found at \url{http://www.stanford.edu/~justinek/Pun/focusSets.html}}
 \label{focusExamples}
 \end{table*}
 
 \begin{figure}[t]
-\scalebox{0.44}{\includegraphics{Plots/ambiguity_distinctiveness_ellipse.png}}
-\caption{Standard error ellipses of ambiguity and distinctiveness across sentence types}
+\includegraphics[width=85mm, height=65mm] {Plots/ambiguity_distinctiveness_ellipse.png}
+\caption{Standard error ellipses of ambiguity and distinctiveness across sentence types. Puns score higher on ambiguity and distinctiveness; de-puns are less supported by distinct focus sets; non-puns have low ambiguity.}
 \label{ellipse}
 \end{figure}
 
 \begin{figure}[t]
-\scalebox{0.44}{\includegraphics{Plots/contour_plot.png}}
-\caption{Ambiguity and disjointedness with funniness contours}
+\includegraphics[width=95mm, height=65mm]{Plots/contour_plot_legend.png}
+\caption{Funniness contours smoothed using a 2-D Loess regression with ambiguity and disjointedness measures as predictors. Sentences become funnier as they move to high ambiguity and distinctiveness space.}
 \label{contour}
 \end{figure}
+
+A linear regression model showed that both ambiguity and distinctiveness are significant predictors of funniness. Together, the two predictors capture a modest but significant amount of the variance in funniness ratings ($F(2,232) =19.6,  R^2 = 0.137, p < 0.001$) (see Table~\ref{coefficients}). Using both ambiguity and distinctiveness as dimensions that formalize incongruity, we can distinguish among puns, non-puns, and de-punned sentences, as shown in Figure~\ref{ellipse}. Figure~\ref{ellipse} shows the standard error ellipses for each of the three sentence types in the two-dimensional space of ambiguity and distinctiveness. Although there is a fair amount of noise in the predictors (likely due to simplifying assumptions, the need to use empirical measures of relatedness, and the inherent complexity of humor) we see that pun sentences tend to cluster at a space with higher ambiguity and distinctiveness. While de-punned sentences are also fairly high on ambiguity (e.g. it is ambiguous whether the word ``hare" in ``The professor got so mad he pulled his hare out" should be interpreted as \emph{hair}), they tend to have lower distinctiveness measures. Non-pun sentences score the lowest on ambiguity and have moderate distinctiveness measures.
 
 Figure~\ref{contour} shows the funniness contours in the two-dimensional ambiguity-distinctiveness space smoothed using a 2-D Loess regression. Not only do the three types of sentences differ along the two dimensions, but sentences become funnier as they increase in ambiguity and distinctiveness. These results suggest that our probabilistic model of language and measures of incongruity capture an important aspect of humor in pun sentences.
 
