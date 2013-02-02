@@ -1,17 +1,19 @@
+%\documentclass[10pt,letterpaper]{article}
+%\usepackage{multirow}
+%\usepackage{hyperref}
+%\usepackage{cogsci}
+%\usepackage{pslatex}
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+%\usepackage{setspace}
+%\usepackage{apacite}
+%\usepackage{graphicx}
+%\usepackage{caption}
+%\usepackage{subcaption}
+%\usepackage{etex}
+%\usepackage{color}
+
 \documentclass[10pt,letterpaper]{article}
-\usepackage{multirow}
-\usepackage{hyperref}
-\usepackage{cogsci}
-\usepackage{pslatex}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{setspace}
-\usepackage{apacite}
-\usepackage{graphicx}
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage{etex}
-\usepackage{color}\documentclass[10pt,letterpaper]{article}
 \usepackage{multirow}
 \usepackage{hyperref}
 \usepackage{cogsci}
@@ -309,13 +311,14 @@ Our work moves beyond these two approaches and directly utilizes a model of gene
 
 While the measures we developed account for a significant amount of variance in funniness ratings, there are several ways to improve our model of language in order to more accurately capture the subtleties of linguistic humor. By making the simplifying assumption that semantic association drives sentence comprehension, we disregarded the sequential structure of language that is often important for understanding a pun. For example, ``The actors had one great movie after another. They were on a role." scores high on funniness but low on our measures because it leverages the idiomatic expression ``on a roll" to boost the interpretation \emph{roll}.  Since our bag-of-words model does not account for word sequences, the measures we derive fail to fully capture the incongruity of many pun sentences that contain idiomatic expressions. In future work, we aim to incorporate information about the sequential structure of a sentence to further improve our language model and measures of incongruity.
 
-In this paper, we showed how a basic model of sentence comprehension can give rise to incongruous sentence interpretations with rich social and linguistic meaning.
+In this paper, we showed how a basic model of sentence comprehension can illuminate incongruous sentence interpretations with rich social and linguistic meaning.
 %We described a probabilistic model of sentence comprehension that uses noisy channel assumptions to compute the meaning of a phonetically ambiguous word. 
-Although our task in this paper is limited in scope, we believe that it represents a step towards developing models of language that can explain complex phenomena such as humor. From the perspective of language understanding, such phenomena can serve as probes for developing models of language that account for the subtitles of linguistic behavior. wider range of richness in linguistic behavior. We hope that our work contributes to research in humor theory, computational humor, and language understanding, with the aim to one day understand what makes us laugh and build robots that appreciate the wonders of word play.
+Although our task in this paper is limited in scope, we believe that it represents a step towards developing models of language that can explain complex phenomena such as humor. From the perspective of language understanding, such phenomena can serve as probes for developing models of language that account for the subtleties of linguistic behavior. %wider range of richness in linguistic behavior. 
+We hope that our work contributes to research in humor theory, computational humor, and language understanding, with the aim to one day understand what makes us laugh and build robots that appreciate the wonders of word play.
 
 
 \section{Acknowledgments}
-We thank Stu Melton and Mia Polansky for helping create and prepare part of the materials used in this paper.  This work was supported by a John S. McDonnell Foundation Scholar Award.
+We thank Stu Melton and Mia Polansky for helping create and prepare part of the materials used in this paper.  This work was supported in part by a John S. McDonnell Foundation Scholar Award to NDG.
 
 
 \bibliographystyle{apacite}
