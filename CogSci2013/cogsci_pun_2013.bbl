@@ -445,30 +445,6 @@ Seidenberg, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem[\protect\citeauthoryear{%
-Simpson%
-}{%
-Simpson%
-}{%
-{\protect\APACyear{1981}}%
-}]{%
-simpson1981meaning}%
-\APACinsertmetastar{%
-simpson1981meaning}%
-Simpson, G.%
-%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1981}{}{}.
-\newblock
-\BBOQ{}\APACrefatitle{Meaning dominance and semantic context in the processing
-  of lexical ambiguity}{Meaning dominance and semantic context in the
-  processing of lexical ambiguity}.\BBCQ{}
-\newblock
-\APACjournalVolNumPages{Journal of Verbal Learning and Verbal
-  Behavior}{20}{1}{120--136}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem[\protect\citeauthoryear{%
 Stewart%
 , Stinnett%
 \BCBL{}\ \BBA{} Rosenfeld%

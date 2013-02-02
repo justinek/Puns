@@ -10,6 +10,7 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: pun_bib.bib
+Warning--I didn't find a database entry for "simpson1981meaning"
 apacite.bst [2007/09/03 v4.00 APA bibliography style]
 Warning--No journal in binsted1996machine
 Warning--No address in frank1989humor
@@ -23,45 +24,45 @@ Warning--No address in levy2008noisy
 Warning--No address in martin2007psychology
 Warning--No address in mcghee1979humor
 Warning--No address in semantic2010
-You've used 22 entries,
+You've used 21 entries,
             6345 wiz_defined-function locations,
-            1321 strings with 13571 characters,
-and the built_in function-call counts, 39727 in all, are:
-= -- 4854
-> -- 348
-< -- 1908
-+ -- 1851
-- -- 44
-* -- 2601
-:= -- 7406
-add.period$ -- 96
-call.type$ -- 22
-change.case$ -- 114
+            1316 strings with 13423 characters,
+and the built_in function-call counts, 38030 in all, are:
+= -- 4652
+> -- 338
+< -- 1813
++ -- 1763
+- -- 42
+* -- 2482
+:= -- 7056
+add.period$ -- 92
+call.type$ -- 21
+change.case$ -- 109
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 983
-empty$ -- 1604
-format.name$ -- 533
-if$ -- 7540
+cite$ -- 54
+duplicate$ -- 949
+empty$ -- 1537
+format.name$ -- 519
+if$ -- 7232
 int.to.chr$ -- 0
-int.to.str$ -- 44
+int.to.str$ -- 42
 missing$ -- 0
-newline$ -- 519
-num.names$ -- 178
-pop$ -- 707
+newline$ -- 498
+num.names$ -- 170
+pop$ -- 686
 preamble$ -- 1
-purify$ -- 88
+purify$ -- 84
 quote$ -- 0
-skip$ -- 2588
+skip$ -- 2477
 stack$ -- 0
-substring$ -- 2066
-swap$ -- 638
-text.length$ -- 76
+substring$ -- 1972
+swap$ -- 613
+text.length$ -- 74
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 2016
+type$ -- 1936
 warning$ -- 12
-while$ -- 192
+while$ -- 187
 width$ -- 0
-write$ -- 641
-(There were 12 warnings)
+write$ -- 618
+(There were 13 warnings)
